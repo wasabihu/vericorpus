@@ -1,0 +1,250 @@
+[
+  {
+    "id": "LAW-01",
+    "prefix": "cnlaw",
+    "category": "法律·阿拉伯条号",
+    "query": "公司法 第47条 注册资本 五年",
+    "expect_path_sub": "公司法(2023-12-29).md",
+    "expect_snippet_any": [
+      "第四十七条",
+      "五年"
+    ]
+  },
+  {
+    "id": "LAW-02",
+    "prefix": "cnlaw",
+    "category": "法律·中文法条",
+    "query": "民法典 第584条 违约损失赔偿",
+    "expect_path_sub": "合同编.md",
+    "expect_snippet_any": [
+      "第五百八十四条",
+      "损失"
+    ]
+  },
+  {
+    "id": "LAW-03",
+    "prefix": "cnlaw",
+    "category": "法律·合规定位",
+    "query": "个人信息保护法 第二十八条 敏感个人信息",
+    "expect_path_sub": "个人信息保护法",
+    "expect_snippet_any": [
+      "敏感个人信息",
+      "二十八条"
+    ]
+  },
+  {
+    "id": "LAW-04",
+    "prefix": "cnlaw",
+    "category": "法律·用工合规",
+    "query": "劳动合同法 第十四条 无固定期限",
+    "expect_path_sub": "劳动合同法",
+    "expect_snippet_any": [
+      "无固定期限"
+    ]
+  },
+  {
+    "id": "LAW-05",
+    "prefix": "cnlaw",
+    "category": "法律·数据分类",
+    "query": "数据安全法 核心数据 严格管理",
+    "expect_path_sub": "数据安全法",
+    "expect_snippet_any": [
+      "核心数据"
+    ]
+  },
+  {
+    "id": "GH-01",
+    "prefix": "cngh",
+    "category": "开源·中文RAG",
+    "query": "RAGFlow DeepDoc 深度文档理解",
+    "expect_path_sub": "ragflow/",
+    "expect_snippet_any": [
+      "DeepDoc",
+      "深度文档"
+    ]
+  },
+  {
+    "id": "GH-02",
+    "prefix": "cngh",
+    "category": "开源·模型微调",
+    "query": "LLaMA-Factory LoRA 微调 模型",
+    "expect_path_sub": "llamafactory/",
+    "expect_snippet_any": [
+      "LoRA",
+      "微调"
+    ]
+  },
+  {
+    "id": "GH-03",
+    "prefix": "cngh",
+    "category": "开源·OCR表格",
+    "query": "PaddleOCR TableMaster 表格识别",
+    "expect_path_sub": "paddleocr/table_master.md",
+    "expect_snippet_any": [
+      "TableMaster",
+      "表格识别"
+    ]
+  },
+  {
+    "id": "GH-04",
+    "prefix": "cngh",
+    "category": "开源·知识库问答",
+    "query": "Langchain-Chatchat 本地知识库 RAG",
+    "expect_path_sub": "chatchat/",
+    "expect_snippet_any": [
+      "Langchain-Chatchat",
+      "知识库"
+    ]
+  },
+  {
+    "id": "GH-05",
+    "prefix": "cngh",
+    "category": "开源·国产部署",
+    "query": "self-llm DeepSeek Qwen vLLM 部署",
+    "expect_path_sub": "selfllm/",
+    "expect_snippet_any": [
+      "vLLM",
+      "Qwen"
+    ]
+  },
+  {
+    "id": "SCI-01",
+    "prefix": "cnsci",
+    "category": "科研·中文临床传感",
+    "query": "即时检验 POCT 电化学传感器",
+    "expect_path_sub": "s42242-024-00301-6",
+    "expect_snippet_any": [
+      "POCT",
+      "即时检验"
+    ]
+  },
+  {
+    "id": "SCI-02",
+    "prefix": "cnsci",
+    "category": "科研·生物打印",
+    "query": "微液滴喷射 生物3D打印 组织工程",
+    "expect_path_sub": "s42242-024-00285-3",
+    "expect_snippet_any": [
+      "微液滴",
+      "生物"
+    ]
+  },
+  {
+    "id": "SCI-03",
+    "prefix": "cnsci",
+    "category": "科研·中英跨语医学",
+    "query": "中国肺癌 低剂量CT 筛查指南",
+    "expect_path_sub": "1009-3419.2023.102.10",
+    "expect_snippet_any": [
+      "Lung Cancer",
+      "LDCT",
+      "Screening"
+    ]
+  },
+  {
+    "id": "SCI-04",
+    "prefix": "cnsci",
+    "category": "科研·中英跨语指南",
+    "query": "成人 急性淋巴细胞白血病 诊疗指南",
+    "expect_path_sub": "10.3760_cma.j.",
+    "expect_snippet_any": [
+      "acute lymphoblastic leukemia"
+    ]
+  },
+  {
+    "id": "SCI-05",
+    "prefix": "cnsci",
+    "category": "科研·医学符号锚定",
+    "query": "PD-1/PD-L1 肿瘤免疫 联合",
+    "expect_path_sub": "s12943-",
+    "expect_snippet_any": [
+      "PD-1",
+      "PD-L1"
+    ]
+  },
+  {
+    "id": "HK-01",
+    "prefix": "cnhkus",
+    "category": "财报·陆港英同义口径",
+    "query": "归母净利润 阿里巴巴 普通股股东",
+    "expect_path_sub": "baba_",
+    "expect_snippet_any": [
+      "淨利潤",
+      "普通股股東",
+      "net income attributable"
+    ]
+  },
+  {
+    "id": "HK-02",
+    "prefix": "cnhkus",
+    "category": "财报·CMap洁净季度",
+    "query": "腾讯 2026年九月三十日 經調整盈利 微信",
+    "expect_path_sub": "tencent_hkex_2026q3",
+    "expect_snippet_any": [
+      "九月三十日",
+      "微信",
+      "盈利"
+    ]
+  },
+  {
+    "id": "HK-03",
+    "prefix": "cnhkus",
+    "category": "财报·股份支付跨口径",
+    "query": "股份支付 阿里巴巴 股權激勵",
+    "expect_path_sub": "baba_",
+    "expect_snippet_any": [
+      "股權激勵",
+      "share-based compensation"
+    ]
+  },
+  {
+    "id": "SEC-04",
+    "prefix": "secipo",
+    "category": "美股财报·双语表格数值",
+    "query": "ARM 2026-03-31 营业收入 4,920.00M 毛利润",
+    "expect_path_sub": "ARM/ARM_xbrl_summary.md",
+    "expect_snippet_any": [
+      "4,920.00M",
+      "4,799.00M"
+    ]
+  },
+  {
+    "id": "SEC-05",
+    "prefix": "secipo",
+    "category": "美股招股书·高速互联产品",
+    "query": "Astera Labs ALAB Aries retimer CXL 424B4",
+    "expect_path_sub": "ALAB/2024_424B4",
+    "expect_snippet_any": [
+      "Aries",
+      "Retimer"
+    ]
+  },
+  {
+    "id": "ABS-01",
+    "prefix": "cnlaw",
+    "category": "拒答·缺失法条",
+    "query": "破产重整 个人信用豁免 第999条",
+    "expect_absent": true
+  },
+  {
+    "id": "ABS-02",
+    "prefix": "cngh",
+    "category": "拒答·无关基础设施",
+    "query": "Kubernetes 火星探测器 星际调度器",
+    "expect_absent": true
+  },
+  {
+    "id": "ABS-03",
+    "prefix": "cnsci",
+    "category": "拒答·虚构超导量子",
+    "query": "室温超导量子芯片 5000比特 零电阻",
+    "expect_absent": true
+  },
+  {
+    "id": "ABS-04",
+    "prefix": "cnhkus",
+    "category": "拒答·他司财报",
+    "query": "特斯拉 2026Q4 汽车毛利率 FSD订阅",
+    "expect_absent": true
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "slug": "cn-hkus-disclosures",
+  "title": "港美股公开披露与 PDF 表格坐标重建配方（本地自测）",
+  "description": "面向阿里巴巴（9988.HK / BABA）与腾讯控股（0700.HK）官方季度报告的本地表格坐标重建与 CMap 修复配方；受限于第三方再分发条款，本清单仅以 recipe 模式公开配方，不打包二次分发原件。",
+  "domain": "FINANCE",
+  "region": "HK",
+  "mode": "recipe",
+  "license": "HKEX-Public-Disclosure",
+  "source_url": "https://www1.hkexnews.hk/",
+  "sources": [
+    {
+      "name": "baba_sec_6k_2026_08_20.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577552/",
+      "local_path": "data/local_samples/hkus-mvp/filings/9988_baba/2026-08-20_sec_6k_ex99_1_en.html",
+      "license": "SEC-Public-Filing"
+    },
+    {
+      "name": "baba_hkex_sept_qtr_zh.pdf",
+      "url": "https://www1.hkexnews.hk/",
+      "local_path": "data/local_samples/hkus-mvp/filings/9988_baba/2026-11-19_sept_qtr_zh.pdf",
+      "license": "HKEX-Public-Disclosure"
+    },
+    {
+      "name": "tencent_hkex_2026q3_zh.pdf",
+      "url": "https://www1.hkexnews.hk/",
+      "local_path": "data/local_samples/hkus-mvp/filings/0700_hk/2026-11-18_2026Q3_results_zh.pdf",
+      "license": "HKEX-Public-Disclosure"
+    }
+  ],
+  "review": {
+    "spdx": "HKEX-Public-Disclosure",
+    "use": "approach-only",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "Exchange-restricted HKEX PDFs kept strictly in recipe mode under .gitignore-isolated data/."
+  }
+}

@@ -1,0 +1,1438 @@
+[
+  {
+    "id": "SEC-01",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "MSFT",
+    "question": "微软(MSFT)在 2025-06-30 财年的营业收入是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "msft_10y_xbrl.md",
+    "expect_snippet_any": [
+      "281,724.00M"
+    ],
+    "oracle_document": "# 微软 (Microsoft Corporation / MSFT) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2026-06-30 | USD 331,839.00M (331,839,000,000) | USD 225,465.00M (225,465,000,000) | USD 155,237.00M (155,237,000,000) | USD 133,749.00M (133,749,000,000) | USD 17.95 | USD 35,562.00M (35,562,000,000) | USD 182,935.00M (182,935,000,000) | USD 115,948.00M (115,948,000,000) | USD 20,935.00M (20,935,000,000) | USD 758,376.00M (758,376,000,000) | USD 442,387.00M (442,387,000,000) | 10-K 2026-07-29 (0001193125-26-323660) |\n| 2025-06-30 | USD 281,724.00M (281,724,000,000) | USD 193,893.00M (193,893,000,000) | USD 128,528.00M (128,528,000,000) | USD 101,832.00M (101,832,000,000) | USD 13.64 | USD 32,488.00M (32,488,000,000) | USD 136,162.00M (136,162,000,000) | USD 64,551.00M (64,551,000,000) | USD 30,242.00M (30,242,000,000) | USD 619,003.00M (619,003,000,000) | USD 343,479.00M (343,479,000,000) | 10-K 2025-07-30 (0000950170-25-100235); 10-K 2026-07-29 (0001193125-26-323660) |\n| 2024-06-30 | USD 245,122.00M (245,122,000,000) | USD 171,008.00M (171,008,000,000) | USD 109,433.00M (109,433,000,000) | USD 88,136.00M (88,136,000,000) | USD 11.80 | USD 29,510.00M (29,510,000,000) | USD 118,548.00M (118,548,000,000) | USD 44,477.00M (44,477,000,000) | USD 18,315.00M (18,315,000,000) | USD 512,163.00M (512,163,000,000) | USD 268,477.00M (268,477,000,000) | 10-K 2024-07-30 (0000950170-24-087843); 10-K 2025-07-30 (0000950170-25-100235) |\n| 2023-06-30 | USD 211,915.00M (211,915,000,000) | USD 146,052.00M (146,052,000,000) | USD 88,523.00M (88,523,000,000) | USD 72,361.00M (72,361,000,000) | USD 9.68 | USD 27,195.00M (27,195,000,000) | USD 87,582.00M (87,582,000,000) | USD 28,107.00M (28,107,000,000) | USD 34,704.00M (34,704,000,000) | USD 411,976.00M (411,976,000,000) | USD 206,223.00M (206,223,000,000) | 10-K 2024-07-30 (0000950170-24-087843); 10-K 2025-07-30 (0000950170-25-100235) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "281724",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 893,
+          "end": 908,
+          "quote": "USD 281,724.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-02",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "MSFT",
+    "question": "根据微软(MSFT) 2025 10-K 分部业绩表，Intelligent Cloud 分部 2025 年的营业收入(Revenue)是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "msft/2025_10-k",
+    "expect_snippet_any": [
+      "$106,265",
+      "Intelligent Cloud"
+    ],
+    "oracle_document": "# 微软 (Microsoft Corporation / MSFT) 2025 10-K Segment Results\n| (In millions, except percentages) | 2025 | 2024 | Percentage Change |\n| --- | --- | --- | --- |\n| Productivity and Business Processes |  |  |  |\n| Revenue | $120,810 | $106,820 | 13% |\n| Cost of revenue | 22,422 | 19,611 | 14% |\n| Operating expenses | 28,615 | 27,548 | 4% |\n| Operating Income | $69,773 | $59,661 | 17% |\n| Intelligent Cloud |  |  |  |\n| Revenue | $106,265 | $87,464 | 21% |\n| Cost of revenue | 40,171 | 29,611 | 36% |\n| Operating expenses | 21,505 | 20,040 | 7% |\n| Operating Income | $44,589 | $37,813 | 18% |\n| More Personal Computing |  |  |  |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "106265",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 429,
+          "end": 437,
+          "quote": "$106,265"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-03",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "TSM",
+    "question": "台积电(TSM)在 2024-12-31 财年的营业收入是多少百万新台币(TWD)？",
+    "expect_absent": false,
+    "expect_path_sub": "tsm_10y_xbrl.md",
+    "expect_snippet_any": [
+      "2,894,307.70M"
+    ],
+    "oracle_document": "# 台积电 (Taiwan Semiconductor Manufacturing Company Limited / TSM) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2024-12-31 | TWD 2,894,307.70M (2,894,307,700,000) | TWD 1,624,353.60M (1,624,353,600,000) | TWD 1,322,053.00M (1,322,053,000,000) | TWD 1,157,523.90M (1,157,523,900,000) | TWD 44.67 | TWD 204,181.80M (204,181,800,000) | TWD 1,826,177.10M (1,826,177,100,000) | TWD 956,006.50M (956,006,500,000) | TWD 2,127,627.00M (2,127,627,000,000) | TWD 6,691,764.70M (6,691,764,700,000) | TWD 4,279,271.60M (4,279,271,600,000) | 20-F 2025-04-17 (0001193125-25-083423) |\n| 2023-12-31 | TWD 2,161,735.80M (2,161,735,800,000) | TWD 1,175,110.60M (1,175,110,600,000) | TWD 921,465.60M (921,465,600,000) | TWD 851,027.70M (851,027,700,000) | TWD 32.85 | TWD 182,370.20M (182,370,200,000) | TWD 1,241,967.30M (1,241,967,300,000) | TWD 949,816.80M (949,816,800,000) | TWD 1,465,427.80M (1,465,427,800,000) | TWD 5,532,196.60M (5,532,196,600,000) | TWD 3,453,866.50M (3,453,866,500,000) | 20-F 2025-04-17 (0001193125-25-083423) |\n| 2022-12-31 | TWD 2,263,891.30M (2,263,891,300,000) | TWD 1,348,354.80M (1,348,354,800,000) | TWD 1,121,278.90M (1,121,278,900,000) | TWD 993,294.70M (993,294,700,000) | TWD 38.29 | TWD 163,262.20M (163,262,200,000) | TWD 1,610,599.20M (1,610,599,200,000) | TWD 1,082,672.10M (1,082,672,100,000) | TWD 1,342,814.10M (1,342,814,100,000) | TWD 4,964,459.10M (4,964,459,100,000) | TWD 2,917,832.40M (2,917,832,400,000) | 20-F 2024-04-18 (0001193125-24-099840); 20-F 2025-04-17 (0001193125-25-083423) |\n| 2021-12-31 | TWD 1,587,415.00M (1,587,415,000,000) | TWD 819,537.30M (819,537,300,000) | TWD 649,980.90M (649,980,900,000) | TWD 592,880.60M (592,880,600,000) | TWD 22.84 | TWD 124,734.80M (124,734,800,000) | TWD 1,112,160.70M (1,112,160,700,000) | TWD 839,195.70M (839,195,700,000) | TWD 1,064,990.20M (1,064,990,200,000) | TWD 3,725,302.20M (3,725,302,200,000) | TWD 2,151,682.50M (2,151,682,500,000) | 20-F 2023-04-20 (0001193125-23-107214); 20-F 2024-04-18 (0001193125-24-099840) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "2894307.7",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 498,
+          "end": 515,
+          "quote": "TWD 2,894,307.70M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-04",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "TSM",
+    "question": "根据台积电(TSM) 2025 20-F 晶圆技术节点表，3-nanometer 制程在 2025 年占晶圆总收入的百分比是多少？",
+    "expect_absent": false,
+    "expect_path_sub": "tsm/2025_20-f",
+    "expect_snippet_any": [
+      "3-nanometer",
+      "24%"
+    ],
+    "oracle_document": "# 台积电 (TSM) 2025 20-F Wafer Revenue by Technology Node\n| Year ended December 31, |  |  |  |\n| --- | --- | --- | --- |\n| 2023 | 2024 | 2025 |  |\n| Resolution | Percentage of total wafer revenue(1) | Percentage of total wafer revenue(1) | Percentage of total wafer revenue(1) |\n| 3-nanometer | 6% | 18% | 24% |\n| 5-nanometer | 33% | 34% | 36% |\n| 7-nanometer | 19% | 17% | 14% |\n| 16-nanometer | 10% | 8% | 7% |\n| 20-nanometer | 1% | 0% | 0% |\n| 28-nanometer | 10% | 7% | 7% |\n| 40/45-nanometer | 6% | 4% | 3% |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "24",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 303,
+          "end": 306,
+          "quote": "24%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-05",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "GS",
+    "question": "高盛(GS)在 2025-12-31 财年的净利润(Net Income)是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "gs_10y_xbrl.md",
+    "expect_snippet_any": [
+      "17,176.00M"
+    ],
+    "oracle_document": "# 高盛 (The Goldman Sachs Group, Inc. / GS) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 58,283.00M (58,283,000,000) | - | - | USD 17,176.00M (17,176,000,000) | USD 51.32 | - | USD -45,154.00M (-45,154,000,000) | USD 2,064.00M (2,064,000,000) | USD 164,259.00M (164,259,000,000) | USD 1,809,320.00M (1,809,320,000,000) | USD 124,972.00M (124,972,000,000) | 10-K 2026-02-25 (0000886982-26-000091) |\n| 2024-12-31 | USD 53,512.00M (53,512,000,000) | - | - | USD 14,276.00M (14,276,000,000) | USD 40.54 | - | USD -13,212.00M (-13,212,000,000) | USD 2,091.00M (2,091,000,000) | USD 182,092.00M (182,092,000,000) | USD 1,675,972.00M (1,675,972,000,000) | USD 121,996.00M (121,996,000,000) | 10-K 2026-02-25 (0000886982-26-000091) |\n| 2023-12-31 | USD 46,254.00M (46,254,000,000) | - | - | USD 8,516.00M (8,516,000,000) | USD 22.87 | - | USD -12,587.00M (-12,587,000,000) | USD 2,316.00M (2,316,000,000) | USD 241,577.00M (241,577,000,000) | USD 1,641,594.00M (1,641,594,000,000) | USD 116,905.00M (116,905,000,000) | 10-K 2025-02-27 (0000886982-25-000005); 10-K 2026-02-25 (0000886982-26-000091) |\n| 2022-12-31 | USD 47,365.00M (47,365,000,000) | - | - | USD 11,261.00M (11,261,000,000) | USD 30.06 | - | USD 8,708.00M (8,708,000,000) | USD 3,748.00M (3,748,000,000) | USD 241,825.00M (241,825,000,000) | USD 1,441,799.00M (1,441,799,000,000) | USD 117,189.00M (117,189,000,000) | 10-K 2024-02-23 (0000886982-24-000006); 10-K 2025-02-27 (0000886982-25-000005) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "17176",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 517,
+          "end": 531,
+          "quote": "USD 17,176.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-06",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "GS",
+    "question": "根据高盛(GS) 2025 10-K 分部业绩表，Global Banking & Markets 在 2025 年的 Net revenues 是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "gs/2025_10-k",
+    "expect_snippet_any": [
+      "$41,453",
+      "Global Banking & Markets"
+    ],
+    "oracle_document": "# 高盛 (GS) 2025 10-K Segment Operating Results\nSegment Operating Results. The table below presents our segment operating results.\n\n| Year Ended December |  |  |  |\n| --- | --- | --- | --- |\n| $ in millions | 2025 | 2024 | 2023 |\n| Global Banking & Markets |  |  |  |\n| Net revenues | $41,453 | $35,067 | $29,994 |\n| Provision for credit losses | 378 | 84 | 430 |\n| Compensation and benefits expenses | 11,025 | 9,640 | 8,762 |\n| Other operating expenses | 12,476 | 10,814 | 9,802 |\n| Total operating expenses | 23,501 | 20,454 | 18,564 |\n| Pre-tax earnings | $17,574 | $14,529 | $11,000 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "41453",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 283,
+          "end": 290,
+          "quote": "$41,453"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-07",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "JPM",
+    "question": "根据摩根大通(JPM) 2025 10-K 分部业绩表，Consumer & Community Banking 在 2025 年的 Total net revenue 是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "jpm/2025_10-k",
+    "expect_snippet_any": [
+      "$76,029",
+      "Consumer & Community Banking"
+    ],
+    "oracle_document": "# 摩根大通 (JPM) 2025 10-K Segment & Corporate Results\nSegment & Corporate Results – Managed Basis\n\nThe following tables summarize the Firm’s results by business segments and Corporate for the periods indicated.\n\n| Year ended December 31, | Consumer & Community Banking | Commercial & Investment Bank | Asset & Wealth Management |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| (in millions, except ratios) | 2025 | 2024 | 2023 | 2025 | 2024 | 2023 | 2025 | 2024 | 2023 |  |\n| Total net revenue | $76,029 | $71,507 | $70,148 | $78,454 | $70,114 | $64,353 | $24,073 | $21,578 | $19,827 |  |\n| Total noninterest expense | 40,267 | 38,036 | 34,819 | 38,216 | 35,353 | 33,972 | 15,332 | 14,414 | 12,780 |  |\n| Pre-provision profit | 35,762 | 33,471 | 35,329 | 40,238 | 34,761 | 30,381 | 8,741 | 7,164 | 7,047 |  |\n| Provision for credit losses | 11,493 | (a) | 9,974 | 6,899 | 2,615 | 762 | 2,091 | 97 | (68) | 159 |\n| Net income | 18,245 | 17,603 | 21,232 | 27,761 | 24,846 | 20,272 | 6,522 | 5,421 | 5,227 |  |\n| Return on equity (“ROE”) | 32% | 32% | 38% | 18% | 18% | 14% | 40% | 34% | 31% |  |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "76029",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 537,
+          "end": 544,
+          "quote": "$76,029"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-08",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "BABA",
+    "question": "根据阿里巴巴(BABA) 2026 20-F 分部营业收入表，Cloud Intelligence Group 在 2026 财年(Year ended March 31, 2026)的营业收入是多少百万元人民币？",
+    "expect_absent": false,
+    "expect_path_sub": "baba/2026_20-f",
+    "expect_snippet_any": [
+      "158,132",
+      "Cloud Intelligence Group"
+    ],
+    "oracle_document": "# 阿里巴巴 (BABA) 2026 20-F Revenues by Segment\n| Year ended March 31, |  |  |  |  |\n| --- | --- | --- | --- | --- |\n| 2024 | 2025 | 2026 |  |  |\n| RMB | RMB | RMB | US$ |  |\n| (in millions) |  |  |  |  |\n| Alibaba China E-commerce Group: |  |  |  |  |\n| E-commerce |  |  |  |  |\n| - Customer management | 307,950 | 326,769 | 343,867 | 49,850 |\n| - Direct sales, logistics and others (2) | 110,820 | 103,722 | 105,518 | 15,297 |\n| 418,770 | 430,491 | 449,385 | 65,147 |  |\n| Quick commerce (3) | 50,852 | 53,588 | 78,520 | 11,383 |\n| China commerce wholesale | 20,479 | 24,301 | 26,312 | 3,815 |\n| Total Alibaba China E-commerce Group | 490,101 | 508,380 | 554,217 | 80,345 |\n| Alibaba International Digital Commerce Group: |  |  |  |  |\n| International commerce retail | 81,654 | 108,465 | 117,731 | 17,067 |\n| International commerce wholesale | 20,944 | 23,835 | 26,439 | 3,833 |\n| Total Alibaba International Digital Commerce Group | 102,598 | 132,300 | 144,170 | 20,900 |\n| Cloud Intelligence Group | 106,374 | 118,028 | 158,132 | 22,924 |\n| All others (4) | 317,539 | 338,347 | 254,367 | 36,876 |\n| Unallocated | 1,297 | 1,924 | 2,340 | 339 |\n| Inter-segment elimination | (76,741) | (102,632) | (89,556) | (12,983) |\n| Consolidated revenue | 941,168 | 996,347 | 1,023,670 | 148,401 |\n",
+    "expected": {
+      "status": "ANSWER",
+      "value": "158132",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1021,
+          "end": 1028,
+          "quote": "158,132"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-09",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "JNJ",
+    "question": "强生(JNJ)在 2025-12-28 财年的摊薄每股收益(Diluted EPS)是多少美元？",
+    "expect_absent": false,
+    "expect_path_sub": "jnj_10y_xbrl.md",
+    "expect_snippet_any": [
+      "USD 11.03"
+    ],
+    "oracle_document": "# 强生 (Johnson & Johnson / JNJ) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-28 | USD 94,193.00M (94,193,000,000) | USD 63,937.00M (63,937,000,000) | - | USD 26,804.00M (26,804,000,000) | USD 11.03 | USD 109.00M (109,000,000) | USD 24,530.00M (24,530,000,000) | USD 4,832.00M (4,832,000,000) | USD 19,709.00M (19,709,000,000) | USD 199,210.00M (199,210,000,000) | USD 81,544.00M (81,544,000,000) | 10-K 2026-02-11 (0000200406-26-000016) |\n| 2024-12-29 | USD 88,821.00M (88,821,000,000) | USD 61,350.00M (61,350,000,000) | - | USD 14,066.00M (14,066,000,000) | USD 5.79 | USD 1,841.00M (1,841,000,000) | USD 24,266.00M (24,266,000,000) | USD 4,424.00M (4,424,000,000) | USD 24,105.00M (24,105,000,000) | USD 180,104.00M (180,104,000,000) | USD 71,490.00M (71,490,000,000) | 10-K 2026-02-11 (0000200406-26-000016) |\n| 2023-12-31 | USD 85,159.00M (85,159,000,000) | USD 58,606.00M (58,606,000,000) | - | USD 35,153.00M (35,153,000,000) | USD 13.72 | USD 483.00M (483,000,000) | USD 22,791.00M (22,791,000,000) | USD 4,543.00M (4,543,000,000) | USD 21,859.00M (21,859,000,000) | USD 167,558.00M (167,558,000,000) | USD 76,804.00M (76,804,000,000) | 10-K 2025-02-13 (0000200406-25-000038); 10-K 2026-02-11 (0000200406-26-000016) |\n| 2022-01-02 | USD 78,740.00M (78,740,000,000) | USD 55,338.00M (55,338,000,000) | - | USD 20,878.00M (20,878,000,000) | USD 7.81 | USD 0.00 | USD 23,410.00M (23,410,000,000) | USD 3,652.00M (3,652,000,000) | USD 14,487.00M (14,487,000,000) | USD 182,018.00M (182,018,000,000) | USD 74,023.00M (74,023,000,000) | 10-K 2023-02-16 (0000200406-23-000016); 10-K 2024-02-16 (0000200406-24-000013) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "11.03",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 570,
+          "end": 579,
+          "quote": "USD 11.03"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-10",
+    "track": "sec_fin",
+    "category": "extract",
+    "ticker": "XOM",
+    "question": "埃克森美孚(XOM)在 2024-12-31 财年的资本开支(CapEx)是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "xom_10y_xbrl.md",
+    "expect_snippet_any": [
+      "24,306.00M"
+    ],
+    "oracle_document": "# 埃克森美孚 (Exxon Mobil Corporation / XOM) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 332,238.00M (332,238,000,000) | - | - | USD 28,844.00M (28,844,000,000) | USD 6.70 | USD 1,200.00M (1,200,000,000) | USD 51,970.00M (51,970,000,000) | USD 28,358.00M (28,358,000,000) | USD 10,681.00M (10,681,000,000) | USD 448,980.00M (448,980,000,000) | USD 259,386.00M (259,386,000,000) | 10-K 2026-02-18 (0000034088-26-000045) |\n| 2024-12-31 | USD 349,585.00M (349,585,000,000) | - | - | USD 33,680.00M (33,680,000,000) | USD 7.84 | USD 1,000.00M (1,000,000,000) | USD 55,022.00M (55,022,000,000) | USD 24,306.00M (24,306,000,000) | USD 23,029.00M (23,029,000,000) | USD 453,475.00M (453,475,000,000) | USD 263,705.00M (263,705,000,000) | 10-K 2026-02-18 (0000034088-26-000045) |\n| 2023-12-31 | USD 344,582.00M (344,582,000,000) | - | - | USD 36,010.00M (36,010,000,000) | USD 8.89 | USD 900.00M (900,000,000) | USD 55,369.00M (55,369,000,000) | USD 21,919.00M (21,919,000,000) | USD 31,539.00M (31,539,000,000) | USD 376,317.00M (376,317,000,000) | USD 204,802.00M (204,802,000,000) | 10-K 2025-02-19 (0000034088-25-000010); 10-K 2026-02-18 (0000034088-26-000045) |\n| 2022-12-31 | USD 413,680.00M (413,680,000,000) | - | - | USD 55,740.00M (55,740,000,000) | USD 13.26 | USD 824.00M (824,000,000) | USD 76,797.00M (76,797,000,000) | USD 18,407.00M (18,407,000,000) | USD 29,640.00M (29,640,000,000) | USD 369,067.00M (369,067,000,000) | USD 195,049.00M (195,049,000,000) | 10-K 2024-02-28 (0000034088-24-000018); 10-K 2025-02-19 (0000034088-25-000010) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "24306",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 979,
+          "end": 993,
+          "quote": "USD 24,306.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-11",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "MSFT",
+    "question": "计算微软(MSFT) 2025-06-30 财年营业收入比 2024-06-30 财年增加了多少百万美元（2025减去2024）？",
+    "expect_absent": false,
+    "expect_path_sub": "msft_10y_xbrl.md",
+    "expect_snippet_any": [
+      "281,724.00M",
+      "245,122.00M"
+    ],
+    "oracle_document": "# 微软 (Microsoft Corporation / MSFT) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2026-06-30 | USD 331,839.00M (331,839,000,000) | USD 225,465.00M (225,465,000,000) | USD 155,237.00M (155,237,000,000) | USD 133,749.00M (133,749,000,000) | USD 17.95 | USD 35,562.00M (35,562,000,000) | USD 182,935.00M (182,935,000,000) | USD 115,948.00M (115,948,000,000) | USD 20,935.00M (20,935,000,000) | USD 758,376.00M (758,376,000,000) | USD 442,387.00M (442,387,000,000) | 10-K 2026-07-29 (0001193125-26-323660) |\n| 2025-06-30 | USD 281,724.00M (281,724,000,000) | USD 193,893.00M (193,893,000,000) | USD 128,528.00M (128,528,000,000) | USD 101,832.00M (101,832,000,000) | USD 13.64 | USD 32,488.00M (32,488,000,000) | USD 136,162.00M (136,162,000,000) | USD 64,551.00M (64,551,000,000) | USD 30,242.00M (30,242,000,000) | USD 619,003.00M (619,003,000,000) | USD 343,479.00M (343,479,000,000) | 10-K 2025-07-30 (0000950170-25-100235); 10-K 2026-07-29 (0001193125-26-323660) |\n| 2024-06-30 | USD 245,122.00M (245,122,000,000) | USD 171,008.00M (171,008,000,000) | USD 109,433.00M (109,433,000,000) | USD 88,136.00M (88,136,000,000) | USD 11.80 | USD 29,510.00M (29,510,000,000) | USD 118,548.00M (118,548,000,000) | USD 44,477.00M (44,477,000,000) | USD 18,315.00M (18,315,000,000) | USD 512,163.00M (512,163,000,000) | USD 268,477.00M (268,477,000,000) | 10-K 2024-07-30 (0000950170-24-087843); 10-K 2025-07-30 (0000950170-25-100235) |\n| 2023-06-30 | USD 211,915.00M (211,915,000,000) | USD 146,052.00M (146,052,000,000) | USD 88,523.00M (88,523,000,000) | USD 72,361.00M (72,361,000,000) | USD 9.68 | USD 27,195.00M (27,195,000,000) | USD 87,582.00M (87,582,000,000) | USD 28,107.00M (28,107,000,000) | USD 34,704.00M (34,704,000,000) | USD 411,976.00M (411,976,000,000) | USD 206,223.00M (206,223,000,000) | 10-K 2024-07-30 (0000950170-24-087843); 10-K 2025-07-30 (0000950170-25-100235) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "36602",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 893,
+          "end": 908,
+          "quote": "USD 281,724.00M"
+        },
+        {
+          "start": 1355,
+          "end": 1370,
+          "quote": "USD 245,122.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-12",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "MSFT",
+    "question": "根据微软(MSFT) 2025 10-K 分部表，Productivity and Business Processes 与 Intelligent Cloud 两个分部 2025 年营业收入(Revenue)合计是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "msft/2025_10-k",
+    "expect_snippet_any": [
+      "$120,810",
+      "$106,265"
+    ],
+    "oracle_document": "# 微软 (Microsoft Corporation / MSFT) 2025 10-K Segment Results\n| (In millions, except percentages) | 2025 | 2024 | Percentage Change |\n| --- | --- | --- | --- |\n| Productivity and Business Processes |  |  |  |\n| Revenue | $120,810 | $106,820 | 13% |\n| Cost of revenue | 22,422 | 19,611 | 14% |\n| Operating expenses | 28,615 | 27,548 | 4% |\n| Operating Income | $69,773 | $59,661 | 17% |\n| Intelligent Cloud |  |  |  |\n| Revenue | $106,265 | $87,464 | 21% |\n| Cost of revenue | 40,171 | 29,611 | 36% |\n| Operating expenses | 21,505 | 20,040 | 7% |\n| Operating Income | $44,589 | $37,813 | 18% |\n| More Personal Computing |  |  |  |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "227075",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 221,
+          "end": 229,
+          "quote": "$120,810"
+        },
+        {
+          "start": 429,
+          "end": 437,
+          "quote": "$106,265"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-13",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "TSM",
+    "question": "根据台积电(TSM) 2025 20-F 晶圆节点表，2025 年 3-nanometer 与 5-nanometer 合计占晶圆总收入的百分之多少？",
+    "expect_absent": false,
+    "expect_path_sub": "tsm/2025_20-f",
+    "expect_snippet_any": [
+      "3-nanometer",
+      "24%",
+      "36%"
+    ],
+    "oracle_document": "# 台积电 (TSM) 2025 20-F Wafer Revenue by Technology Node\n| Year ended December 31, |  |  |  |\n| --- | --- | --- | --- |\n| 2023 | 2024 | 2025 |  |\n| Resolution | Percentage of total wafer revenue(1) | Percentage of total wafer revenue(1) | Percentage of total wafer revenue(1) |\n| 3-nanometer | 6% | 18% | 24% |\n| 5-nanometer | 33% | 34% | 36% |\n| 7-nanometer | 19% | 17% | 14% |\n| 16-nanometer | 10% | 8% | 7% |\n| 20-nanometer | 1% | 0% | 0% |\n| 28-nanometer | 10% | 7% | 7% |\n| 40/45-nanometer | 6% | 4% | 3% |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "60",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 303,
+          "end": 306,
+          "quote": "24%"
+        },
+        {
+          "start": 337,
+          "end": 340,
+          "quote": "36%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-14",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "GS",
+    "question": "高盛(GS) 2025-12-31 财年的净利润比 2024-12-31 财年增加了多少百万美元（2025减去2024）？",
+    "expect_absent": false,
+    "expect_path_sub": "gs_10y_xbrl.md",
+    "expect_snippet_any": [
+      "17,176.00M",
+      "14,276.00M"
+    ],
+    "oracle_document": "# 高盛 (The Goldman Sachs Group, Inc. / GS) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 58,283.00M (58,283,000,000) | - | - | USD 17,176.00M (17,176,000,000) | USD 51.32 | - | USD -45,154.00M (-45,154,000,000) | USD 2,064.00M (2,064,000,000) | USD 164,259.00M (164,259,000,000) | USD 1,809,320.00M (1,809,320,000,000) | USD 124,972.00M (124,972,000,000) | 10-K 2026-02-25 (0000886982-26-000091) |\n| 2024-12-31 | USD 53,512.00M (53,512,000,000) | - | - | USD 14,276.00M (14,276,000,000) | USD 40.54 | - | USD -13,212.00M (-13,212,000,000) | USD 2,091.00M (2,091,000,000) | USD 182,092.00M (182,092,000,000) | USD 1,675,972.00M (1,675,972,000,000) | USD 121,996.00M (121,996,000,000) | 10-K 2026-02-25 (0000886982-26-000091) |\n| 2023-12-31 | USD 46,254.00M (46,254,000,000) | - | - | USD 8,516.00M (8,516,000,000) | USD 22.87 | - | USD -12,587.00M (-12,587,000,000) | USD 2,316.00M (2,316,000,000) | USD 241,577.00M (241,577,000,000) | USD 1,641,594.00M (1,641,594,000,000) | USD 116,905.00M (116,905,000,000) | 10-K 2025-02-27 (0000886982-25-000005); 10-K 2026-02-25 (0000886982-26-000091) |\n| 2022-12-31 | USD 47,365.00M (47,365,000,000) | - | - | USD 11,261.00M (11,261,000,000) | USD 30.06 | - | USD 8,708.00M (8,708,000,000) | USD 3,748.00M (3,748,000,000) | USD 241,825.00M (241,825,000,000) | USD 1,441,799.00M (1,441,799,000,000) | USD 117,189.00M (117,189,000,000) | 10-K 2024-02-23 (0000886982-24-000006); 10-K 2025-02-27 (0000886982-25-000005) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "2900",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 517,
+          "end": 531,
+          "quote": "USD 17,176.00M"
+        },
+        {
+          "start": 845,
+          "end": 859,
+          "quote": "USD 14,276.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-15",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "JPM",
+    "question": "根据摩根大通(JPM) 2025-12-31 财年 XBRL 摘要数据，其总资产(Total Assets)减去股东权益(Stockholders Equity)的隐含总负债是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "jpm_10y_xbrl.md",
+    "expect_snippet_any": [
+      "4,424,900.00M",
+      "362,438.00M"
+    ],
+    "oracle_document": "# 摩根大通 (JPMorgan Chase & Co. / JPM) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 182,447.00M (182,447,000,000) | - | - | USD 57,048.00M (57,048,000,000) | USD 20.02 | - | USD -147,782.00M (-147,782,000,000) | - | - | USD 4,424,900.00M (4,424,900,000,000) | USD 362,438.00M (362,438,000,000) | 10-K 2026-02-13 (0001628280-26-008131) |\n| 2024-12-31 | USD 177,556.00M (177,556,000,000) | - | - | USD 58,471.00M (58,471,000,000) | USD 19.75 | - | USD -42,012.00M (-42,012,000,000) | - | - | USD 4,002,814.00M (4,002,814,000,000) | USD 344,758.00M (344,758,000,000) | 10-K 2026-02-13 (0001628280-26-008131) |\n| 2023-12-31 | USD 158,104.00M (158,104,000,000) | - | - | USD 49,552.00M (49,552,000,000) | USD 16.23 | - | USD 12,974.00M (12,974,000,000) | - | - | USD 3,875,393.00M (3,875,393,000,000) | USD 327,878.00M (327,878,000,000) | 10-K 2026-02-13 (0001628280-26-008131) |\n| 2022-12-31 | USD 128,695.00M (128,695,000,000) | - | - | USD 37,676.00M (37,676,000,000) | USD 12.09 | - | USD 107,119.00M (107,119,000,000) | - | - | USD 3,665,743.00M (3,665,743,000,000) | USD 292,332.00M (292,332,000,000) | 10-K 2025-02-14 (0000019617-25-000270) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "4062462",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 609,
+          "end": 626,
+          "quote": "USD 4,424,900.00M"
+        },
+        {
+          "start": 649,
+          "end": 664,
+          "quote": "USD 362,438.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-16",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "BABA",
+    "question": "根据阿里巴巴(BABA) 2026 20-F 分部营业收入表，Cloud Intelligence Group 2026 财年收入比 2025 财年增加了多少百万元人民币（2026减去2025）？",
+    "expect_absent": false,
+    "expect_path_sub": "baba/2026_20-f",
+    "expect_snippet_any": [
+      "158,132",
+      "118,028"
+    ],
+    "oracle_document": "# 阿里巴巴 (BABA) 2026 20-F Revenues by Segment\n| Year ended March 31, |  |  |  |  |\n| --- | --- | --- | --- | --- |\n| 2024 | 2025 | 2026 |  |  |\n| RMB | RMB | RMB | US$ |  |\n| (in millions) |  |  |  |  |\n| Alibaba China E-commerce Group: |  |  |  |  |\n| E-commerce |  |  |  |  |\n| - Customer management | 307,950 | 326,769 | 343,867 | 49,850 |\n| - Direct sales, logistics and others (2) | 110,820 | 103,722 | 105,518 | 15,297 |\n| 418,770 | 430,491 | 449,385 | 65,147 |  |\n| Quick commerce (3) | 50,852 | 53,588 | 78,520 | 11,383 |\n| China commerce wholesale | 20,479 | 24,301 | 26,312 | 3,815 |\n| Total Alibaba China E-commerce Group | 490,101 | 508,380 | 554,217 | 80,345 |\n| Alibaba International Digital Commerce Group: |  |  |  |  |\n| International commerce retail | 81,654 | 108,465 | 117,731 | 17,067 |\n| International commerce wholesale | 20,944 | 23,835 | 26,439 | 3,833 |\n| Total Alibaba International Digital Commerce Group | 102,598 | 132,300 | 144,170 | 20,900 |\n| Cloud Intelligence Group | 106,374 | 118,028 | 158,132 | 22,924 |\n| All others (4) | 317,539 | 338,347 | 254,367 | 36,876 |\n| Unallocated | 1,297 | 1,924 | 2,340 | 339 |\n| Inter-segment elimination | (76,741) | (102,632) | (89,556) | (12,983) |\n| Consolidated revenue | 941,168 | 996,347 | 1,023,670 | 148,401 |\n",
+    "expected": {
+      "status": "ANSWER",
+      "value": "40104",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1021,
+          "end": 1028,
+          "quote": "158,132"
+        },
+        {
+          "start": 1011,
+          "end": 1018,
+          "quote": "118,028"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-17",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "MRNA",
+    "question": "莫德纳(MRNA) 2025-12-31 财年的研发费用(R&D Expense)相比 2024-12-31 财年变化了多少百万美元（2025减去2024）？",
+    "expect_absent": false,
+    "expect_path_sub": "mrna_10y_xbrl.md",
+    "expect_snippet_any": [
+      "3,132.00M",
+      "4,543.00M"
+    ],
+    "oracle_document": "# Moderna (Moderna, Inc. / MRNA) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 1,944.00M (1,944,000,000) | - | USD -3,074.00M (-3,074,000,000) | USD -2,822.00M (-2,822,000,000) | USD -7.26 | USD 3,132.00M (3,132,000,000) | USD -1,873.00M (-1,873,000,000) | USD 192.00M (192,000,000) | USD 2,595.00M (2,595,000,000) | USD 12,338.00M (12,338,000,000) | USD 8,650.00M (8,650,000,000) | 10-K 2026-02-20 (0001682852-26-000033) |\n| 2024-12-31 | USD 3,236.00M (3,236,000,000) | - | USD -3,945.00M (-3,945,000,000) | USD -3,561.00M (-3,561,000,000) | USD -9.28 | USD 4,543.00M (4,543,000,000) | USD -3,004.00M (-3,004,000,000) | USD 1,051.00M (1,051,000,000) | USD 1,927.00M (1,927,000,000) | USD 14,142.00M (14,142,000,000) | USD 10,901.00M (10,901,000,000) | 10-K 2026-02-20 (0001682852-26-000033) |\n| 2023-12-31 | USD 6,848.00M (6,848,000,000) | - | USD -4,239.00M (-4,239,000,000) | USD -4,714.00M (-4,714,000,000) | USD -12.33 | USD 4,845.00M (4,845,000,000) | USD -3,118.00M (-3,118,000,000) | USD 707.00M (707,000,000) | USD 2,907.00M (2,907,000,000) | USD 18,426.00M (18,426,000,000) | USD 13,854.00M (13,854,000,000) | 10-K 2025-02-21 (0001682852-25-000022); 10-K 2026-02-20 (0001682852-26-000033) |\n| 2022-12-31 | USD 19,263.00M (19,263,000,000) | - | USD 9,420.00M (9,420,000,000) | USD 8,362.00M (8,362,000,000) | USD 20.12 | USD 3,295.00M (3,295,000,000) | USD 4,981.00M (4,981,000,000) | USD 400.00M (400,000,000) | USD 3,205.00M (3,205,000,000) | USD 25,858.00M (25,858,000,000) | USD 19,123.00M (19,123,000,000) | 10-K 2024-02-23 (0001682852-24-000015); 10-K 2025-02-21 (0001682852-25-000022) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "-1411",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 582,
+          "end": 595,
+          "quote": "USD 3,132.00M"
+        },
+        {
+          "start": 946,
+          "end": 959,
+          "quote": "USD 4,543.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-18",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "OXY",
+    "question": "西方石油(OXY)在 2025-12-31、2024-12-31 与 2023-12-31 三个财年的资本开支(CapEx)累计合计是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "oxy_10y_xbrl.md",
+    "expect_snippet_any": [
+      "6,427.00M",
+      "6,263.00M",
+      "5,696.00M"
+    ],
+    "oracle_document": "# 西方石油 (Occidental Petroleum Corporation / OXY) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 21,569.00M (21,569,000,000) | - | - | USD 2,369.00M (2,369,000,000) | USD 1.61 | - | USD 10,532.00M (10,532,000,000) | USD 6,427.00M (6,427,000,000) | USD 1,968.00M (1,968,000,000) | USD 84,186.00M (84,186,000,000) | USD 36,034.00M (36,034,000,000) | 10-K 2026-02-18 (0001628280-26-009059) |\n| 2024-12-31 | USD 22,710.00M (22,710,000,000) | - | - | USD 3,078.00M (3,078,000,000) | USD 2.44 | - | USD 11,439.00M (11,439,000,000) | USD 6,263.00M (6,263,000,000) | USD 2,125.00M (2,125,000,000) | USD 85,445.00M (85,445,000,000) | USD 34,159.00M (34,159,000,000) | 10-K 2026-02-18 (0001628280-26-009059) |\n| 2023-12-31 | USD 23,230.00M (23,230,000,000) | - | - | USD 4,696.00M (4,696,000,000) | USD 3.90 | - | USD 12,308.00M (12,308,000,000) | USD 5,696.00M (5,696,000,000) | USD 1,426.00M (1,426,000,000) | USD 74,008.00M (74,008,000,000) | USD 30,250.00M (30,250,000,000) | 10-K 2024-02-14 (0000797468-24-000034); 10-K 2025-02-18 (0000797468-25-000029) |\n| 2022-12-31 | USD 36,234.00M (36,234,000,000) | - | - | USD 13,304.00M (13,304,000,000) | USD 12.40 | - | USD 16,810.00M (16,810,000,000) | USD 4,497.00M (4,497,000,000) | USD 984.00M (984,000,000) | USD 72,609.00M (72,609,000,000) | USD 30,085.00M (30,085,000,000) | 10-K 2024-02-14 (0000797468-24-000034); 10-K 2025-02-18 (0000797468-25-000029) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "18386",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 604,
+          "end": 617,
+          "quote": "USD 6,427.00M"
+        },
+        {
+          "start": 915,
+          "end": 928,
+          "quote": "USD 6,263.00M"
+        },
+        {
+          "start": 1226,
+          "end": 1239,
+          "quote": "USD 5,696.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-19",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "WFC",
+    "question": "富国银行(WFC) 2025-12-31 财年净利润比 2024-12-31 财年增加了多少百万美元（2025减去2024）？",
+    "expect_absent": false,
+    "expect_path_sub": "wfc_10y_xbrl.md",
+    "expect_snippet_any": [
+      "21,338.00M",
+      "19,722.00M"
+    ],
+    "oracle_document": "# 富国银行 (Wells Fargo & Company / WFC) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 83,699.00M (83,699,000,000) | - | - | USD 21,338.00M (21,338,000,000) | USD 6.26 | - | USD -19,001.00M (-19,001,000,000) | - | - | USD 2,148,631.00M (2,148,631,000,000) | USD 181,117.00M (181,117,000,000) | 10-K 2026-02-24 (0000072971-26-000133) |\n| 2024-12-31 | USD 82,296.00M (82,296,000,000) | - | - | USD 19,722.00M (19,722,000,000) | USD 5.37 | - | USD 3,035.00M (3,035,000,000) | - | - | USD 1,929,845.00M (1,929,845,000,000) | USD 179,120.00M (179,120,000,000) | 10-K 2026-02-24 (0000072971-26-000133) |\n| 2023-12-31 | USD 82,597.00M (82,597,000,000) | - | - | USD 19,142.00M (19,142,000,000) | USD 4.83 | - | USD 40,358.00M (40,358,000,000) | - | - | USD 1,932,468.00M (1,932,468,000,000) | USD 185,735.00M (185,735,000,000) | 10-K 2025-02-25 (0000072971-25-000066); 10-K 2026-02-24 (0000072971-26-000133) |\n| 2022-12-31 | USD 74,368.00M (74,368,000,000) | - | - | USD 13,677.00M (13,677,000,000) | USD 3.27 | - | USD 27,048.00M (27,048,000,000) | - | - | USD 1,881,020.00M (1,881,020,000,000) | USD 180,227.00M (180,227,000,000) | 10-K 2024-02-20 (0000072971-24-000064); 10-K 2025-02-25 (0000072971-25-000066) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "1616",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 512,
+          "end": 526,
+          "quote": "USD 21,338.00M"
+        },
+        {
+          "start": 779,
+          "end": 793,
+          "quote": "USD 19,722.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SEC-20",
+    "track": "sec_fin",
+    "category": "arithmetic",
+    "ticker": "XOM",
+    "question": "埃克森美孚(XOM)在 2025-12-31 与 2024-12-31 两个财年的经营性现金流(Operating Cash Flow)累计合计是多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "xom_10y_xbrl.md",
+    "expect_snippet_any": [
+      "51,970.00M",
+      "55,022.00M"
+    ],
+    "oracle_document": "# 埃克森美孚 (Exxon Mobil Corporation / XOM) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 332,238.00M (332,238,000,000) | - | - | USD 28,844.00M (28,844,000,000) | USD 6.70 | USD 1,200.00M (1,200,000,000) | USD 51,970.00M (51,970,000,000) | USD 28,358.00M (28,358,000,000) | USD 10,681.00M (10,681,000,000) | USD 448,980.00M (448,980,000,000) | USD 259,386.00M (259,386,000,000) | 10-K 2026-02-18 (0000034088-26-000045) |\n| 2024-12-31 | USD 349,585.00M (349,585,000,000) | - | - | USD 33,680.00M (33,680,000,000) | USD 7.84 | USD 1,000.00M (1,000,000,000) | USD 55,022.00M (55,022,000,000) | USD 24,306.00M (24,306,000,000) | USD 23,029.00M (23,029,000,000) | USD 453,475.00M (453,475,000,000) | USD 263,705.00M (263,705,000,000) | 10-K 2026-02-18 (0000034088-26-000045) |\n| 2023-12-31 | USD 344,582.00M (344,582,000,000) | - | - | USD 36,010.00M (36,010,000,000) | USD 8.89 | USD 900.00M (900,000,000) | USD 55,369.00M (55,369,000,000) | USD 21,919.00M (21,919,000,000) | USD 31,539.00M (31,539,000,000) | USD 376,317.00M (376,317,000,000) | USD 204,802.00M (204,802,000,000) | 10-K 2025-02-19 (0000034088-25-000010); 10-K 2026-02-18 (0000034088-26-000045) |\n| 2022-12-31 | USD 413,680.00M (413,680,000,000) | - | - | USD 55,740.00M (55,740,000,000) | USD 13.26 | USD 824.00M (824,000,000) | USD 76,797.00M (76,797,000,000) | USD 18,407.00M (18,407,000,000) | USD 29,640.00M (29,640,000,000) | USD 369,067.00M (369,067,000,000) | USD 195,049.00M (195,049,000,000) | 10-K 2024-02-28 (0000034088-24-000018); 10-K 2025-02-19 (0000034088-25-000010) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "106992",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 594,
+          "end": 608,
+          "quote": "USD 51,970.00M"
+        },
+        {
+          "start": 945,
+          "end": 959,
+          "quote": "USD 55,022.00M"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-01",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM Holdings plc 2023 年 424B4 招股书披露，本次首次公开发行每份 ADS 的初始发行价(Initial public offering price)是多少美元？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "$51.00"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Cover\n\n95,500,000 American Depositary Shares\n\n(Representing 95,500,000 Ordinary Shares)\n\nThis is an initial offering of American depositary shares (“ADSs”) representing ordinary shares of Arm Holdings plc.\n\nAll of the ADSs to be sold in this offering are currently held by the selling shareholder identified in this prospectus. We are not selling\nany of the ADSs in this offering and will not receive any proceeds from the sale of the ADSs by the selling shareholder in this offering. Each ADS represents the right to receive one ordinary share, nominal value £0.001 per share, and may be\nevidenced by American depositary receipts (“ADRs”).\n\nPrior to this offering, there has been no public market for the ADSs or our\nordinary shares. The initial public offering price per ADS is $51.00. Our ADSs have been approved for listing on the Nasdaq Global Select Market (“Nasdaq”) under the symbol “ARM”.\n\nWe are a “foreign private issuer” as defined under the U.S. federal securities laws and, as such, will be subject to reduced public\ncompany reporting and stock exchange governance requirements. See “Management and Executive Remuneration—Foreign Private Issuer Exemption” for additional information.\n\nSoftBank Group Corp. (“SoftBank Group”) is expected to beneficially own approximately 90.6% of our outstanding ordinary shares\nfollowing the completion of this offering (or approximately 89.9% if the underwriters exercise in full their option to purchase additional ADSs from the selling shareholder). As a result of SoftBank Group’s ownership, after the completion of\nthis offering, we will be a “controlled company” within the meaning of Nasdaq rules. See “Management and Executive Remuneration—Controlled Company Status.”\n\nAdvanced Micro Devices, Inc., Apple Inc., Cadence Design Systems, Inc., Google International LLC, Intel Corporation, MediaTek Inc.’s\naffiliated entities, NVIDIA Corporation, Samsung Electronics Co., Ltd., Synopsys, Inc. and TSMC Partners, Ltd. (collectively, the “Cornerstone Investors”) have, severally and not jointly, indicated an interest in purchasing up to\nan aggregate of $735 million of the ADSs offered in this offering at the initial public offering price and on the same terms and conditions as the other purchasers in this offering. Because these indications of interest are not binding\nagreements or commitments to purchase, any of the Cornerstone Investors may determine to purchase more, fewer, or no ADSs in this offering, or the underwriters may determine to sell more, fewer, or no ADSs to any of the Cornerstone Investors. The\nunderwriters will receive the same underwriting discount on any ADSs purchased by the Cornerstone Investors as they will from the other ADSs sold to the public in this offering.\n\nInvesting in our ADSs involves a high degree of risk. Before buying any ADSs, you should carefully read the discussion of material risks of\ninvesting in our ADSs in “Risk Factors” beginning on page 21 of this prospectus.\n\n| PER ADS | TOTAL |  |\n| --- | --- | --- |\n| Initial public offering price | $51.00 | $4,870,500,000 |\n| Underwriting discounts and commissions | 1.02 | 97,410,000 |\n| Proceeds, before expenses, to the selling shareholder | 49.98 | 4,773,090,000 |\n\nThe underwriters may also exercise their option to purchase up to an additional 7,000,000 ADSs from the selling shareholder at the initial",
+    "expected": {
+      "status": "ANSWER",
+      "value": "51",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 822,
+          "end": 828,
+          "quote": "$51.00"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-02",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM Holdings plc 2023 年 424B4 招股书封面披露的本次发行 American Depositary Shares (ADSs) 初始数量是多少份？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "95,500,000 American Depositary"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Cover\n\n95,500,000 American Depositary Shares\n\n(Representing 95,500,000 Ordinary Shares)\n\nThis is an initial offering of American depositary shares (“ADSs”) representing ordinary shares of Arm Holdings plc.\n\nAll of the ADSs to be sold in this offering are currently held by the selling shareholder identified in this prospectus. We are not selling\nany of the ADSs in this offering and will not receive any proceeds from the sale of the ADSs by the selling shareholder in this offering. Each ADS represents the right to receive one ordinary share, nominal value £0.001 per share, and may be\nevidenced by American depositary receipts (“ADRs”).\n\nPrior to this offering, there has been no public market for the ADSs or our\nordinary shares. The initial public offering price per ADS is $51.00. Our ADSs have been approved for listing on the Nasdaq Global Select Market (“Nasdaq”) under the symbol “ARM”.\n\nWe are a “foreign private issuer” as defined under the U.S. federal securities laws and, as such, will be subject to reduced public\ncompany reporting and stock exchange governance requirements. See “Management and Executive Remuneration—Foreign Private Issuer Exemption” for additional information.\n\nSoftBank Group Corp. (“SoftBank Group”) is expected to beneficially own approximately 90.6% of our outstanding ordinary shares\nfollowing the completion of this offering (or approximately 89.9% if the underwriters exercise in full their option to purchase additional ADSs from the selling shareholder). As a result of SoftBank Group’s ownership, after the completion of\nthis offering, we will be a “controlled company” within the meaning of Nasdaq rules. See “Management and Executive Remuneration—Controlled Company Status.”\n\nAdvanced Micro Devices, Inc., Apple Inc., Cadence Design Systems, Inc., Google International LLC, Intel Corporation, MediaTek Inc.’s\naffiliated entities, NVIDIA Corporation, Samsung Electronics Co., Ltd., Synopsys, Inc. and TSMC Partners, Ltd. (collectively, the “Cornerstone Investors”) have, severally and not jointly, indicated an interest in purchasing up to\nan aggregate of $735 million of the ADSs offered in this offering at the initial public offering price and on the same terms and conditions as the other purchasers in this offering. Because these indications of interest are not binding\nagreements or commitments to purchase, any of the Cornerstone Investors may determine to purchase more, fewer, or no ADSs in this offering, or the underwriters may determine to sell more, fewer, or no ADSs to any of the Cornerstone Investors. The\nunderwriters will receive the same underwriting discount on any ADSs purchased by the Cornerstone Investors as they will from the other ADSs sold to the public in this offering.\n\nInvesting in our ADSs involves a high degree of risk. Before buying any ADSs, you should carefully read the discussion of material risks of\ninvesting in our ADSs in “Risk Factors” beginning on page 21 of this prospectus.\n\n| PER ADS | TOTAL |  |\n| --- | --- | --- |\n| Initial public offering price | $51.00 | $4,870,500,000 |\n| Underwriting discounts and commissions | 1.02 | 97,410,000 |\n| Proceeds, before expenses, to the selling shareholder | 49.98 | 4,773,090,000 |\n\nThe underwriters may also exercise their option to purchase up to an additional 7,000,000 ADSs from the selling shareholder at the initial",
+    "expected": {
+      "status": "ANSWER",
+      "value": "95500000",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 49,
+          "end": 68,
+          "quote": "95,500,000 American"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-03",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "根据 ARM 2023 年 424B4 招股书，本次发行完成后 SoftBank Group 预计实益持有 ARM 多少比例的普通股(ordinary shares)？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "90.6%"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Cover\n\n95,500,000 American Depositary Shares\n\n(Representing 95,500,000 Ordinary Shares)\n\nThis is an initial offering of American depositary shares (“ADSs”) representing ordinary shares of Arm Holdings plc.\n\nAll of the ADSs to be sold in this offering are currently held by the selling shareholder identified in this prospectus. We are not selling\nany of the ADSs in this offering and will not receive any proceeds from the sale of the ADSs by the selling shareholder in this offering. Each ADS represents the right to receive one ordinary share, nominal value £0.001 per share, and may be\nevidenced by American depositary receipts (“ADRs”).\n\nPrior to this offering, there has been no public market for the ADSs or our\nordinary shares. The initial public offering price per ADS is $51.00. Our ADSs have been approved for listing on the Nasdaq Global Select Market (“Nasdaq”) under the symbol “ARM”.\n\nWe are a “foreign private issuer” as defined under the U.S. federal securities laws and, as such, will be subject to reduced public\ncompany reporting and stock exchange governance requirements. See “Management and Executive Remuneration—Foreign Private Issuer Exemption” for additional information.\n\nSoftBank Group Corp. (“SoftBank Group”) is expected to beneficially own approximately 90.6% of our outstanding ordinary shares\nfollowing the completion of this offering (or approximately 89.9% if the underwriters exercise in full their option to purchase additional ADSs from the selling shareholder). As a result of SoftBank Group’s ownership, after the completion of\nthis offering, we will be a “controlled company” within the meaning of Nasdaq rules. See “Management and Executive Remuneration—Controlled Company Status.”\n\nAdvanced Micro Devices, Inc., Apple Inc., Cadence Design Systems, Inc., Google International LLC, Intel Corporation, MediaTek Inc.’s\naffiliated entities, NVIDIA Corporation, Samsung Electronics Co., Ltd., Synopsys, Inc. and TSMC Partners, Ltd. (collectively, the “Cornerstone Investors”) have, severally and not jointly, indicated an interest in purchasing up to\nan aggregate of $735 million of the ADSs offered in this offering at the initial public offering price and on the same terms and conditions as the other purchasers in this offering. Because these indications of interest are not binding\nagreements or commitments to purchase, any of the Cornerstone Investors may determine to purchase more, fewer, or no ADSs in this offering, or the underwriters may determine to sell more, fewer, or no ADSs to any of the Cornerstone Investors. The\nunderwriters will receive the same underwriting discount on any ADSs purchased by the Cornerstone Investors as they will from the other ADSs sold to the public in this offering.\n\nInvesting in our ADSs involves a high degree of risk. Before buying any ADSs, you should carefully read the discussion of material risks of\ninvesting in our ADSs in “Risk Factors” beginning on page 21 of this prospectus.\n\n| PER ADS | TOTAL |  |\n| --- | --- | --- |\n| Initial public offering price | $51.00 | $4,870,500,000 |\n| Underwriting discounts and commissions | 1.02 | 97,410,000 |\n| Proceeds, before expenses, to the selling shareholder | 49.98 | 4,773,090,000 |\n\nThe underwriters may also exercise their option to purchase up to an additional 7,000,000 ADSs from the selling shareholder at the initial",
+    "expected": {
+      "status": "ANSWER",
+      "value": "90.6",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1327,
+          "end": 1332,
+          "quote": "90.6%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-04",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM 2023 年 424B4 招股书披露，Cornerstone Investors（基石投资者）合计表示有意按发行价认购至多多少百万美元的 ADS？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "$735 million"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Cover\n\n95,500,000 American Depositary Shares\n\n(Representing 95,500,000 Ordinary Shares)\n\nThis is an initial offering of American depositary shares (“ADSs”) representing ordinary shares of Arm Holdings plc.\n\nAll of the ADSs to be sold in this offering are currently held by the selling shareholder identified in this prospectus. We are not selling\nany of the ADSs in this offering and will not receive any proceeds from the sale of the ADSs by the selling shareholder in this offering. Each ADS represents the right to receive one ordinary share, nominal value £0.001 per share, and may be\nevidenced by American depositary receipts (“ADRs”).\n\nPrior to this offering, there has been no public market for the ADSs or our\nordinary shares. The initial public offering price per ADS is $51.00. Our ADSs have been approved for listing on the Nasdaq Global Select Market (“Nasdaq”) under the symbol “ARM”.\n\nWe are a “foreign private issuer” as defined under the U.S. federal securities laws and, as such, will be subject to reduced public\ncompany reporting and stock exchange governance requirements. See “Management and Executive Remuneration—Foreign Private Issuer Exemption” for additional information.\n\nSoftBank Group Corp. (“SoftBank Group”) is expected to beneficially own approximately 90.6% of our outstanding ordinary shares\nfollowing the completion of this offering (or approximately 89.9% if the underwriters exercise in full their option to purchase additional ADSs from the selling shareholder). As a result of SoftBank Group’s ownership, after the completion of\nthis offering, we will be a “controlled company” within the meaning of Nasdaq rules. See “Management and Executive Remuneration—Controlled Company Status.”\n\nAdvanced Micro Devices, Inc., Apple Inc., Cadence Design Systems, Inc., Google International LLC, Intel Corporation, MediaTek Inc.’s\naffiliated entities, NVIDIA Corporation, Samsung Electronics Co., Ltd., Synopsys, Inc. and TSMC Partners, Ltd. (collectively, the “Cornerstone Investors”) have, severally and not jointly, indicated an interest in purchasing up to\nan aggregate of $735 million of the ADSs offered in this offering at the initial public offering price and on the same terms and conditions as the other purchasers in this offering. Because these indications of interest are not binding\nagreements or commitments to purchase, any of the Cornerstone Investors may determine to purchase more, fewer, or no ADSs in this offering, or the underwriters may determine to sell more, fewer, or no ADSs to any of the Cornerstone Investors. The\nunderwriters will receive the same underwriting discount on any ADSs purchased by the Cornerstone Investors as they will from the other ADSs sold to the public in this offering.\n\nInvesting in our ADSs involves a high degree of risk. Before buying any ADSs, you should carefully read the discussion of material risks of\ninvesting in our ADSs in “Risk Factors” beginning on page 21 of this prospectus.\n\n| PER ADS | TOTAL |  |\n| --- | --- | --- |\n| Initial public offering price | $51.00 | $4,870,500,000 |\n| Underwriting discounts and commissions | 1.02 | 97,410,000 |\n| Proceeds, before expenses, to the selling shareholder | 49.98 | 4,773,090,000 |\n\nThe underwriters may also exercise their option to purchase up to an additional 7,000,000 ADSs from the selling shareholder at the initial",
+    "expected": {
+      "status": "ANSWER",
+      "value": "735",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2146,
+          "end": 2158,
+          "quote": "$735 million"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-05",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM 2023 年 424B4 招股书员工统计表显示，截至 March 31, 2023，ARM 全球共有多少名总员工(Total Employees)？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "5,963",
+      "Total Employees"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Employees\nWe employ a global workforce that spans across 19 countries. As of March 31, 2023, approximately 80% of our 5,963 global employees were\nengaged in engineering activities delivering products for our partners to schedule and specification as well as driving innovations in our industry. During the fiscal year ended March 31, 2023, we engaged an average of 1,421 contractors and\nconsultants.\n\nThe following table sets forth the number of our employees for each of the past three financial years:\n\n| Function | March 31, 2023 | March 31, 2022 | March 31, 2021 |\n| --- | --- | --- | --- |\n| Engineering | 4,753 | 4,758 | 4,712 |\n| Non-Engineering | 1,210 | 1,571 | 1,655 |\n| Geographic Distribution |  |  |  |\n| United Kingdom | 2,785 | 3,219 | 3,161 |\n| United States | 1,157 | 1,177 | 1,246 |\n| India | 848 | 793 | 826 |\n| Other | 1,173 | 1,140 | 1,134 |\n| Total Employees | 5,963 | 6,329 | 6,367 |\n",
+    "expected": {
+      "status": "ANSWER",
+      "value": "5963",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 925,
+          "end": 930,
+          "quote": "5,963"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-06",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM 2023 年 424B4 招股书披露，在截至 March 31, 2023 止财年，Royalty revenue（特许权使用费收入）占总收入的百分之多少？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "63% of our total revenue"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Royalty Fees\n\n| • | Royalty Fees: We generate the majority of our revenue from customers who enter into license agreements, pursuant to which we receive royalty fees based on average selling price of the customer’s Arm-based chip or a fixed fee per chip. Royalty revenues are impacted primarily by the adoption of our products by the licensee as well as other factors, such as product lifecycles, customer’s business performance, market trends and global supply constraints. In the fiscal year ended March 31, 2023, royalty revenue represented 63% of our total revenue. |\n| --- | --- |\n",
+    "expected": {
+      "status": "ANSWER",
+      "value": "63",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 586,
+          "end": 589,
+          "quote": "63%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-07",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM 2023 年 424B4 招股书预测，截至 December 31, 2025 止日历年度 ARM 的可寻址总市场规模(TAM)将增长至约多少十亿美元(billion)？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "$246.6 billion"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Market Opportunity\n Our Market Opportunity\n\nWe define our total addressable market (“TAM”) to include all chips that can contain a processor and, therefore, our TAM includes the\nmain controller chips in smartphones, PCs, digital TVs, servers, vehicles and networking equipment. Our TAM excludes chips that are unlikely to contain a processor, such as memory and analog chips.\n\nFor the calendar year ended December 31, 2022, we estimate that our TAM was approximately $202.5 billion and we forecast that our\nTAM will grow at a 6.8% compound annual growth rate (“CAGR”) to approximately $246.6 billion by the end of the calendar year ending December 31, 2025. We estimate that the aggregate value of chips containing Arm technology was\napproximately $98.9 billion in the calendar year ended December 31, 2022, representing an approximate 48.9% market share as compared to an approximate 42.3% market share as of December 31, 2020. We estimate that our royalty revenue as of\nDecember 31, 2022 represented approximately 1.7% of the industry TAM containing Arm-based chips. We expect that the cost and complexity of chip design will continue to increase, and that we will be able\nto contribute a greater proportion of the technology included in each chip, resulting in our royalties comprising a greater proportion of each chip’s total value. Our calculation of TAM is based on a combination of third-party sources, customer\nreports and our own internal assessments and judgment.",
+    "expected": {
+      "status": "ANSWER",
+      "value": "246.6",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 627,
+          "end": 641,
+          "quote": "$246.6 billion"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-08",
+    "track": "arm_ipo",
+    "category": "extract",
+    "ticker": "ARM",
+    "question": "ARM 2023 年 424B4 招股书风险因素披露，截至 March 31, 2023 止财年最大单一客户 Arm China 约占 ARM 总收入的百分之多少？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "24% and 18%",
+      "Arm China"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Customer Concentration\nA significant portion of our total revenue is generated from\na limited number of key customers. In particular, our top five customers (including Arm China) collectively accounted for approximately 57% and 56% of our total revenue for the fiscal years ended March 31, 2023 and 2022, respectively, and our\nlargest customer individually, Arm China, accounted for approximately 24% and 18% of our total revenue, respectively, during those fiscal years. As a result of this customer concentration, we are particularly susceptible to adverse developments\naffecting our key customers and their respective businesses, including industry downturns, decreased demand for their products, increased competition, changes in trade protection and other government policies, financial hardship and changes in their\nbusiness model, purchasing behavior and strategic priorities, among other factors, many of which are beyond our control. In particular, developments in our key customers’ respective businesses that adversely affect their ability to satisfy",
+    "expected": {
+      "status": "ANSWER",
+      "value": "24",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 425,
+          "end": 442,
+          "quote": "approximately 24%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-09",
+    "track": "arm_ipo",
+    "category": "arithmetic",
+    "ticker": "ARM",
+    "question": "根据 ARM 2023 年 424B4 招股书收入拆分表(Disaggregation of Revenue)，2023 财年 Total Royalty Revenue 比 Total License and Other Revenue 高多少百万美元？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2023_424b4",
+    "expect_snippet_any": [
+      "1,675",
+      "$1,004"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Disaggregation of Revenue\n| Fiscal Year Ended March 31, |  |  |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| External Customers | Related Parties | Total |  |  |  |  |  |  |  |\n| (in millions) | 2023 | 2022 | 2021 | 2023 | 2022 | 2021 | 2023 | 2022 | 2021 |\n| License and Other Revenue(1) | $569 | $902 | $574 | $435 | $239 | $140 | $1,004 | $1,141 | $714 |\n| Royalty Revenue | 1,456 | 1,317 | 1,005 | 219 | 245 | 308 | 1,675 | 1,562 | 1,313 |\n| $2,025 | $2,219 | $1,579 | $654 | $484 | $448 | $2,679 | $2,703 | $2,027 |  |\n\n| (1) | Includes over-time revenues of $100 million, $102 million, and $197 million and point-in-time revenues of $904 million, $1,039 million, and $517 million for the fiscal years ended March 31, 2023, 2022, and 2021, respectively. |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "671",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 502,
+          "end": 507,
+          "quote": "1,675"
+        },
+        {
+          "start": 415,
+          "end": 421,
+          "quote": "$1,004"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ARM-10",
+    "track": "arm_ipo",
+    "category": "arithmetic",
+    "ticker": "ARM",
+    "question": "根据 ARM 2026 20-F 合并损益表，ARM 2026 财年 Total revenue 相比 2025 财年增加了多少百万美元（2026减去2025）？",
+    "expect_absent": false,
+    "expect_path_sub": "arm/2026_20-f",
+    "expect_snippet_any": [
+      "4,920",
+      "4,007"
+    ],
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2026 20-F Consolidated Income Statements\n| Fiscal Year Ended March 31, |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- |\n| (in millions, except percentages) | 2026 | % of revenue | 2025 | % of revenue | 2024 | % of revenue |\n| Revenue: |  |  |  |  |  |  |\n| Revenue from external customers | $3,421 | 70% | $3,184 | 79% | $2,509 | 78% |\n| Revenue from related parties | 1,499 | 30% | 823 | 21% | 724 | 22% |\n| Total revenue | 4,920 | 100% | 4,007 | 100% | 3,233 | 100% |\n| Cost of sales | (121) | 2% | (121) | 3% | (154) | 5% |\n| Gross profit (loss) | 4,799 | 98% | 3,886 | 97% | 3,079 | 95% |\n| Operating expenses: |  |  |  |  |  |  |\n| Research and development | (2,776) | 56% | (2,071) | 52% | (1,979) | 61% |\n| Selling, general and administrative | (1,115) | 23% | (984) | 25% | (983) | 30% |\n| Disposal, restructuring and other operating expenses, net | (8) | 0% | — | 0% | (6) | 0% |\n| Total operating expenses | (3,899) | 79% | (3,055) | 76% | (2,968) | 92% |\n| Operating income (loss) | 900 | 18% | 831 | 21% | 111 | 3% |\n| Income (loss) from equity investments, net | 14 | —% | (237) | 6% | (20) | 1% |\n| Interest income, net | 111 | 2% | 116 | 3% | 110 | 3% |\n| Other non-operating income (loss), net | 132 | 3% | 10 | 0% | 11 | 0% |\n| Income (loss) before income taxes | 1,157 | 24% | 720 | 18% | 212 | 7% |\n| Income tax benefit (expense) | (253) | 5% | 72 | 2% | 94 | 3% |\n| Net income (loss) | $904 | 18% | $792 | 20% | $306 | 9% |\n",
+    "expected": {
+      "status": "ANSWER",
+      "value": "913",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 471,
+          "end": 476,
+          "quote": "4,920"
+        },
+        {
+          "start": 486,
+          "end": 491,
+          "quote": "4,007"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-01",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《中华人民共和国公司法》第四十七条规定，有限责任公司全体股东认缴的出资额应自公司成立之日起几年内缴足？",
+    "expect_absent": false,
+    "expect_path_sub": "公司法(2023-12-29).md",
+    "expect_snippet_any": [
+      "五年内缴足"
+    ],
+    "oracle_document": "# 中华人民共和国公司法\n\n第四十七条 有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。全体股东认缴的出资额由股东按照公司章程的规定自公司成立之日起五年内缴足。\n法律、行政法规以及国务院决定对有限责任公司注册资本实缴、注册资本最低限额、股东出资期限另有规定的，从其规定。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "5",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 83,
+          "end": 85,
+          "quote": "五年"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-02",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《中华人民共和国公司法》第二百一十条规定，公司分配当年税后利润时，应当提取利润的百分之多少列入公司法定公积金？",
+    "expect_absent": false,
+    "expect_path_sub": "公司法(2023-12-29).md",
+    "expect_snippet_any": [
+      "百分之十"
+    ],
+    "oracle_document": "# 中华人民共和国公司法\n\n第二百一十条 公司分配当年税后利润时，应当提取利润的百分之十列入公司法定公积金。公司法定公积金累计额为公司注册资本的百分之五十以上的，可以不再提取。\n公司的法定公积金不足以弥补以前年度亏损的，在依照前款规定提取法定公积金之前，应当先用当年利润弥补亏损。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "10",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 40,
+          "end": 44,
+          "quote": "百分之十"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-03",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《中华人民共和国证券法》第三十一条规定，证券的代销、包销期限最长不得超过多少日？",
+    "expect_absent": false,
+    "expect_path_sub": "证券法(2019-12-28).md",
+    "expect_snippet_any": [
+      "九十日"
+    ],
+    "oracle_document": "# 中华人民共和国证券法\n\n第三十一条 证券的代销、包销期限最长不得超过九十日。\n证券公司在代销、包销期内，对所代销、包销的证券应当保证先行出售给认购人，证券公司不得为本公司预留所代销的证券和预先购入并留存所包销的证券。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "90",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 36,
+          "end": 39,
+          "quote": "九十日"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-04",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《中华人民共和国证券法》第三十三条规定，股票发行采用代销方式，代销期限届满向投资者出售的股票数量未达到拟公开发行股票数量百分之多少的为发行失败？",
+    "expect_absent": false,
+    "expect_path_sub": "证券法(2019-12-28).md",
+    "expect_snippet_any": [
+      "百分之七十"
+    ],
+    "oracle_document": "# 中华人民共和国证券法\n\n第三十三条 股票发行采用代销方式，代销期限届满，向投资者出售的股票数量未达到拟公开发行股票数量百分之七十的，为发行失败。发行人应当按照发行价并加算银行同期存款利息返还股票认购人。\n第三十四条 公开发行股票，代销、包销期限届满，发行人应当在规定的期限内将股票发行情况报国务院证券监督管理机构备案。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "70",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 61,
+          "end": 66,
+          "quote": "百分之七十"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-05",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《会计法》第四十条规定，违反本法规定且情节严重的，对其直接负责的主管人员和其他直接责任人员最高可以处多少万元的罚款？",
+    "expect_absent": false,
+    "expect_path_sub": "会计法(2024-06-28).md",
+    "expect_snippet_any": [
+      "五十万元"
+    ],
+    "oracle_document": "# 中华人民共和国会计法\n\n第四十条 违反本法规定，有下列行为之一的，由县级以上人民政府财政部门责令限期改正，给予警告、通报批评，对单位可以并处二十万元以下的罚款，对其直接负责的主管人员和其他直接责任人员可以处五万元以下的罚款；情节严重的，对单位可以并处二十万元以上一百万元以下的罚款，对其直接负责的主管人员和其他直接责任人员可以处五万元以上五十万元以下的罚款；属于公职人员的，还应当依法给予处分：\n（一）不依法设置会计账簿的；",
+    "expected": {
+      "status": "ANSWER",
+      "value": "500000",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 171,
+          "end": 175,
+          "quote": "五十万元"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-06",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《会计法》第四十二条规定，授意、指使、强令会计机构伪造会计凭证且情节严重的，最高可以并处多少万元的罚款？",
+    "expect_absent": false,
+    "expect_path_sub": "会计法(2024-06-28).md",
+    "expect_snippet_any": [
+      "五百万元"
+    ],
+    "oracle_document": "# 中华人民共和国会计法\n\n第四十二条 授意、指使、强令会计机构、会计人员及其他人员伪造、变造会计凭证、会计账簿，编制虚假财务会计报告或者隐匿、故意销毁依法应当保存的会计凭证、会计账簿、财务会计报告的，由县级以上人民政府财政部门给予警告、通报批评，可以并处二十万元以上一百万元以下的罚款；情节严重的，可以并处一百万元以上五百万元以下的罚款；属于公职人员的，还应当依法给予处分；构成犯罪的，依法追究刑事责任。\n第四十三条 单位负责人对依法履行职责、抵制违反本法规定行为的会计人员以降级、撤职、调离工作岗位、解聘或者开除等方式实行打击报复的，依法给予处分；构成犯罪的，依法追究刑事责任。对受打击报复的会计人员，应当恢复其名誉和原有职务、级别。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "5000000",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 160,
+          "end": 164,
+          "quote": "五百万元"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-07",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《注册会计师法》第十一条规定，参加注册会计师全国统一考试成绩合格，并从事审计业务工作几年以上的，可以申请注册？",
+    "expect_absent": false,
+    "expect_path_sub": "注册会计师法(2026-06-26).md",
+    "expect_snippet_any": [
+      "二年以上"
+    ],
+    "oracle_document": "# 中华人民共和国注册会计师法\n\n第十一条 参加注册会计师全国统一考试成绩合格，并从事审计业务工作二年以上的，可以向省、自治区、直辖市注册会计师协会申请注册。\n除有本法第十二条所列情形外，受理申请的注册会计师协会应当准予注册。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "2",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 49,
+          "end": 51,
+          "quote": "二年"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-08",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《注册会计师法》第二十八条规定，审批机关应当自收到申请文件之日起多少日内决定批准或者不批准？",
+    "expect_absent": false,
+    "expect_path_sub": "注册会计师法(2026-06-26).md",
+    "expect_snippet_any": [
+      "十五日内"
+    ],
+    "oracle_document": "# 中华人民共和国注册会计师法\n\n第二十八条 审批机关应当自收到申请文件之日起十五日内决定批准或者不批准。\n省、自治区、直辖市人民政府财政部门批准的会计师事务所，应当报国务院财政部门备案。国务院财政部门发现批准不当的，应当自收到备案报告之日起十五日内通知原审批机关重新审查。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "15",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 39,
+          "end": 42,
+          "quote": "十五日"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-09",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《科创板首次公开发行股票注册管理办法（试行）》第二十四条规定，中国证监会在多少个工作日内对发行人的注册申请作出同意注册或者不予注册的决定？",
+    "expect_absent": false,
+    "expect_path_sub": "科创板首次公开发行股票注册管理办法",
+    "expect_snippet_any": [
+      "20个工作日"
+    ],
+    "oracle_document": "# 科创板首次公开发行股票注册管理办法（试行）\n\n第二十四条 中国证监会在20个工作日内对发行人的注册申请作出同意注册或者不予注册的决定。发行人根据要求补充、修改注册申请文件，中国证监会要求交易所进一步问询，以及中国证监会要求保荐人、证券服务机构等对有关事项进行核查的时间不计算在内。\n第二十五条 中国证监会同意注册的决定自作出之日起1年内有效，发行人应当在注册决定有效期内发行股票，发行时点由发行人自主选择。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "20",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 37,
+          "end": 43,
+          "quote": "20个工作日"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-10",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《创业板首次公开发行股票注册管理办法（试行）》第二十七条规定，交易所作出终止发行上市审核决定或中国证监会作出不予注册决定的，自决定作出之日起几个月后发行人可以再次提出申请？",
+    "expect_absent": false,
+    "expect_path_sub": "创业板首次公开发行股票注册管理办法",
+    "expect_snippet_any": [
+      "六个月后"
+    ],
+    "oracle_document": "# 创业板首次公开发行股票注册管理办法（试行）\n\n第二十七条 交易所认为发行人不符合发行条件或者信息披露要求，作出终止发行上市审核决定，或者中国证监会作出不予注册决定的，自决定作出之日起六个月后，发行人可以再次提出公开发行股票并上市申请。\n第二十八条 中国证监会应当按规定公开股票发行注册行政许可事项相关的监管信息。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "6",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 93,
+          "end": 96,
+          "quote": "六个月"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-11",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《上市公司信息披露管理办法》第十三条规定，上市公司年度报告应当在每个会计年度结束之日起几个月内编制完成并披露？",
+    "expect_absent": false,
+    "expect_path_sub": "上市公司信息披露管理办法",
+    "expect_snippet_any": [
+      "四个月内"
+    ],
+    "oracle_document": "# 上市公司信息披露管理办法\n\n第十三条 年度报告应当在每个会计年度结束之日起四个月内，中期报告应当在每个会计年度的上半年结束之日起两个月内编制完成并披露。\n第十四条 年度报告应当记载以下内容：",
+    "expected": {
+      "status": "ANSWER",
+      "value": "4",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 39,
+          "end": 42,
+          "quote": "四个月"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-12",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《企业所得税法》第四条第一款规定，企业所得税的法定税率是百分之多少？",
+    "expect_absent": false,
+    "expect_path_sub": "企业所得税法(2018-12-29).md",
+    "expect_snippet_any": [
+      "25％"
+    ],
+    "oracle_document": "# 中华人民共和国企业所得税法\n\n第四条 企业所得税的税率为25％。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "25",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 30,
+          "end": 33,
+          "quote": "25％"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-13",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《增值税法》第九条规定，小规模纳税人是指年应征增值税销售额未超过多少万元的纳税人？",
+    "expect_absent": false,
+    "expect_path_sub": "增值税法(2024-12-25).md",
+    "expect_snippet_any": [
+      "五百万元"
+    ],
+    "oracle_document": "# 中华人民共和国增值税法\n\n第九条 本法所称小规模纳税人，是指年应征增值税销售额未超过五百万元的纳税人。\n小规模纳税人会计核算健全，能够提供准确税务资料的，可以向主管税务机关办理登记，按照本法规定的一般计税方法计算缴纳增值税。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "5000000",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 44,
+          "end": 48,
+          "quote": "五百万元"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-14",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《上市公司收购管理办法》第二十四条规定，收购人持有一个上市公司的股份达到该公司已发行股份的百分之多少时继续增持应当采取要约方式进行？",
+    "expect_absent": false,
+    "expect_path_sub": "上市公司收购管理办法",
+    "expect_snippet_any": [
+      "30%"
+    ],
+    "oracle_document": "# 上市公司收购管理办法\n\n第二十四条 通过证券交易所的证券交易，收购人持有一个上市公司的股份达到该公司已发行股份的30%时，继续增持股份的，应当采取要约方式进行，发出全面要约或者部分要约。\n第二十五条 收购人依照本办法第二十三条、第二十四条、第四十七条、第五十六条的规定，以要约方式收购一个上市公司股份的，其预定收购的股份比例均不得低于该上市公司已发行股份的5%。",
+    "expected": {
+      "status": "ANSWER",
+      "value": "30",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 58,
+          "end": 61,
+          "quote": "30%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "LAW-15",
+    "track": "cn_law",
+    "category": "extract",
+    "ticker": null,
+    "question": "《企业破产法》第十四条规定，人民法院应当自裁定受理破产申请之日起多少日内通知已知债权人并予以公告？",
+    "expect_absent": false,
+    "expect_path_sub": "企业破产法(2006-08-27).md",
+    "expect_snippet_any": [
+      "二十五日内"
+    ],
+    "oracle_document": "# 中华人民共和国企业破产法\n\n第十四条 人民法院应当自裁定受理破产申请之日起二十五日内通知已知债权人，并予以公告。\n通知和公告应当载明下列事项：",
+    "expected": {
+      "status": "ANSWER",
+      "value": "25",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 39,
+          "end": 43,
+          "quote": "二十五日"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ABS-01",
+    "track": "absent",
+    "category": "absent_out_of_corpus",
+    "ticker": null,
+    "question": "字节跳动(ByteDance) 2025 财年的合并营业收入是多少亿美元？",
+    "expect_absent": true,
+    "oracle_document": "# 阿里巴巴 (Alibaba Group Holding Limited / BABA) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2026-03-31 | CNY 1,023,670.00M (1,023,670,000,000) | - | CNY 50,150.00M (50,150,000,000) | CNY 103,592.00M (103,592,000,000) | CNY 5.50 | CNY 66,533.00M (66,533,000,000) | CNY 76,213.00M (76,213,000,000) | - | - | - | - | 20-F 2026-05-20 (0001193125-26-231755) |\n| 2025-03-31 | CNY 996,347.00M (996,347,000,000) | - | CNY 140,905.00M (140,905,000,000) | CNY 130,109.00M (130,109,000,000) | CNY 6.70 | CNY 57,151.00M (57,151,000,000) | CNY 163,509.00M (163,509,000,000) | - | CNY 145,487.00M (145,487,000,000) | CNY 1,804,227.00M (1,804,227,000,000) | CNY 1,009,858.00M (1,009,858,000,000) | 20-F 2025-06-26 (0000950170-25-090161); 20-F 2026-05-20 (0001193125-26-231755) |\n| 2024-03-31 | CNY 941,168.00M (941,168,000,000) | - | CNY 113,350.00M (113,350,000,000) | CNY 80,009.00M (80,009,000,000) | CNY 3.91 | CNY 52,256.00M (52,256,000,000) | CNY 182,593.00M (182,593,000,000) | - | CNY 248,125.00M (248,125,000,000) | CNY 1,764,829.00M (1,764,829,000,000) | CNY 986,544.00M (986,544,000,000) | 20-F 2024-05-23 (0000950170-24-063767); 20-F 2026-05-20 (0001193125-26-231755) |\n| 2023-03-31 | CNY 868,687.00M (868,687,000,000) | - | CNY 100,351.00M (100,351,000,000) | CNY 72,783.00M (72,783,000,000) | CNY 3.43 | CNY 56,744.00M (56,744,000,000) | CNY 199,752.00M (199,752,000,000) | - | CNY 193,086.00M (193,086,000,000) | CNY 1,753,044.00M (1,753,044,000,000) | CNY 989,657.00M (989,657,000,000) | 20-F 2023-07-21 (0000950170-23-033752); 20-F 2025-06-26 (0000950170-25-090161) |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-02",
+    "track": "absent",
+    "category": "absent_out_of_corpus",
+    "ticker": null,
+    "question": "Stripe Inc. 2025 年 SEC 424B4 招股书披露的净利润是多少百万美元？",
+    "expect_absent": true,
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Cover\n\n95,500,000 American Depositary Shares\n\n(Representing 95,500,000 Ordinary Shares)\n\nThis is an initial offering of American depositary shares (“ADSs”) representing ordinary shares of Arm Holdings plc.\n\nAll of the ADSs to be sold in this offering are currently held by the selling shareholder identified in this prospectus. We are not selling\nany of the ADSs in this offering and will not receive any proceeds from the sale of the ADSs by the selling shareholder in this offering. Each ADS represents the right to receive one ordinary share, nominal value £0.001 per share, and may be\nevidenced by American depositary receipts (“ADRs”).\n\nPrior to this offering, there has been no public market for the ADSs or our\nordinary shares. The initial public offering price per ADS is $51.00. Our ADSs have been approved for listing on the Nasdaq Global Select Market (“Nasdaq”) under the symbol “ARM”.\n\nWe are a “foreign private issuer” as defined under the U.S. federal securities laws and, as such, will be subject to reduced public\ncompany reporting and stock exchange governance requirements. See “Management and Executive Remuneration—Foreign Private Issuer Exemption” for additional information.\n\nSoftBank Group Corp. (“SoftBank Group”) is expected to beneficially own approximately 90.6% of our outstanding ordinary shares\nfollowing the completion of this offering (or approximately 89.9% if the underwriters exercise in full their option to purchase additional ADSs from the selling shareholder). As a result of SoftBank Group’s ownership, after the completion of\nthis offering, we will be a “controlled company” within the meaning of Nasdaq rules. See “Management and Executive Remuneration—Controlled Company Status.”\n\nAdvanced Micro Devices, Inc., Apple Inc., Cadence Design Systems, Inc., Google International LLC, Intel Corporation, MediaTek Inc.’s\naffiliated entities, NVIDIA Corporation, Samsung Electronics Co., Ltd., Synopsys, Inc. and TSMC Partners, Ltd. (collectively, the “Cornerstone Investors”) have, severally and not jointly, indicated an interest in purchasing up to\nan aggregate of $735 million of the ADSs offered in this offering at the initial public offering price and on the same terms and conditions as the other purchasers in this offering. Because these indications of interest are not binding\nagreements or commitments to purchase, any of the Cornerstone Investors may determine to purchase more, fewer, or no ADSs in this offering, or the underwriters may determine to sell more, fewer, or no ADSs to any of the Cornerstone Investors. The\nunderwriters will receive the same underwriting discount on any ADSs purchased by the Cornerstone Investors as they will from the other ADSs sold to the public in this offering.\n\nInvesting in our ADSs involves a high degree of risk. Before buying any ADSs, you should carefully read the discussion of material risks of\ninvesting in our ADSs in “Risk Factors” beginning on page 21 of this prospectus.\n\n| PER ADS | TOTAL |  |\n| --- | --- | --- |\n| Initial public offering price | $51.00 | $4,870,500,000 |\n| Underwriting discounts and commissions | 1.02 | 97,410,000 |\n| Proceeds, before expenses, to the selling shareholder | 49.98 | 4,773,090,000 |\n\nThe underwriters may also exercise their option to purchase up to an additional 7,000,000 ADSs from the selling shareholder at the initial",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-03",
+    "track": "absent",
+    "category": "absent_out_of_corpus",
+    "ticker": null,
+    "question": "华为技术有限公司 2025 年年度报告披露的研发费用支出是多少亿元人民币？",
+    "expect_absent": true,
+    "oracle_document": "# 台积电 (Taiwan Semiconductor Manufacturing Company Limited / TSM) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2024-12-31 | TWD 2,894,307.70M (2,894,307,700,000) | TWD 1,624,353.60M (1,624,353,600,000) | TWD 1,322,053.00M (1,322,053,000,000) | TWD 1,157,523.90M (1,157,523,900,000) | TWD 44.67 | TWD 204,181.80M (204,181,800,000) | TWD 1,826,177.10M (1,826,177,100,000) | TWD 956,006.50M (956,006,500,000) | TWD 2,127,627.00M (2,127,627,000,000) | TWD 6,691,764.70M (6,691,764,700,000) | TWD 4,279,271.60M (4,279,271,600,000) | 20-F 2025-04-17 (0001193125-25-083423) |\n| 2023-12-31 | TWD 2,161,735.80M (2,161,735,800,000) | TWD 1,175,110.60M (1,175,110,600,000) | TWD 921,465.60M (921,465,600,000) | TWD 851,027.70M (851,027,700,000) | TWD 32.85 | TWD 182,370.20M (182,370,200,000) | TWD 1,241,967.30M (1,241,967,300,000) | TWD 949,816.80M (949,816,800,000) | TWD 1,465,427.80M (1,465,427,800,000) | TWD 5,532,196.60M (5,532,196,600,000) | TWD 3,453,866.50M (3,453,866,500,000) | 20-F 2025-04-17 (0001193125-25-083423) |\n| 2022-12-31 | TWD 2,263,891.30M (2,263,891,300,000) | TWD 1,348,354.80M (1,348,354,800,000) | TWD 1,121,278.90M (1,121,278,900,000) | TWD 993,294.70M (993,294,700,000) | TWD 38.29 | TWD 163,262.20M (163,262,200,000) | TWD 1,610,599.20M (1,610,599,200,000) | TWD 1,082,672.10M (1,082,672,100,000) | TWD 1,342,814.10M (1,342,814,100,000) | TWD 4,964,459.10M (4,964,459,100,000) | TWD 2,917,832.40M (2,917,832,400,000) | 20-F 2024-04-18 (0001193125-24-099840); 20-F 2025-04-17 (0001193125-25-083423) |\n| 2021-12-31 | TWD 1,587,415.00M (1,587,415,000,000) | TWD 819,537.30M (819,537,300,000) | TWD 649,980.90M (649,980,900,000) | TWD 592,880.60M (592,880,600,000) | TWD 22.84 | TWD 124,734.80M (124,734,800,000) | TWD 1,112,160.70M (1,112,160,700,000) | TWD 839,195.70M (839,195,700,000) | TWD 1,064,990.20M (1,064,990,200,000) | TWD 3,725,302.20M (3,725,302,200,000) | TWD 2,151,682.50M (2,151,682,500,000) | 20-F 2023-04-20 (0001193125-23-107214); 20-F 2024-04-18 (0001193125-24-099840) |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-04",
+    "track": "absent",
+    "category": "absent_out_of_corpus",
+    "ticker": null,
+    "question": "《中华人民共和国反垄断法》第二十二条规定的经营者集中申报营业额门槛是多少亿元？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国公司法\n\n第四十七条 有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。全体股东认缴的出资额由股东按照公司章程的规定自公司成立之日起五年内缴足。\n法律、行政法规以及国务院决定对有限责任公司注册资本实缴、注册资本最低限额、股东出资期限另有规定的，从其规定。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-05",
+    "track": "absent",
+    "category": "absent_out_of_corpus",
+    "ticker": null,
+    "question": "《中华人民共和国人工智能法》第十八条规定的大模型备案审批时限是多少个工作日？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国数据安全法\n\n第二十一条 国家建立数据分类分级保护制度，根据数据在经济社会发展中的重要程度，以及一旦遭到篡改、破坏、泄露或者非法获取、非法利用，对国家安全、公共利益或者个人、组织合法权益造成的危害程度，对数据实行分类分级保护。国家数据安全工作协调机制统筹协调有关部门制定重要数据目录，加强对重要数据的保护。\n关系国家安全、国民经济命脉、重要民生、重大公共利益等数据属于国家核心数据，实行更加严格的管理制度。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-06",
+    "track": "absent",
+    "category": "absent_heldout_metric_or_year",
+    "ticker": "MSFT",
+    "question": "微软(MSFT) 2005-06-30 财年的营业收入是多少百万美元？",
+    "expect_absent": true,
+    "oracle_document": "# 微软 (Microsoft Corporation / MSFT) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2026-06-30 | USD 331,839.00M (331,839,000,000) | USD 225,465.00M (225,465,000,000) | USD 155,237.00M (155,237,000,000) | USD 133,749.00M (133,749,000,000) | USD 17.95 | USD 35,562.00M (35,562,000,000) | USD 182,935.00M (182,935,000,000) | USD 115,948.00M (115,948,000,000) | USD 20,935.00M (20,935,000,000) | USD 758,376.00M (758,376,000,000) | USD 442,387.00M (442,387,000,000) | 10-K 2026-07-29 (0001193125-26-323660) |\n| 2025-06-30 | USD 281,724.00M (281,724,000,000) | USD 193,893.00M (193,893,000,000) | USD 128,528.00M (128,528,000,000) | USD 101,832.00M (101,832,000,000) | USD 13.64 | USD 32,488.00M (32,488,000,000) | USD 136,162.00M (136,162,000,000) | USD 64,551.00M (64,551,000,000) | USD 30,242.00M (30,242,000,000) | USD 619,003.00M (619,003,000,000) | USD 343,479.00M (343,479,000,000) | 10-K 2025-07-30 (0000950170-25-100235); 10-K 2026-07-29 (0001193125-26-323660) |\n| 2024-06-30 | USD 245,122.00M (245,122,000,000) | USD 171,008.00M (171,008,000,000) | USD 109,433.00M (109,433,000,000) | USD 88,136.00M (88,136,000,000) | USD 11.80 | USD 29,510.00M (29,510,000,000) | USD 118,548.00M (118,548,000,000) | USD 44,477.00M (44,477,000,000) | USD 18,315.00M (18,315,000,000) | USD 512,163.00M (512,163,000,000) | USD 268,477.00M (268,477,000,000) | 10-K 2024-07-30 (0000950170-24-087843); 10-K 2025-07-30 (0000950170-25-100235) |\n| 2023-06-30 | USD 211,915.00M (211,915,000,000) | USD 146,052.00M (146,052,000,000) | USD 88,523.00M (88,523,000,000) | USD 72,361.00M (72,361,000,000) | USD 9.68 | USD 27,195.00M (27,195,000,000) | USD 87,582.00M (87,582,000,000) | USD 28,107.00M (28,107,000,000) | USD 34,704.00M (34,704,000,000) | USD 411,976.00M (411,976,000,000) | USD 206,223.00M (206,223,000,000) | 10-K 2024-07-30 (0000950170-24-087843); 10-K 2025-07-30 (0000950170-25-100235) |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-07",
+    "track": "absent",
+    "category": "absent_heldout_metric_or_year",
+    "ticker": "GS",
+    "question": "高盛(GS) 2025-12-31 财年在 SEC XBRL 财务总表中披露的研发费用(R&D Expense)是多少百万美元？",
+    "expect_absent": true,
+    "oracle_document": "# 高盛 (The Goldman Sachs Group, Inc. / GS) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 58,283.00M (58,283,000,000) | - | - | USD 17,176.00M (17,176,000,000) | USD 51.32 | - | USD -45,154.00M (-45,154,000,000) | USD 2,064.00M (2,064,000,000) | USD 164,259.00M (164,259,000,000) | USD 1,809,320.00M (1,809,320,000,000) | USD 124,972.00M (124,972,000,000) | 10-K 2026-02-25 (0000886982-26-000091) |\n| 2024-12-31 | USD 53,512.00M (53,512,000,000) | - | - | USD 14,276.00M (14,276,000,000) | USD 40.54 | - | USD -13,212.00M (-13,212,000,000) | USD 2,091.00M (2,091,000,000) | USD 182,092.00M (182,092,000,000) | USD 1,675,972.00M (1,675,972,000,000) | USD 121,996.00M (121,996,000,000) | 10-K 2026-02-25 (0000886982-26-000091) |\n| 2023-12-31 | USD 46,254.00M (46,254,000,000) | - | - | USD 8,516.00M (8,516,000,000) | USD 22.87 | - | USD -12,587.00M (-12,587,000,000) | USD 2,316.00M (2,316,000,000) | USD 241,577.00M (241,577,000,000) | USD 1,641,594.00M (1,641,594,000,000) | USD 116,905.00M (116,905,000,000) | 10-K 2025-02-27 (0000886982-25-000005); 10-K 2026-02-25 (0000886982-26-000091) |\n| 2022-12-31 | USD 47,365.00M (47,365,000,000) | - | - | USD 11,261.00M (11,261,000,000) | USD 30.06 | - | USD 8,708.00M (8,708,000,000) | USD 3,748.00M (3,748,000,000) | USD 241,825.00M (241,825,000,000) | USD 1,441,799.00M (1,441,799,000,000) | USD 117,189.00M (117,189,000,000) | 10-K 2024-02-23 (0000886982-24-000006); 10-K 2025-02-27 (0000886982-25-000005) |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-08",
+    "track": "absent",
+    "category": "absent_heldout_metric_or_year",
+    "ticker": "JPM",
+    "question": "摩根大通(JPM) 2025-12-31 财年在 SEC XBRL 财务总表中披露的毛利润(Gross Profit)是多少百万美元？",
+    "expect_absent": true,
+    "oracle_document": "# 摩根大通 (JPMorgan Chase & Co. / JPM) — SEC 官方 XBRL 近 10 年审计财务总表\n## 核心财务指标年度对比表（单位：原币种百万 M 与精确原值；EPS 为每股原值）\n| 财年结束(FY End) | 营业收入 Revenue | 毛利润 Gross Profit | 营业利润 Operating Income | 净利润 Net Income | 摊薄每股收益 Diluted EPS | 研发费用 R&D Expense | 经营性现金流 Operating Cash Flow | 资本开支 CapEx | 现金及等价物 Cash & Equivalents | 总资产 Total Assets | 股东权益 Stockholders Equity | 最新申报日 / Accession |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-12-31 | USD 182,447.00M (182,447,000,000) | - | - | USD 57,048.00M (57,048,000,000) | USD 20.02 | - | USD -147,782.00M (-147,782,000,000) | - | - | USD 4,424,900.00M (4,424,900,000,000) | USD 362,438.00M (362,438,000,000) | 10-K 2026-02-13 (0001628280-26-008131) |\n| 2024-12-31 | USD 177,556.00M (177,556,000,000) | - | - | USD 58,471.00M (58,471,000,000) | USD 19.75 | - | USD -42,012.00M (-42,012,000,000) | - | - | USD 4,002,814.00M (4,002,814,000,000) | USD 344,758.00M (344,758,000,000) | 10-K 2026-02-13 (0001628280-26-008131) |\n| 2023-12-31 | USD 158,104.00M (158,104,000,000) | - | - | USD 49,552.00M (49,552,000,000) | USD 16.23 | - | USD 12,974.00M (12,974,000,000) | - | - | USD 3,875,393.00M (3,875,393,000,000) | USD 327,878.00M (327,878,000,000) | 10-K 2026-02-13 (0001628280-26-008131) |\n| 2022-12-31 | USD 128,695.00M (128,695,000,000) | - | - | USD 37,676.00M (37,676,000,000) | USD 12.09 | - | USD 107,119.00M (107,119,000,000) | - | - | USD 3,665,743.00M (3,665,743,000,000) | USD 292,332.00M (292,332,000,000) | 10-K 2025-02-14 (0000019617-25-000270) |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-09",
+    "track": "absent",
+    "category": "absent_heldout_metric_or_year",
+    "ticker": "ARM",
+    "question": "ARM Holdings plc 2023 年 424B4 招股书员工分布表中单独披露的中国大陆全职员工人数是多少名？",
+    "expect_absent": true,
+    "oracle_document": "# Arm (Arm Holdings plc / ARM) 2023 424B4 Employees\nWe employ a global workforce that spans across 19 countries. As of March 31, 2023, approximately 80% of our 5,963 global employees were\nengaged in engineering activities delivering products for our partners to schedule and specification as well as driving innovations in our industry. During the fiscal year ended March 31, 2023, we engaged an average of 1,421 contractors and\nconsultants.\n\nThe following table sets forth the number of our employees for each of the past three financial years:\n\n| Function | March 31, 2023 | March 31, 2022 | March 31, 2021 |\n| --- | --- | --- | --- |\n| Engineering | 4,753 | 4,758 | 4,712 |\n| Non-Engineering | 1,210 | 1,571 | 1,655 |\n| Geographic Distribution |  |  |  |\n| United Kingdom | 2,785 | 3,219 | 3,161 |\n| United States | 1,157 | 1,177 | 1,246 |\n| India | 848 | 793 | 826 |\n| Other | 1,173 | 1,140 | 1,134 |\n| Total Employees | 5,963 | 6,329 | 6,367 |\n",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-10",
+    "track": "absent",
+    "category": "absent_heldout_metric_or_year",
+    "ticker": "TSM",
+    "question": "台积电(TSM) 2025 年 20-F 晶圆技术节点表中 1-nanometer 制程占晶圆总收入的百分比是多少？",
+    "expect_absent": true,
+    "oracle_document": "# 台积电 (TSM) 2025 20-F Wafer Revenue by Technology Node\n| Year ended December 31, |  |  |  |\n| --- | --- | --- | --- |\n| 2023 | 2024 | 2025 |  |\n| Resolution | Percentage of total wafer revenue(1) | Percentage of total wafer revenue(1) | Percentage of total wafer revenue(1) |\n| 3-nanometer | 6% | 18% | 24% |\n| 5-nanometer | 33% | 34% | 36% |\n| 7-nanometer | 19% | 17% | 14% |\n| 16-nanometer | 10% | 8% | 7% |\n| 20-nanometer | 1% | 0% | 0% |\n| 28-nanometer | 10% | 7% | 7% |\n| 40/45-nanometer | 6% | 4% | 3% |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-11",
+    "track": "absent",
+    "category": "absent_law_article",
+    "ticker": null,
+    "question": "《会计法》第999条规定对虚假财务会计报告的最高行政罚款是多少万元？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国会计法\n\n第四十二条 授意、指使、强令会计机构、会计人员及其他人员伪造、变造会计凭证、会计账簿，编制虚假财务会计报告或者隐匿、故意销毁依法应当保存的会计凭证、会计账簿、财务会计报告的，由县级以上人民政府财政部门给予警告、通报批评，可以并处二十万元以上一百万元以下的罚款；情节严重的，可以并处一百万元以上五百万元以下的罚款；属于公职人员的，还应当依法给予处分；构成犯罪的，依法追究刑事责任。\n第四十三条 单位负责人对依法履行职责、抵制违反本法规定行为的会计人员以降级、撤职、调离工作岗位、解聘或者开除等方式实行打击报复的，依法给予处分；构成犯罪的，依法追究刑事责任。对受打击报复的会计人员，应当恢复其名誉和原有职务、级别。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-12",
+    "track": "absent",
+    "category": "absent_law_article",
+    "ticker": null,
+    "question": "《中华人民共和国公司法》第888条规定的跨境并购国家安全审查期限是多少日？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国公司法\n\n第四十七条 有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。全体股东认缴的出资额由股东按照公司章程的规定自公司成立之日起五年内缴足。\n法律、行政法规以及国务院决定对有限责任公司注册资本实缴、注册资本最低限额、股东出资期限另有规定的，从其规定。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-13",
+    "track": "absent",
+    "category": "absent_law_article",
+    "ticker": null,
+    "question": "《中华人民共和国证券法》第777条规定的高频量化交易印花税率是多少？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国证券法\n\n第三十一条 证券的代销、包销期限最长不得超过九十日。\n证券公司在代销、包销期内，对所代销、包销的证券应当保证先行出售给认购人，证券公司不得为本公司预留所代销的证券和预先购入并留存所包销的证券。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-14",
+    "track": "absent",
+    "category": "absent_law_article",
+    "ticker": null,
+    "question": "《注册会计师法》第666条规定的数字审计工作底稿最低保存年限是多少年？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国注册会计师法\n\n第二十八条 审批机关应当自收到申请文件之日起十五日内决定批准或者不批准。\n省、自治区、直辖市人民政府财政部门批准的会计师事务所，应当报国务院财政部门备案。国务院财政部门发现批准不当的，应当自收到备案报告之日起十五日内通知原审批机关重新审查。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "ABS-15",
+    "track": "absent",
+    "category": "absent_law_article",
+    "ticker": null,
+    "question": "《企业所得税法》第555条规定的数字资产资本利得特别税率是百分之多少？",
+    "expect_absent": true,
+    "oracle_document": "# 中华人民共和国企业所得税法\n\n第四条 企业所得税的税率为25％。",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  }
+]

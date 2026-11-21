@@ -1,0 +1,607 @@
+[
+  {
+    "id": "sci_ai_01",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/07_10.1038_s41746-025-01684-1.md",
+    "question": "在《Evaluating large language model workflows in clinical decision support for triage and referral and diagnosis》的汇总评估表中，Clinical User 设定下 Claude 3.5 Sonnet 的 Diagnosis / At least one 准确率数值是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.1038/s41746-025-01684-1\ntrack: RAG & Hallucination Attribution\nsource_url: https://openalex.org/W4410232646\npmcid: PMC12064692\n---\n\n# Evaluating large language model workflows in clinical decision support for triage and referral and diagnosis\n\n- **DOI / PMCID**: https://doi.org/10.1038/s41746-025-01684-1 (PMC12064692)\n- **Journal**: NPJ Digital Medicine\n- **Published**: 2025\n- **Authors**: Farieda Gaber, Maqsood Shaik, Fabio Allega, Agnes Julia Bilecz, Felix Busch, Kelsey Goon, Vedran Franke, Altuna Akalin\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 5: Clinician validation of llm-generated diagnoses: inter-rater agreement**\n\n| User setting | Model | Triage level / Exact match | Triage level / Range | Specialty / Matched | Specialty / At least one | Diagnosis / Matched | Diagnosis / At least one | Average |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| General User | RAG-Assisted LLM | 64.10 | 78.20 | 77.12 | 86.35 | 69.43 | 80.85 | 76.01 |\n| General User | Claude 3.5 Sonnet | 62.20 | 82.80 | 78.26 | 88.05 | 70.22 | 82.00 | 77.26 |\n| General User | Claude 3 Sonnet | 58.35 | 74.40 | 78.10 | 87.70 | 70.17 | 81.55 | 75.05 |\n| General User | Claude 3 Haiku | 57.70 | 71.80 | 77.86 | 87.10 | 67.39 | 79.60 | 73.58 |\n| Clinical User | RAG-Assisted LLM | 65.75 | 77.15 | 77.28 | 86.45 | 69.77 | 81.70 | 76.35 |\n| Clinical User | Claude 3.5 Sonnet | 64.40 | 82.40 | 78.86 | 88.55 | 70.26 | 82.10 | 77.76 |\n| Clinical User | Claude 3 Sonnet | 61.65 | 74.55 | 77.72 | 87.15 | 70.51 | 82.05 | 75.61 |\n| Clinical User | Claude 3 Haiku | 59.00 | 66.15 | 78.02 | 87.05 | 67.46 | 79.30 | 72.83 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "82.10",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1712,
+          "end": 1717,
+          "quote": "82.10"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_02",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/08_10.48550_arxiv.2408.04187.md",
+    "question": "在 Medical Graph RAG（MedGraphRAG）论文最后一个对比表（GraphRAG 与 +U-Retrieval 消融表）中，+U-Retrieval (MedGraphRAG) 在 MedQA 上的得分比 GraphRAG 高多少个百分点？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2408.04187\ntrack: RAG & Hallucination Attribution\nsource_url: https://arxiv.org/html/2408.04187\n---\n\n# Medical Graph RAG: Towards Safe Medical Large Language Model via Graph Retrieval-Augmented Generation\n\n- **Track**: RAG & Hallucination Attribution\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2408.04187\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2024 | **Cited By**: 293\n- **Authors**: Junde Wu, Jiayuan Zhu, Qi, Yunli, Chen, Jingkun, Xu, Min, Filippo Menolascina, Grau, Vicente\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: Accuracy(%) of LLMs using different retrieval methods. Columns with a blue background represent health fact-checking benchmarks, while the others correspond to medical Q&A benchmarks. The best results are highlighted in bold.**\n\n| Col 1 | MedQA | PubMedQA | MedMCQA |\n| --- | --- | --- | --- |\n| GraphRAG | 88.9 | 77.9 | 77.2 |\n| +Med-MetaGraph | 90.4 | 78.5 | 78.1 |\n| +Triple Graph Construction | 91.1 | 81.8 | 80.9 |\n| +U-Retrieval (MedGraphRAG) | 91.3 | 83.3 | 81.5 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "2.4",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1310,
+          "end": 1314,
+          "quote": "91.3"
+        },
+        {
+          "start": 1166,
+          "end": 1170,
+          "quote": "88.9"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_03",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/15_10.1038_s41586-023-06747-5.md",
+    "question": "在《Solving olympiad geometry without human demonstrations》的 IMO-AG-30 基准测试表中，AlphaGeometry（满分 30 题）共解出了多少道题？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.1038/s41586-023-06747-5\ntrack: Reasoning / RLVR / Neuro-Symbolic\nsource_url: https://openalex.org/W4390940921\npmcid: PMC10794143\n---\n\n# Solving olympiad geometry without human demonstrations\n\n- **DOI / PMCID**: https://doi.org/10.1038/s41586-023-06747-5 (PMC10794143)\n- **Journal**: Nature\n- **Published**: 2024\n- **Authors**: Trieu H Trinh, Yuhuai Wu, Quoc V Le, He He, Thang Luong\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: Main results on our IMO-AG-30 test benchmark**\n\n| Method | Method | Problems solved (out of 30) |\n| --- | --- | --- |\n| Computer algebra | Wu’s method21 (previous state of the art) | 10 |\n| Computer algebra | Gröbner basis20 | 4 |\n| Search (human-like) | GPT-4 (ref. 25) | 0 |\n| Search (human-like) | Full-angle method30 | 2 |\n| Search (human-like) | Deductive database (DD)10 | 7 |\n| Search (human-like) | DD + human-designed heuristics17 | 9 |\n| Search (human-like) | DD + AR (ours) | 14 |\n| Search (human-like) | DD + AR + GPT-4 auxiliary constructions | 15 |\n| Search (human-like) | DD + AR + human-designed heuristics | 18 |\n| Search (human-like) | AlphaGeometry | 25 |\n| Search (human-like) | • Without pretraining | 21 |\n| Search (human-like) | • Without fine-tuning | 23 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "25",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1361,
+          "end": 1405,
+          "quote": "| Search (human-like) | AlphaGeometry | 25 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_04",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/11_10.48550_arxiv.2210.03629.md",
+    "question": "在 ReAct 论文的最后一个评测表（Method / Score / SR）中，ReAct 的 SR 比 Act 高多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2210.03629\ntrack: Reasoning / RLVR / Neuro-Symbolic\nsource_url: https://arxiv.org/html/2210.03629\n---\n\n# ReAct: Synergizing Reasoning and Acting in Language Models\n\n- **Track**: Reasoning / RLVR / Neuro-Symbolic\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2210.03629\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2022 | **Cited By**: 9705\n- **Authors**: Yao, Shunyu, Jeffrey W. Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: PaLM-540B prompting results on HotpotQA and Fever. Figure 2: PaLM-540B prompting results with respect to number of CoT-SC samples used.**\n\n| Method | Score | SR |\n| --- | --- | --- |\n| Act | 62.3 | 30.1 |\n| ReAct | 66.6 | 40.0 |\n| IL | 59.9 | 29.1 |\n| IL+RL | 62.4 | 28.7 |\n| Human | 82.1 | 59.6 |\n| Expert | 82.1 | 59.6 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "9.9",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1041,
+          "end": 1045,
+          "quote": "40.0"
+        },
+        {
+          "start": 1017,
+          "end": 1021,
+          "quote": "30.1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_05",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/19_10.48550_arxiv.2309.16797.md",
+    "question": "在 Promptbreeder 论文第一张基准对比表中，Zero-shot 设定下 PaLM 2-L 使用 PB (ours) 方法在 GSM8K 上的准确率是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2309.16797\ntrack: Reasoning / RLVR / Neuro-Symbolic\nsource_url: https://arxiv.org/html/2309.16797\n---\n\n# Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution\n\n- **Track**: Reasoning / RLVR / Neuro-Symbolic\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2309.16797\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2023 | **Cited By**: 633\n- **Authors**: Chrisantha Fernando, Dylan Banarse, Henryk Michalewski, Simon Osindero, Tim Rocktäschel\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: Promptbreeder (PB) comparison to Chain-of-Thought (Wei et al., 2022, Manual-CoT,), Zero-shot CoT (Kojima et al., 2022), Program-of-Thoughts (Chen et al., 2022, PoT,), Auto-CoT (Zhang et al., 2023b), OPRO (Yang et al., 2023a), Automatic Prompt Engineer Zero-shot prompt (Zhou et al., 2023, APE,), Plan-and-Solve with (PS+) and without the improved prompt (Wang et al., 2023b, PS,) and using PaLM 2-L (Anil et al., 2023) as the underlying LLM (APE, PSPaLM 2-L/PS+PaLM 2-L). Best results in both the zero-shot and few-shot categories are highlighted in bold. Results in brackets are directly taken from the Plan-and-Solve paper which uses text-davinci-003 (Brown et al., 2020). For datasets with astericks (MultiArith*, SingleEq*, AddSub*, and SVAMP*), we randomly took half of the examples for training and report accuracy on the remaining test set. See Section 4 and Appendix I for details on the prompts and datasets.**\n\n| Col 1 | Method | LLM | MultiArith* | SingleEq* | AddSub* | SVAMP* | SQA | CSQA | AQuA-RAT | GSM8K |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Zero-shot | CoT | text-davinci-003 | (83.8) | (88.1) | (85.3) | (69.9) | (63.8) | (65.2) | (38.9) | (56.4) |\n| Zero-shot | PoT | text-davinci-003 | (92.2) | (91.7) | (85.1) | (70.8) | – | – | (43.9) | (57.0) |\n| Zero-shot | PS | text-davinci-003 | (87.2) | (89.2) | (88.1) | (72.0) | – | – | (42.5) | (58.2) |\n| Zero-shot | PS+ | text-davinci-003 | (91.8) | (94.7) | (92.2) | (75.7) | (65.4) | (71.9) | (46.0) | (59.3) |\n| Zero-shot | PS | PaLM 2-L | 97.7 | 90.6 | 72.4 | 83.8 | 50.0 | 77.9 | 40.2 | 59.0 |\n| Zero-shot | PS+ | PaLM 2-L | 92.5 | 94.7 | 74.4 | 86.3 | 50.1 | 73.3 | 39.4 | 60.5 |\n| Zero-shot | APE | PaLM 2-L | 95.8 | 82.2 | 72.2 | 73.0 | 38.4 | 67.3 | 45.7 | 77.9 |\n| Zero-shot | OPRO | PaLM 2-L | – | – | – | – | – | – | – | 80.2 |\n| Zero-shot | PB (ours) | PaLM 2-L | 99.7 | 96.4 | 87.8 | 90.2 | 71.8 | 85.4 | 62.2 | 83.9 |\n| Few- | Manual-CoT | text-davinci-003 | (93.6) | (93.5) | (91.6) | (80.3) | (71.2) | (78.3) | (48.4) | (58.4) |\n| Few- | Auto-CoT | text-davinci-003 | (95.5) | (92.1) | (90.8) | (78.1) | – | – | (41.7) | (57.1) |\n| Few- | PB (ours) | PaLM 2-L | 100.0 | 98.9 | 87.1 | 93.7 | 80.2 | 85.9 | 64.6 | 83.5 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "83.9",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2753,
+          "end": 2757,
+          "quote": "83.9"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_06",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/21_10.48550_arxiv.2309.16609.md",
+    "question": "在 Qwen Technical Report 的多模型基准总表中，Qwen 14B 在 C-Eval（5-shot）上的得分比 Qwen 7B 高多少分？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2309.16609\ntrack: LLM Agents\nsource_url: https://arxiv.org/html/2309.16609\n---\n\n# Qwen Technical Report\n\n- **Track**: LLM Agents\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2309.16609\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2023 | **Cited By**: 7271\n- **Authors**: Jinze Bai, Shuai Bai, Chu, Yunfei, Zeyu Cui, Kai Dang, Xiaodong Deng, Fan, Yang, Wenbin Ge\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: Model sizes, architectures, and optimization hyper-parameters.**\n\n| Model | Params | MMLU | C-Eval | GSM8K | MATH | HumanEval | MBPP | BBH |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  |  | 5-shot | 5-shot | 8-shot | 4-shot | 0-shot | 3-shot | 3-shot |\n| MPT | 7B | 30.8 | 23.5 | 9.1 | 3.0 | 18.3 | 22.8 | 35.6 |\n| MPT | 30B | 47.9 | - | 15.2 | 3.1 | 25.0 | 32.8 | 38.0 |\n| Falcon | 7B | 27.8 | - | 6.8 | 2.3 | - | 11.2 | 28.0 |\n| Falcon | 40B | 57.0 | - | 19.6 | 5.5 | - | 29.8 | 37.1 |\n| ChatGLM2 | 6B | 47.9 | 51.7 | 32.4 | 6.5 | - | - | 33.7 |\n| InternLM | 7B | 51.0 | 53.4 | 31.2 | 6.3 | 10.4 | 14.0 | 37.0 |\n| InternLM | 20B | 62.1 | 58.8 | 52.6 | 7.9 | 25.6 | 35.6 | 52.5 |\n| Baichuan2 | 7B | 54.7 | 56.3 | 24.6 | 5.6 | 18.3 | 24.2 | 41.6 |\n| Baichuan2 | 13B | 59.5 | 59.0 | 52.8 | 10.1 | 17.1 | 30.2 | 49.0 |\n| LLaMA | 7B | 35.6 | 27.3 | 11.0 | 2.9 | 12.8 | 17.7 | 33.5 |\n| LLaMA | 13B | 47.7 | 31.8 | 20.3 | 4.2 | 15.8 | 22.0 | 37.9 |\n| LLaMA | 33B | 58.7 | 37.5 | 42.3 | 7.1 | 21.7 | 30.2 | 50.0 |\n| LLaMA | 65B | 63.7 | 40.4 | 54.4 | 10.6 | 23.7 | 37.7 | 58.4 |\n| Llama 2 | 7B | 46.8 | 32.5 | 16.7 | 3.3 | 12.8 | 20.8 | 38.2 |\n| Llama 2 | 13B | 55.0 | 41.4 | 29.6 | 5.0 | 18.9 | 30.3 | 45.6 |\n| Llama 2 | 34B | 62.6 | - | 42.2 | 6.2 | 22.6 | 33.0 | 44.1 |\n| Llama 2 | 70B | 69.8 | 50.1 | 63.3 | 13.5 | 29.9 | 45.0 | 64.9 |\n| StableBeluga2 | 70B | 68.6 | 51.4 | 69.6 | 14.6 | 28.0 | 11.4 | 69.3 |\n| Qwen | 1.8B | 44.6 | 54.7 | 21.2 | 5.6 | 17.1 | 14.8 | 28.2 |\n| Qwen | 7B | 58.2 | 63.5 | 51.7 | 11.6 | 29.9 | 31.6 | 45.0 |\n| Qwen | 14B | 66.3 | 72.1 | 61.3 | 24.8 | 32.3 | 40.8 | 53.4 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "8.6",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2307,
+          "end": 2311,
+          "quote": "72.1"
+        },
+        {
+          "start": 2243,
+          "end": 2247,
+          "quote": "63.5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_07",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/27_10.48550_arxiv.2312.13010.md",
+    "question": "在 AgentCoder 论文第一张主对比表中，AgentCoder (GPT-4) 在 HumanEval 上的通过率是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2312.13010\ntrack: LLM Agents\nsource_url: https://arxiv.org/html/2312.13010\n---\n\n# AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation\n\n- **Track**: LLM Agents\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2312.13010\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2023 | **Cited By**: 583\n- **Authors**: Dong Huang, Jie M. Zhang, G. Flucke, Qingwen Bu, Qing, Yuhao, Heming Cui\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: End-to-end results of AgentCoder and baseline approaches for HumanEval, HumanEval-ET, MBPP, and MBPP-ET datasets. The best approach is highlighted in bold. The baseline results are obtained from its paper report. We use “-” to indicate the cases where the results are absent. The percentages in brackets are the improvement rate over the base LLMs (zero-shot prompting). For the last three rows, no baseline optimisation approaches report effectiveness on these LLMs, therefore, we report the results of AgentCoder only.**\n\n| Models | HumanEval | HumanEval-ET | MBPP | MBPP-ET | Mean |\n| --- | --- | --- | --- | --- | --- |\n| Zero-Shot LLMs |  |  |  |  |  |\n| AlphaCode (1.1B) | 17.1 | - | - | - | 17.1 |\n| Incoder (6.7B) | 15.2 | 11.6 | 17.6 | 14.3 | 14.7 |\n| CodeGeeX (13B) | 18.9 | 15.2 | 26.9 | 20.4 | 20.4 |\n| StarCoder (15.5B) | 34.1 | 25.6 | 43.6 | 33.4 | 34.2 |\n| CodeLlama (34B) | 51.8 | - | 69.3 | - | 60.6 |\n| Llama3 (8B) | 62.2 | - | - | - | - |\n| CodeGen-Mono (16.1B) | 32.9 | 25.0 | 38.6 | 31.6 | 32.0 |\n| CodeX (175B) | 47.0 | 31.7 | 58.1 | 38.8 | 43.9 |\n| CodeX (175B)+CodeT | 65.8 | 51.7 | 67.7 | 45.1 | 57.6 |\n| GPT-3.5-turbo | 57.3 | 42.7 | 52.2 | 36.8 | 47.3 |\n| PaLM Coder | 43.9 | 36.6 | 32.3 | 27.2 | 35.0 |\n| Claude-instant-1 | 31.1 | 28.1 | 26.9 | 19.9 | 26.5 |\n| GPT-4-turbo | 57.9 | 48.8 | 63.4 | 47.5 | 54.4 |\n| GPT-4 | 67.6 | 50.6 | 68.3 | 52.2 | 59.7 |\n| LLM-based optimisation methods with GPT-3.5-turbo |  |  |  |  |  |\n| Few-Shot | 67.7 (18.2%) | 54.9 (28.6%) | 65.8 (26.1%) | 48.3 (31.2%) | 59.2 (25.2%) |\n| CoT | 44.6 (-22.2%) | 37.2 (-12.9%) | 46.1 (-11.7%) | 34.8 (-5.4%) | 40.7 (-14.0%) |\n| ReAct | 56.9 (-0.7%) | 49.4 (15.7%) | 67.0 (28.4%) | 45.9 (24.7%) | 54.8 (15.9%) |\n| Reflexion | 68.1 (18.8%) | 50.6 (18.5%) | 70.0 (34.1%) | 47.5 (29.1%) | 59.1 (24.9%) |\n| ToT | 54.4 (-5.1%) | 42.7 (0.0%) | 65.8 (26.1%) | 40.8 (10.9%) | 50.9 (7.6%) |\n| RAP | 63.1 (10.1%) | 52.4 (22.7%) | 71.4 (36.8%) | 46.7 (26.9%) | 58.4 (23.5%) |\n| Self-Edit | 62.2 (8.6%) | 54.3 (27.2%) | 56.4 (8.0%) | 45.9 (24.7%) | 54.7 (15.6%) |\n| Self-Planing | 65.2 (13.8%) | 48.8 (14.3%) | 58.6 (12.3%) | 41.5 (12.8%) | 53.5 (13.1%) |\n| Self-debugging | 61.6 (7.5%) | 45.8 (7.3%) | 60.1 (15.1%) | 52.3 (42.1%) | 55.0 (16.3%) |\n| INTERVENOR | 75.6 (31.9%) | 54.8 (28.3%) | 69.8 (33.7%) | 47.1 (28.0%) | 61.8 (30.7%) |\n| CodeCoT | 79.3 (38.4%) | 69.5 (62.8%) | 89.5 (71.5%) | 63.0 (71.2%) | 75.3 (59.2%) |\n| Self-Collaboration | 74.4 (29.8%) | 56.1 (31.4%) | 68.2 (30.7%) | 49.5 (34.5%) | 62.1 (31.3%) |\n| AgentCoder (GPT-3.5-turbo) | 79.9 (39.4%) | 77.4 (81.3%) | 89.9 (72.2%) | 89.1 (142.1%) | 84.1 (77.8%) |\n| LLM-based optimisation methods with GPT-4 |  |  |  |  |  |\n| Reflexion | 91.0 (34.6%) | - | 77.1 (12.9%) | - | 84.1 (40.9%) |\n| Self-Debugging | - | - | 80.6 (18.0%) | - | 80.6 (35.0%) |\n| Self-Collaboration | 90.2 (33.4%) | 70.7 (39.7%) | 78.9 (15.5%) | 62.1 (19.0%) | 75.5 (26.5%) |\n| ChatDev | 84.1 (24.4%) | - | 79.8 (12.9%) | - | 84.1 (40.9%) |\n| AgentVerse | 89.0 (24.4%) | - | 73.5 (7.6%) | - | 81.3 (19.6%) |\n| MetaGPT | 85.9 (27.1%) | - | 87.7 (28.4%) | - | 86.8 (45.4%) |\n| AgentCoder (GPT-4) | 96.3 (42.5%) | 86.0 (70.0%) | 91.8 (34.4%) | 91.8 (75.9%) | 91.5 (53.3%) |\n| LLM-based optimisation methods with other backbone LLMs |  |  |  |  |  |\n| AgentCoder (PaLM Coder) | 64.0 (45.8%) | 55.5 (51.6%) | 75.9 (135.0%) | 75.5 (177.6%) | 67.7 (93.4%) |\n| AgentCoder (Claude-instant-1) | 67.7 (117.7%) | 57.9 (106.0%) | 76.3 (183.6%) | 75.1 (277.4%) | 69.3 (161.5%) |\n| AgentCoder (GPT-4-turbo) | 89.6 (54.7%) | 76.2 (56.1%) | 91.4 (44.2%) | 91.4 (92.4%) | 87.2 (60.3%) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "96.3",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 3906,
+          "end": 3910,
+          "quote": "96.3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_08",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/27_10.48550_arxiv.2312.13010.md",
+    "question": "在 AgentCoder 论文第一张主对比表中，AgentCoder (GPT-4) 在 MBPP 上的得分比 Zero-Shot LLMs 组的 GPT-4 高多少个百分点？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2312.13010\ntrack: LLM Agents\nsource_url: https://arxiv.org/html/2312.13010\n---\n\n# AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation\n\n- **Track**: LLM Agents\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2312.13010\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2023 | **Cited By**: 583\n- **Authors**: Dong Huang, Jie M. Zhang, G. Flucke, Qingwen Bu, Qing, Yuhao, Heming Cui\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: End-to-end results of AgentCoder and baseline approaches for HumanEval, HumanEval-ET, MBPP, and MBPP-ET datasets. The best approach is highlighted in bold. The baseline results are obtained from its paper report. We use “-” to indicate the cases where the results are absent. The percentages in brackets are the improvement rate over the base LLMs (zero-shot prompting). For the last three rows, no baseline optimisation approaches report effectiveness on these LLMs, therefore, we report the results of AgentCoder only.**\n\n| Models | HumanEval | HumanEval-ET | MBPP | MBPP-ET | Mean |\n| --- | --- | --- | --- | --- | --- |\n| Zero-Shot LLMs |  |  |  |  |  |\n| AlphaCode (1.1B) | 17.1 | - | - | - | 17.1 |\n| Incoder (6.7B) | 15.2 | 11.6 | 17.6 | 14.3 | 14.7 |\n| CodeGeeX (13B) | 18.9 | 15.2 | 26.9 | 20.4 | 20.4 |\n| StarCoder (15.5B) | 34.1 | 25.6 | 43.6 | 33.4 | 34.2 |\n| CodeLlama (34B) | 51.8 | - | 69.3 | - | 60.6 |\n| Llama3 (8B) | 62.2 | - | - | - | - |\n| CodeGen-Mono (16.1B) | 32.9 | 25.0 | 38.6 | 31.6 | 32.0 |\n| CodeX (175B) | 47.0 | 31.7 | 58.1 | 38.8 | 43.9 |\n| CodeX (175B)+CodeT | 65.8 | 51.7 | 67.7 | 45.1 | 57.6 |\n| GPT-3.5-turbo | 57.3 | 42.7 | 52.2 | 36.8 | 47.3 |\n| PaLM Coder | 43.9 | 36.6 | 32.3 | 27.2 | 35.0 |\n| Claude-instant-1 | 31.1 | 28.1 | 26.9 | 19.9 | 26.5 |\n| GPT-4-turbo | 57.9 | 48.8 | 63.4 | 47.5 | 54.4 |\n| GPT-4 | 67.6 | 50.6 | 68.3 | 52.2 | 59.7 |\n| LLM-based optimisation methods with GPT-3.5-turbo |  |  |  |  |  |\n| Few-Shot | 67.7 (18.2%) | 54.9 (28.6%) | 65.8 (26.1%) | 48.3 (31.2%) | 59.2 (25.2%) |\n| CoT | 44.6 (-22.2%) | 37.2 (-12.9%) | 46.1 (-11.7%) | 34.8 (-5.4%) | 40.7 (-14.0%) |\n| ReAct | 56.9 (-0.7%) | 49.4 (15.7%) | 67.0 (28.4%) | 45.9 (24.7%) | 54.8 (15.9%) |\n| Reflexion | 68.1 (18.8%) | 50.6 (18.5%) | 70.0 (34.1%) | 47.5 (29.1%) | 59.1 (24.9%) |\n| ToT | 54.4 (-5.1%) | 42.7 (0.0%) | 65.8 (26.1%) | 40.8 (10.9%) | 50.9 (7.6%) |\n| RAP | 63.1 (10.1%) | 52.4 (22.7%) | 71.4 (36.8%) | 46.7 (26.9%) | 58.4 (23.5%) |\n| Self-Edit | 62.2 (8.6%) | 54.3 (27.2%) | 56.4 (8.0%) | 45.9 (24.7%) | 54.7 (15.6%) |\n| Self-Planing | 65.2 (13.8%) | 48.8 (14.3%) | 58.6 (12.3%) | 41.5 (12.8%) | 53.5 (13.1%) |\n| Self-debugging | 61.6 (7.5%) | 45.8 (7.3%) | 60.1 (15.1%) | 52.3 (42.1%) | 55.0 (16.3%) |\n| INTERVENOR | 75.6 (31.9%) | 54.8 (28.3%) | 69.8 (33.7%) | 47.1 (28.0%) | 61.8 (30.7%) |\n| CodeCoT | 79.3 (38.4%) | 69.5 (62.8%) | 89.5 (71.5%) | 63.0 (71.2%) | 75.3 (59.2%) |\n| Self-Collaboration | 74.4 (29.8%) | 56.1 (31.4%) | 68.2 (30.7%) | 49.5 (34.5%) | 62.1 (31.3%) |\n| AgentCoder (GPT-3.5-turbo) | 79.9 (39.4%) | 77.4 (81.3%) | 89.9 (72.2%) | 89.1 (142.1%) | 84.1 (77.8%) |\n| LLM-based optimisation methods with GPT-4 |  |  |  |  |  |\n| Reflexion | 91.0 (34.6%) | - | 77.1 (12.9%) | - | 84.1 (40.9%) |\n| Self-Debugging | - | - | 80.6 (18.0%) | - | 80.6 (35.0%) |\n| Self-Collaboration | 90.2 (33.4%) | 70.7 (39.7%) | 78.9 (15.5%) | 62.1 (19.0%) | 75.5 (26.5%) |\n| ChatDev | 84.1 (24.4%) | - | 79.8 (12.9%) | - | 84.1 (40.9%) |\n| AgentVerse | 89.0 (24.4%) | - | 73.5 (7.6%) | - | 81.3 (19.6%) |\n| MetaGPT | 85.9 (27.1%) | - | 87.7 (28.4%) | - | 86.8 (45.4%) |\n| AgentCoder (GPT-4) | 96.3 (42.5%) | 86.0 (70.0%) | 91.8 (34.4%) | 91.8 (75.9%) | 91.5 (53.3%) |\n| LLM-based optimisation methods with other backbone LLMs |  |  |  |  |  |\n| AgentCoder (PaLM Coder) | 64.0 (45.8%) | 55.5 (51.6%) | 75.9 (135.0%) | 75.5 (177.6%) | 67.7 (93.4%) |\n| AgentCoder (Claude-instant-1) | 67.7 (117.7%) | 57.9 (106.0%) | 76.3 (183.6%) | 75.1 (277.4%) | 69.3 (161.5%) |\n| AgentCoder (GPT-4-turbo) | 89.6 (54.7%) | 76.2 (56.1%) | 91.4 (44.2%) | 91.4 (92.4%) | 87.2 (60.3%) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "23.5",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 3936,
+          "end": 3948,
+          "quote": "91.8 (34.4%)"
+        },
+        {
+          "start": 2143,
+          "end": 2147,
+          "quote": "68.3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_09",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/31_10.48550_arxiv.2408.01800.md",
+    "question": "在 MiniCPM-V 论文的多模态基准总表中，MiniCPM-Llama3-V 2.5 在 Math-Vista 列的得分比 GPT-4V (2023.11.06) 高多少分？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2408.01800\ntrack: Document / Table Understanding\nsource_url: https://arxiv.org/html/2408.01800\n---\n\n# MiniCPM-V: A GPT-4V Level MLLM on Your Phone\n\n- **Track**: Document / Table Understanding\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2408.01800\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2024 | **Cited By**: 1628\n- **Authors**: Yuan Yao, Tianyou Yu, Zhang, Ao, Chongyi Wang, Junbo Cui, Zhu, Hongji, Tianchi Cai, Haoyu Li\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: Pre-training data. The pre-training data consists of image captioning and OCR data in English and Chinese. LAION-2B-OCR is generated by applying OCR tools to LAION-2B images.**\n\n| Model | Size | Open- | MME | MMB | MMB | MMMU | Math- | LLaVA | RW | Obj HalBench |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Model | Size | Compass | MME | test (en) | test (cn) | val | Vista | Bench | QA | (Res./Men.) ↓ |\n| Proprietary |  |  |  |  |  |  |  |  |  |  |\n| GPT-4V (2023.11.06) | - | 63.5 | 1771.5 | 77.0 | 74.4 | 53.8 | 47.8 | 93.1 | 63.0 | 13.6 / 7.3* |\n| Gemini Pro | - | 62.9 | 2148.9 | 73.6 | 74.3 | 48.9 | 45.8 | 79.9 | 60.4 | - |\n| Claude 3 Opus | - | 57.7 | 1586.8 | 63.3 | 59.2 | 54.9 | 45.8 | 73.9 | 48.4 | - |\n| Open-source |  |  |  |  |  |  |  |  |  |  |\n| DeepSeek-VL-1.3B | 1.7B | 46.2 | 1531.6 | 66.4 | 62.9 | 33.8 | 29.4 | 51.1 | 49.7 | 16.7 / 9.6* |\n| Mini-Gemini | 2.2B | - | 1653.0 | - | - | 31.7 | - | - | - | - |\n| Yi-VL-6B | 6.7B | 48.9 | 1915.1 | 68.4 | 66.6 | 40.3 | 28.8 | 51.9 | 53.5 | 19.4 / 11.7* |\n| Qwen-VL-Chat | 9.6B | 51.6 | 1860.0 | 61.8 | 56.3 | 37.0 | 33.8 | 67.7 | 49.3 | 43.8 / 20.0* |\n| Yi-VL-34B | 34B | 52.2 | 2050.2 | 72.4 | 70.7 | 45.1 | 30.7 | 62.3 | 54.8 | 20.7 / 14.0* |\n| Phi-3-vision-128k-instruct | 4.2B | - | - | - | - | 40.4 | 44.5 | 64.2* | 58.8* | - |\n| XTuner-Llama-3-8B-v1.1 | 8.4B | 53.3 | 1818.0 | 71.7 | 63.2 | 39.2 | 40.0 | 69.2 | - | - |\n| CogVLM-Chat | 17B | 54.2 | 1736.6 | 65.8 | 55.9 | 37.3 | 34.7 | 73.9 | 60.3 | 26.4 / 12.6* |\n| Bunny-Llama-3-8B | 8.4B | 54.3 | 1920.3 | 77.0 | 73.9 | 41.3 | 31.5 | 61.2 | 58.8 | - |\n| DeepSeek-VL-7B | 7.3B | 54.6 | 1765.4 | 73.8 | 71.4 | 38.3 | 36.8 | 77.8 | 54.2 | 11.4 / 6.5* |\n| LLaVA-NeXT-Llama3-8B | 8.4B | - | 1971.5 | - | - | 41.7 | - | 80.1 | 60.0 | - |\n| Idefics2 | 8.0B | 57.2 | 1847.6 | 75.7 | 68.6 | 45.2 | 52.2 | 49.1 | 60.7 | - |\n| Cambrian-8B | 8.3B | 58.8 | 1802.9 | 74.6 | 67.9 | 41.8 | 47.0 | 71.0 | 60.0 | - |\n| CogVLM2-19B-Chat | 19B | 62.3 | 1869.5 | 73.9 | 69.8 | 42.6 | 38.6 | 83.0 | 62.9 | - |\n| LLaVA-NeXT-Yi-34B | 34B | 62.7 | 2006.5 | 81.1 | 79.0 | 48.8 | 40.4 | 81.8 | 66.0 | - |\n| Cambrian-34B | 34B | 64.9 | 2049.9 | 80.4 | 79.2 | 50.4 | 50.3 | 82.0 | 67.1 | - |\n| MiniCPM-V 1.0 | 2.8B | 47.5 | 1650.2 | 64.1 | 62.6 | 38.3 | 28.9 | 51.3 | 51.2 | 21.6 / 11.5 |\n| MiniCPM-V 2.0 | 2.8B | 54.5 | 1808.6 | 69.1 | 66.5 | 38.2 | 38.7 | 69.2 | 55.8 | 14.5 / 7.8 |\n| MiniCPM-Llama3-V 2.5 | 8.5B | 65.1 | 2024.6 | 77.2 | 74.2 | 45.8 | 54.3 | 86.7 | 63.5 | 10.3 / 5.0 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "6.5",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 3210,
+          "end": 3285,
+          "quote": "| MiniCPM-Llama3-V 2.5 | 8.5B | 65.1 | 2024.6 | 77.2 | 74.2 | 45.8 | 54.3 |"
+        },
+        {
+          "start": 1279,
+          "end": 1350,
+          "quote": "| GPT-4V (2023.11.06) | - | 63.5 | 1771.5 | 77.0 | 74.4 | 53.8 | 47.8 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_10",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/32_10.48550_arxiv.2507.05595.md",
+    "question": "在 PaddleOCR 3.0 Technical Report 第二个对比表（Recall@1）中，PP-ChatOCRv4 的 Recall@1 百分比数值是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2507.05595\ntrack: Document / Table Understanding\nsource_url: https://arxiv.org/html/2507.05595\n---\n\n# PaddleOCR 3.0 Technical Report\n\n- **Track**: Document / Table Understanding\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2507.05595\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2025 | **Cited By**: 464\n- **Authors**: Cui, Cheng, Sun, Ting, Manhui Lin, Tingquan Gao, Zhang, Yubo, Jiaxuan Liu, Xueqing Wang, Zelun Zhang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Abstract\n\nThis technical report introduces PaddleOCR 3.0, an Apache-licensed open-source toolkit for OCR and document parsing. To address the growing demand for document understanding in the era of large language models, PaddleOCR 3.0 presents three major solutions: (1) PP-OCRv5 for multilingual text recognition, (2) PP-StructureV3 for hierarchical document parsing, and (3) PP-ChatOCRv4 for key information extraction. Compared to mainstream vision-language models (VLMs), these models with fewer than 100 million parameters achieve competitive accuracy and efficiency, rivaling billion-parameter VLMs. In addition to offering a high-quality OCR model library, PaddleOCR 3.0 provides efficient tools for training, inference, and deployment, supports heterogeneous hardware acceleration, and enables developers to easily build intelligent document applications.\n\n## Benchmark & Results Tables\n\n**Table 1: Comprehensive evaluation of document parsing methods on OmniDocBench.**\n\n| Method Type | Methods | Edit ↓ | Col 4 |\n| --- | --- | --- | --- |\n| Method Type | Methods | EN | ZH |\n| Pipeline Tools | PP-StructureV3 | 0.145 | 0.206 |\n| Pipeline Tools | MinerU-1.3.11 (Wang et al., 2024) | 0.166 | 0.310 |\n| Pipeline Tools | MinerU-0.9.3 (Wang et al., 2024) | 0.150 | 0.357 |\n| Pipeline Tools | Mathpix1 | 0.191 | 0.365 |\n| Pipeline Tools | Pix2Text-1.1.2.3 (breezedeus, 2022) | 0.320 | 0.528 |\n| Pipeline Tools | Marker-1.2.3 (Paruchuri, 2023) | 0.336 | 0.556 |\n| Pipeline Tools | Unstructured-0.17.2 (Unstructured-IO, 2022) | 0.586 | 0.716 |\n| Pipeline Tools | OpenParse-0.7.0 (Filimoa, 2024) | 0.646 | 0.814 |\n| Pipeline Tools | Docling-2.14.0 (Docling Team, 2024) | 0.589 | 0.909 |\n| Expert VLMs | GOT-OCR2.0 (Wei et al., 2024) | 0.287 | 0.411 |\n| Expert VLMs | Mistral OCR2 | 0.268 | 0.439 |\n| Expert VLMs | OLMOCR-sglang (Poznanski et al., 2025) | 0.326 | 0.469 |\n| Expert VLMs | SmolDocling-256M_transformer (Nassar et al., 2025) | 0.493 | 0.816 |\n| Expert VLMs | Nougat (Blecher et al., 2023) | 0.452 | 0.973 |\n| General VLMs | Gemini2.5-Pro3 | 0.148 | 0.212 |\n| General VLMs | Gemini2.0-flash4 | 0.191 | 0.264 |\n| General VLMs | Qwen2.5-VL-72B (Yang et al., 2024) | 0.214 | 0.261 |\n| General VLMs | GPT-4o5 | 0.233 | 0.399 |\n| General VLMs | InternVL2-76B (Chen et al., 2024) | 0.440 | 0.443 |\n\n**Table 2: Comprehensive evaluation of various solutions on a custom multi-scenario benchmark: overall recall@1 performance based on ground truth comparison.**\n\n| Methods | Recall@1 |\n| --- | --- |\n| GPT-4o | 63.47% |\n| PP-ChatOCRv3 | 70.08% |\n| Qwen2.5-VL-72B | 80.26% |\n| PP-ChatOCRv4 | 85.55% |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "85.55",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 3350,
+          "end": 3356,
+          "quote": "85.55%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_11",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/42_10.48550_arxiv.2312.00752.md",
+    "question": "在 Mamba 论文第一张零样本评测总表中，Mamba-2.8B 的 Average（acc ↑）得分比 Pythia-2.8B 高多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2312.00752\ntrack: AI for Science / Bio\nsource_url: https://arxiv.org/html/2312.00752\n---\n\n# Mamba: Linear-Time Sequence Modeling with Selective State Spaces\n\n- **Track**: AI for Science / Bio\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2312.00752\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2023 | **Cited By**: 11898\n- **Authors**: Albert Gu, Tri Dao\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: (Zero-shot Evaluations.) Best results for each size in bold. We compare against open source LMs with various tokenizers, trained for up to 300B tokens. Pile refers to the validation split, comparing only against models trained on the same dataset and tokenizer (GPT-NeoX-20B). For each model size, Mamba is best-in-class on every single evaluation result, and generally matches baselines at twice the model size.**\n\n| Model | Token. | Pile | LAMBADA | LAMBADA | HellaSwag | PIQA | Arc-E | Arc-C | WinoGrande | Average |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  |  | ppl ↓ | ppl ↓ | acc ↑ | acc ↑ | acc ↑ | acc ↑ | acc ↑ | acc ↑ | acc ↑ |\n| Hybrid H3-130M | GPT2 | — | 89.48 | 25.77 | 31.7 | 64.2 | 44.4 | 24.2 | 50.6 | 40.1 |\n| Pythia-160M | NeoX | 29.64 | 38.10 | 33.0 | 30.2 | 61.4 | 43.2 | 24.1 | 51.9 | 40.6 |\n| Mamba-130M | NeoX | 10.56 | 16.07 | 44.3 | 35.3 | 64.5 | 48.0 | 24.3 | 51.9 | 44.7 |\n| Hybrid H3-360M | GPT2 | — | 12.58 | 48.0 | 41.5 | 68.1 | 51.4 | 24.7 | 54.1 | 48.0 |\n| Pythia-410M | NeoX | 9.95 | 10.84 | 51.4 | 40.6 | 66.9 | 52.1 | 24.6 | 53.8 | 48.2 |\n| Mamba-370M | NeoX | 8.28 | 8.14 | 55.6 | 46.5 | 69.5 | 55.1 | 28.0 | 55.3 | 50.0 |\n| Pythia-1B | NeoX | 7.82 | 7.92 | 56.1 | 47.2 | 70.7 | 57.0 | 27.1 | 53.5 | 51.9 |\n| Mamba-790M | NeoX | 7.33 | 6.02 | 62.7 | 55.1 | 72.1 | 61.2 | 29.5 | 56.1 | 57.1 |\n| GPT-Neo 1.3B | GPT2 | — | 7.50 | 57.2 | 48.9 | 71.1 | 56.2 | 25.9 | 54.9 | 52.4 |\n| Hybrid H3-1.3B | GPT2 | — | 11.25 | 49.6 | 52.6 | 71.3 | 59.2 | 28.1 | 56.9 | 53.0 |\n| OPT-1.3B | OPT | — | 6.64 | 58.0 | 53.7 | 72.4 | 56.7 | 29.6 | 59.5 | 55.0 |\n| Pythia-1.4B | NeoX | 7.51 | 6.08 | 61.7 | 52.1 | 71.0 | 60.5 | 28.5 | 57.2 | 55.2 |\n| RWKV-1.5B | NeoX | 7.70 | 7.04 | 56.4 | 52.5 | 72.4 | 60.5 | 29.4 | 54.6 | 54.3 |\n| Mamba-1.4B | NeoX | 6.80 | 5.04 | 64.9 | 59.1 | 74.2 | 65.5 | 32.8 | 61.5 | 59.7 |\n| GPT-Neo 2.7B | GPT2 | — | 5.63 | 62.2 | 55.8 | 72.1 | 61.1 | 30.2 | 57.6 | 56.5 |\n| Hybrid H3-2.7B | GPT2 | — | 7.92 | 55.7 | 59.7 | 73.3 | 65.6 | 32.3 | 61.4 | 58.0 |\n| OPT-2.7B | OPT | — | 5.12 | 63.6 | 60.6 | 74.8 | 60.8 | 31.3 | 61.0 | 58.7 |\n| Pythia-2.8B | NeoX | 6.73 | 5.04 | 64.7 | 59.3 | 74.0 | 64.1 | 32.9 | 59.7 | 59.1 |\n| RWKV-3B | NeoX | 7.00 | 5.24 | 63.9 | 59.6 | 73.7 | 67.8 | 33.1 | 59.6 | 59.6 |\n| Mamba-2.8B | NeoX | 6.22 | 4.23 | 69.2 | 66.1 | 75.2 | 69.7 | 36.3 | 63.5 | 63.3 |\n| GPT-J-6B | GPT2 | – | 4.10 | 68.3 | 66.3 | 75.4 | 67.0 | 36.6 | 64.1 | 63.0 |\n| OPT-6.7B | OPT | – | 4.25 | 67.7 | 67.2 | 76.3 | 65.6 | 34.9 | 65.5 | 62.9 |\n| Pythia-6.9B | NeoX | 6.51 | 4.45 | 67.1 | 64.0 | 75.2 | 67.3 | 35.5 | 61.3 | 61.7 |\n| RWKV-7.4B | NeoX | 6.31 | 4.38 | 67.2 | 65.5 | 76.1 | 67.8 | 37.5 | 61.0 | 62.5 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "4.2",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 3009,
+          "end": 3093,
+          "quote": "| Mamba-2.8B | NeoX | 6.22 | 4.23 | 69.2 | 66.1 | 75.2 | 69.7 | 36.3 | 63.5 | 63.3 |"
+        },
+        {
+          "start": 2841,
+          "end": 2926,
+          "quote": "| Pythia-2.8B | NeoX | 6.73 | 5.04 | 64.7 | 59.3 | 74.0 | 64.1 | 32.9 | 59.7 | 59.1 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_ai_12",
+    "track": "ai_papers",
+    "expect_path_sub": "data/raw/ai-papers-ccby/50_10.1101_2025.06.14.659707.md",
+    "question": "在 Boltz-2 论文中，模型在 4-target FEP 子集（4-target FEP subset）上的平均 Pearson 相关系数（average Pearson correlation）是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.1101/2025.06.14.659707\ntrack: AI for Science / Bio\nsource_url: https://openalex.org/W4411463597\npmcid: PMC12262699\n---\n\n# Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction\n\n- **DOI / PMCID**: https://doi.org/10.1101/2025.06.14.659707 (PMC12262699)\n- **Journal**: bioRxiv\n- **Published**: 2025\n- **Authors**: Saro Passaro, Gabriele Corso, Jeremy Wohlwend, Mateo Reveiz, Stephan Thaler, Vignesh Ram Somnath, Noah Getz, Tally Portnoi\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n### Boltz-2 approaches FEP accuracy on public benchmarks\n\nAccurately ranking analogues within a chemical series is a critical challenge in hit-to-lead and lead optimization. Distinguishing subtle differences in binding affinity among closely related analogues is essential for guiding molecular refinement and progressing candidates through the pipeline. Traditional free energy simulation methods can often offer the required precision, but are too computationally expensive for more widespread use. Boltz-2 addresses this problem as it allows accurate affinity predictions at a fraction of the computational cost, enabling rapid prioritization in structure-guided optimization workflows.\n\nTo evaluate Boltz-2’s affinity prediction ability, we benchmarked it across a suite of hit-to-lead and lead-optimization datasets. Summary results are presented in Figure 6, while expanded tables and scatter plots are available in Appendices E.2.1 and E.2.2.\n\nWe evaluate the model on two subsets of the FEP+ benchmark [Ross et al., 2023]: the OpenFE dataset, consisting of 876 high-quality hit-to-lead measurements [Gowers et al., 2023], and a focused 4-target subset [Hahn et al., 2022], where more physics-based baselines are available, including absolute FEP (ABFE) [Wu et al., 2025] and Fragment Molecular Orbital (FMO) [Nishimoto and Fedorov, 2016, Guareschi et al., 2023], a semi-empirical quantum mechanics-based scoring function. The training sets are filtered to exclude proteins with ≥ 90% sequence identity to any protein in the FEP+ benchmark, ensuring that we benchmark on unseen proteins. Additionally, we assess the impact of compound similarity in Figure D.2.1. On the 4-target FEP subset, Boltz-2 achieves an average Pearson correlation of 0.66, outperforming all available inexpensive physical methods and ML baselines. Remarkably, Boltz-2 approaches state-of-the-art free energy simulations, while running more than 1,000× faster, providing a strong speed-accuracy tradeoff (Figure 1). Even on the full OpenFE benchmark set, Boltz-2 approaches the performance of OpenFE, a widely adopted open-source relative FEP method.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1:: Summary statistics of the affinity training dataset used in our model. Each row corresponds to a different data source or curation strategy. The table reports the number of binders, decoys, unique protein clusters at 90% sequence identity (referred to as Targets in the table), and compounds. Supervision indicates whether the data is used to supervise the binary and/or affinity value head. Values in parentheses show the corresponding statistics prior to applying the structural quality filter, which excludes examples with iptm below 0.75.**\n\n| Source | Type | Supervision | # Binders | # Decoys | # Targets | # Compounds |\n| --- | --- | --- | --- | --- | --- | --- |\n| ChEMBL and BindingDB | optimization | values | 1.2M (1.45M) | 0 | 2k (2.5k) | 600k (700k) |\n| PubChem small assays | hit-discovery | both | 10k (13k) | 50k (70k) | 250 (300) | 20k (25k) |\n| PubChem HTS | hit-discovery | binary | 200k (400k) | 1.8M (3.5M) | 300 (500) | 400k (450k) |\n| CeMM Fragments | hit-discovery | binary | 25k (45k) | 115k (200k) | 1.3k (2.5k) | 400 (400) |\n| MIDAS Metabolites | hit-discovery | binary | 2k (3.5k) | 20k (35k) | 60 (100) | 400 (400) |\n| ChEMBL and BindingDB | synthetic decoys | binary | 0 | 1.2M (1.45M) | 2k (2.5k) | 600k (700k) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "0.66",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2493,
+          "end": 2497,
+          "quote": "0.66"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_01",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/01_PMC13605142.md",
+    "question": "在《Cellular and Immunotherapy for Pediatric Brain Tumors: A Primer》的病例报告汇总表中，Kline et al. 2018 报道再程放疗联合 nivolumab（reirradiation plus nivolumab）的中位总生存期（Median OS，月数）是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3390/curroncol33090522\npmcid: PMC13605142\ntrack: Oncology (PD-1/ADC/CAR-T)\nsource_url: https://europepmc.org/article/PMC/PMC13605142\n---\n\n# Cellular and Immunotherapy for Pediatric Brain Tumors: A Primer\n\n- **DOI / PMCID**: https://doi.org/10.3390/curroncol33090522 (PMC13605142)\n- **Journal**: Current Oncology\n- **Published**: 2026\n- **Authors**: Irem Yenidogan, Nirav Thacker, Anirban Das, Magimairajan Issai Vanan\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 5: Clinical Trials of Oncolytic Viral therapies in Pediatric Brain Tumors.**\n\n| Case Reports |  |  |  |  |  |\n| Study | Phase | Tumor types (strata) | Agent(s)/Schema | Efficacy | Status |\n| Blumenthal et al. 2016 early PD-1 experience [50] | 5 pediatric patients with recurrent CNS tumors | 2 diffuse brainstem gliomas, 1 GB, 1 ATRT, 1 medulloblastoma. | Pembrolizumab ± bevacizumab | 5 children treated with pembrolizumab, all had progressive disease; median OS was only 3.2 months in children—prompting the authors to explicitly advise against further unselected use | Negative for unselected patients |\n| Gorsi et al. 2019 [51] | Retrospective; 10 pediatric patients | 5 HGG, 1 LGG, 1 pineoblastoma, 1 medulloblastoma, 1 ependymoma, 1 CNS embryonal tumor NOS | Nivolumab | Among 10 nivolumab-treated patients, 3 had partial responses at the primary site | Negative in unselected, heavily pretreated pediatric brain tumors, with different median survival by PD-L1 status despite a very low median TMB of 1.3 mut/Mb |\n| Cacciotti et al. 2020 (11-patient series) [52] | Retrospective series; 11 pediatric patients | DIPG [2], HGG [5], ependymoma [1], craniopharyngioma [1], high-grade neuroepithelial tumor (HGNET) [1], and NGGCT/choriocarcinoma [1] | Ipilimumab, nivolumab,pembrolizumab | In 11 patients iRANO-based responses were 3 PR, 7 SD, 1 PD, with 2 durable responders; treatment stopped for progression in 7 and for toxicity in only 2 | Completed; exploratory signal that biology-enriched subsets may respond |\n| Kline et al. 2018 DIPG nivolumab ± re-irradiation [53] | Retrospective single-institution cohort; recurrent DIPG after initial RT | 31 pediatric DIPG at recurrence after initial RT (8 re-irradiation + nivolumab, 4 re-irradiation alone, 19 historical RT-only) DIPG | Concurrent re-irradiation with nivolumab followed by maintenance nivolumab vs. re-irradiation alone vs. RT-only historical cohort | Median OS was 22.9 months with reirradiation plus nivolumab vs. 20.4 months with reirradiation alone vs. 8.3 months with neither | Supports feasibility and safety of combining PD-1 blockade with re-irradiation |\n| AlHarbi et al. 2018 [54] | Single-patient case report | supratentorial glioblastoma (WHO grade IV), CMMRD-associated | Nivolumab monotherapy | A 5-year-old female with CMMRD with 60% tumor shrinkage on nivolumab with no adverse reactions through 10 months, remaining fully ambulatory with a normal neurologic exam. | Supports germline MMRd can have ICI sensitivity |\n| Henderson et al. 2022 ICI for Synchronous Hypermutated Cancers [55] | Two patients with synchronous, progressive, and metastatic malignancies | GBM + rectal adenocarcinomaGrade 3 Astrocytoma + Transitional cell carcinoma | Pembrolizumab, Nivolumab | Prolonged survival | Demonstrates the efficacy of immunotherapy asa rational approach for patients with CMMRD and synchronous cancers |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "22.9",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2703,
+          "end": 2714,
+          "quote": "22.9 months"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_02",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/01_PMC13605142.md",
+    "question": "在 Kline et al. 2018 报道的复发性 DIPG 队列中，reirradiation plus nivolumab 组的中位总生存期（22.9 months）比 reirradiation alone 组（20.4 months）多多少个月？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3390/curroncol33090522\npmcid: PMC13605142\ntrack: Oncology (PD-1/ADC/CAR-T)\nsource_url: https://europepmc.org/article/PMC/PMC13605142\n---\n\n# Cellular and Immunotherapy for Pediatric Brain Tumors: A Primer\n\n- **DOI / PMCID**: https://doi.org/10.3390/curroncol33090522 (PMC13605142)\n- **Journal**: Current Oncology\n- **Published**: 2026\n- **Authors**: Irem Yenidogan, Nirav Thacker, Anirban Das, Magimairajan Issai Vanan\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 5: Clinical Trials of Oncolytic Viral therapies in Pediatric Brain Tumors.**\n\n| Case Reports |  |  |  |  |  |\n| Study | Phase | Tumor types (strata) | Agent(s)/Schema | Efficacy | Status |\n| Blumenthal et al. 2016 early PD-1 experience [50] | 5 pediatric patients with recurrent CNS tumors | 2 diffuse brainstem gliomas, 1 GB, 1 ATRT, 1 medulloblastoma. | Pembrolizumab ± bevacizumab | 5 children treated with pembrolizumab, all had progressive disease; median OS was only 3.2 months in children—prompting the authors to explicitly advise against further unselected use | Negative for unselected patients |\n| Gorsi et al. 2019 [51] | Retrospective; 10 pediatric patients | 5 HGG, 1 LGG, 1 pineoblastoma, 1 medulloblastoma, 1 ependymoma, 1 CNS embryonal tumor NOS | Nivolumab | Among 10 nivolumab-treated patients, 3 had partial responses at the primary site | Negative in unselected, heavily pretreated pediatric brain tumors, with different median survival by PD-L1 status despite a very low median TMB of 1.3 mut/Mb |\n| Cacciotti et al. 2020 (11-patient series) [52] | Retrospective series; 11 pediatric patients | DIPG [2], HGG [5], ependymoma [1], craniopharyngioma [1], high-grade neuroepithelial tumor (HGNET) [1], and NGGCT/choriocarcinoma [1] | Ipilimumab, nivolumab,pembrolizumab | In 11 patients iRANO-based responses were 3 PR, 7 SD, 1 PD, with 2 durable responders; treatment stopped for progression in 7 and for toxicity in only 2 | Completed; exploratory signal that biology-enriched subsets may respond |\n| Kline et al. 2018 DIPG nivolumab ± re-irradiation [53] | Retrospective single-institution cohort; recurrent DIPG after initial RT | 31 pediatric DIPG at recurrence after initial RT (8 re-irradiation + nivolumab, 4 re-irradiation alone, 19 historical RT-only) DIPG | Concurrent re-irradiation with nivolumab followed by maintenance nivolumab vs. re-irradiation alone vs. RT-only historical cohort | Median OS was 22.9 months with reirradiation plus nivolumab vs. 20.4 months with reirradiation alone vs. 8.3 months with neither | Supports feasibility and safety of combining PD-1 blockade with re-irradiation |\n| AlHarbi et al. 2018 [54] | Single-patient case report | supratentorial glioblastoma (WHO grade IV), CMMRD-associated | Nivolumab monotherapy | A 5-year-old female with CMMRD with 60% tumor shrinkage on nivolumab with no adverse reactions through 10 months, remaining fully ambulatory with a normal neurologic exam. | Supports germline MMRd can have ICI sensitivity |\n| Henderson et al. 2022 ICI for Synchronous Hypermutated Cancers [55] | Two patients with synchronous, progressive, and metastatic malignancies | GBM + rectal adenocarcinomaGrade 3 Astrocytoma + Transitional cell carcinoma | Pembrolizumab, Nivolumab | Prolonged survival | Demonstrates the efficacy of immunotherapy asa rational approach for patients with CMMRD and synchronous cancers |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "2.5",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2703,
+          "end": 2714,
+          "quote": "22.9 months"
+        },
+        {
+          "start": 2753,
+          "end": 2764,
+          "quote": "20.4 months"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_03",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/05_PMC13555379.md",
+    "question": "在《Resistance mechanisms and countermeasures in CLDN18.2-positive tumors》的临床试验表中，SPOTLIGHT（NCT03504397）试验的样本量 N 是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3389/fonc.2026.1910011\npmcid: PMC13555379\ntrack: Oncology (PD-1/ADC/CAR-T)\nsource_url: https://europepmc.org/article/PMC/PMC13555379\n---\n\n# Resistance mechanisms and countermeasures in CLDN18.2-positive tumors: from molecular networks to clinical practice\n\n- **DOI / PMCID**: https://doi.org/10.3389/fonc.2026.1910011 (PMC13555379)\n- **Journal**: Frontiers in Oncology\n- **Published**: 2026\n- **Authors**: Yutao Xia, Mingfang Wang, Taosheng Huang, Kai Sun, Peng Wang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: The present review versus prior CLDN18.2 reviews.**\n\n| NCT number | Drug / regimen | Modality | Line | Tumor type | N | Status / primary completion | Resistance dimension addressed* |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| NCT03504397 | Zolbetuximab + mFOLFOX6 (SPOTLIGHT) | mAb | 1L | GC/GEJC | 565 | Completed | Baseline antigen-targeted; ADCC/CDC |\n| NCT03653507 | Zolbetuximab + CAPOX (GLOW) | mAb | 1L | GC/GEJC | 507 | Completed | Baseline antigen-targeted; ADCC/CDC |\n| NCT06901531 | Zolbetuximab + Pembrolizumab + Chemo | mAb + ICI | 1L | GC/GEJC | 500 | Recruiting; 2028-09 | Immunosuppressive TME (PD-L1 co-expr.; EBV/MSI) |\n| NCT06177041 | M108 + CAPOX | mAb | 1L | GC/GEJC (PD-L1 CPS<5) | 486 | Recruiting; 2027-01 | Antigen heterogeneity; PD-L1-low subgroup |\n| NCT07431281 | Sonesitatug vedotin ± Rilvegostomig | ADC | 1L | GC/GEJC/EAC | 2130 | Recruiting; 2029-08 | Antigen heterogeneity (bystander); ICI resistance (36) |\n| NCT06346392 | AZD0901 (CMG901) vs. SoC | ADC | 2L+ | GC/GEJC | 572 | Recruiting; 2026-05 | Acquired antigen loss; autophagy escape† (75) |\n| NCT06238843 | IBI343 vs. SoC | ADC | 2L+ | GC/GEJC | 450 | Recruiting; 2026-12 | Acquired antigen loss; autophagy escape† (75) |\n| NCT06351020 | LM-302 vs. Apatinib / Irinotecan | ADC | 2L+ | GC/GEJC | 387 | Active; 2026-11 | Acquired antigen loss; heterogeneity (bystander) (36) |\n| NCT07385703 | LM-302 + Tislelizumab + CAPOX | ADC + ICI | 1L | GC/GEJC | 752 | Not yet recruiting; 2028-10 | ICI resistance in MSS (ICD via payload)† (76) |\n| NCT07284134 | JS107 vs. SoC | ADC | 2L+ | GC/GEJC | 560 | Recruiting; 2027-10 | Acquired antigen loss; post-zolbetuximab† |\n| NCT07518147 | BL-M05D1 vs. SoC | ADC | 2L+ | GC/GEJC | 438 | Not yet recruiting; 2029-12 | Acquired antigen loss; post-zolbetuximab† |\n| NCT07066098 | IBI343 vs. Placebo (G-HOPE-002) | ADC | 2L+ | Pancreatic | 201 | Recruiting; 2027-06 | PDAC: ZIC2-ERK1/2 axis; MDSC barrier† (48) |\n| NCT07079228 | QLS31905 + Nab-P + Gemcitabine | Bispecific | 1L | Pancreatic | 602 | Recruiting; 2028-12 | PDAC: MDSC immunosuppression; T-cell redirection |\n| NCT07103668 | CLDN18.2 CAR-T vs. Control | CAR-T | Locally adv. | Locally advanced GC | 150 | Recruiting; 2027-05 | TME immunosuppression (IDO1 axis); infiltration barrier (68) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "565",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1055,
+          "end": 1135,
+          "quote": "| NCT03504397 | Zolbetuximab + mFOLFOX6 (SPOTLIGHT) | mAb | 1L | GC/GEJC | 565 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_04",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/05_PMC13555379.md",
+    "question": "在 CLDN18.2 临床试验表中，两项已完成的 Zolbetuximab 一线 III 期试验 SPOTLIGHT（NCT03504397）与 GLOW（NCT03653507）的样本量 N 合计为多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3389/fonc.2026.1910011\npmcid: PMC13555379\ntrack: Oncology (PD-1/ADC/CAR-T)\nsource_url: https://europepmc.org/article/PMC/PMC13555379\n---\n\n# Resistance mechanisms and countermeasures in CLDN18.2-positive tumors: from molecular networks to clinical practice\n\n- **DOI / PMCID**: https://doi.org/10.3389/fonc.2026.1910011 (PMC13555379)\n- **Journal**: Frontiers in Oncology\n- **Published**: 2026\n- **Authors**: Yutao Xia, Mingfang Wang, Taosheng Huang, Kai Sun, Peng Wang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: The present review versus prior CLDN18.2 reviews.**\n\n| NCT number | Drug / regimen | Modality | Line | Tumor type | N | Status / primary completion | Resistance dimension addressed* |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| NCT03504397 | Zolbetuximab + mFOLFOX6 (SPOTLIGHT) | mAb | 1L | GC/GEJC | 565 | Completed | Baseline antigen-targeted; ADCC/CDC |\n| NCT03653507 | Zolbetuximab + CAPOX (GLOW) | mAb | 1L | GC/GEJC | 507 | Completed | Baseline antigen-targeted; ADCC/CDC |\n| NCT06901531 | Zolbetuximab + Pembrolizumab + Chemo | mAb + ICI | 1L | GC/GEJC | 500 | Recruiting; 2028-09 | Immunosuppressive TME (PD-L1 co-expr.; EBV/MSI) |\n| NCT06177041 | M108 + CAPOX | mAb | 1L | GC/GEJC (PD-L1 CPS<5) | 486 | Recruiting; 2027-01 | Antigen heterogeneity; PD-L1-low subgroup |\n| NCT07431281 | Sonesitatug vedotin ± Rilvegostomig | ADC | 1L | GC/GEJC/EAC | 2130 | Recruiting; 2029-08 | Antigen heterogeneity (bystander); ICI resistance (36) |\n| NCT06346392 | AZD0901 (CMG901) vs. SoC | ADC | 2L+ | GC/GEJC | 572 | Recruiting; 2026-05 | Acquired antigen loss; autophagy escape† (75) |\n| NCT06238843 | IBI343 vs. SoC | ADC | 2L+ | GC/GEJC | 450 | Recruiting; 2026-12 | Acquired antigen loss; autophagy escape† (75) |\n| NCT06351020 | LM-302 vs. Apatinib / Irinotecan | ADC | 2L+ | GC/GEJC | 387 | Active; 2026-11 | Acquired antigen loss; heterogeneity (bystander) (36) |\n| NCT07385703 | LM-302 + Tislelizumab + CAPOX | ADC + ICI | 1L | GC/GEJC | 752 | Not yet recruiting; 2028-10 | ICI resistance in MSS (ICD via payload)† (76) |\n| NCT07284134 | JS107 vs. SoC | ADC | 2L+ | GC/GEJC | 560 | Recruiting; 2027-10 | Acquired antigen loss; post-zolbetuximab† |\n| NCT07518147 | BL-M05D1 vs. SoC | ADC | 2L+ | GC/GEJC | 438 | Not yet recruiting; 2029-12 | Acquired antigen loss; post-zolbetuximab† |\n| NCT07066098 | IBI343 vs. Placebo (G-HOPE-002) | ADC | 2L+ | Pancreatic | 201 | Recruiting; 2027-06 | PDAC: ZIC2-ERK1/2 axis; MDSC barrier† (48) |\n| NCT07079228 | QLS31905 + Nab-P + Gemcitabine | Bispecific | 1L | Pancreatic | 602 | Recruiting; 2028-12 | PDAC: MDSC immunosuppression; T-cell redirection |\n| NCT07103668 | CLDN18.2 CAR-T vs. Control | CAR-T | Locally adv. | Locally advanced GC | 150 | Recruiting; 2027-05 | TME immunosuppression (IDO1 axis); infiltration barrier (68) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "1072",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1055,
+          "end": 1135,
+          "quote": "| NCT03504397 | Zolbetuximab + mFOLFOX6 (SPOTLIGHT) | mAb | 1L | GC/GEJC | 565 |"
+        },
+        {
+          "start": 1186,
+          "end": 1258,
+          "quote": "| NCT03653507 | Zolbetuximab + CAPOX (GLOW) | mAb | 1L | GC/GEJC | 507 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_05",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/11_PMC13749324.md",
+    "question": "在《Predicting response to GLP-1–based therapy in MASLD/MASH》第 1 张证据分级表中，Semaglutide 2.4 mg 缓解脂肪性肝炎（resolves steatohepatitis）的比例（百分比数值）是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3389/fendo.2026.1962068\npmcid: PMC13749324\ntrack: Metabolic (GLP-1/MASH)\nsource_url: https://europepmc.org/article/PMC/PMC13749324\n---\n\n# Predicting response to GLP-1–based therapy in MASLD/MASH: an evidence-tiered, endpoint-specific framework built on host genotype and gut microbial features\n\n- **DOI / PMCID**: https://doi.org/10.3389/fendo.2026.1962068 (PMC13749324)\n- **Journal**: Frontiers in Endocrinology\n- **Published**: 2026\n- **Authors**: Guojian Zhu, Yucao Huang, Yun Huang, Wenlong Yang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: Provenance of the load-bearing evidence: the intervention actually administered and the endpoint actually measured.**\n\n| # | Finding as used in this review | Ref | Intervention actually administered | Endpoint actually measured | Tier |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Semaglutide resolves steatohepatitis in 62.9% versus 34.3% on placebo | 7,8 | Semaglutide 2.4 mg | Histology, paired biopsy | 1 |\n| 2 | Tirzepatide resolves MASH dose-dependently | 6 | Tirzepatide, dual GIP/GLP-1 | Histology | 1 |\n| 3 | Resmetirom improves steatohepatitis and fibrosis | 5 | Resmetirom, a thyroid hormone receptor-β agonist | Histology | 1 for its own class only |\n| 4 | Hepatic benefit of GLP-1 action is largely indirect | 11,24 | Mechanistic synthesis, no trial | Not applicable | Mechanism |\n| 5 | Part of the lipogenic effect is weight-independent | 25 | Dulaglutide | Hepatic steatosis and de novo lipogenesis in obesity | 2 |\n| 6 | Bile acid metabolism responds more reliably than community composition | 30,31 | Liraglutide and sitagliptin; metformin comparator | Microbial composition, bile acids | 2 |\n| 7 | Genotype modifies hepatic benefit per unit weight lost | 10 | Dietary advice, no drug administered | Liver stiffness, not histology | 3 |\n| 8 | Variant hepatocytes respond less to a directly acting hepatic drug | 39 | Resmetirom in vitro | Cellular phenotype | 3 |\n| 9 | Baseline microbiota predicts response | 12 | Resistant starch, a substrate delivered to the community | Intrahepatic triglyceride | 3 |\n| 10 | Prevotella marks the better metabolic responders | 50,51 | Fiber-rich and whole-grain diets | Body fat and weight, not a hepatic endpoint | 2, direction not stable |\n| 11 | Microbial signature tracks fibrosis stage | 45,46 | None; cross-sectional | Stage of disease, not response to therapy | 2 |\n| 12 | Microbial manipulation does not move hepatic endpoints | 56,59-62 | Synbiotic; fecal microbiota transplantation | Liver fat, validated fibrosis scores | 1, negative |\n| 13 | Cardiovascular benefit does not track baseline FIB-4 category | 74,75 | Semaglutide 2.4 mg | MACE; hepatic phenotype not measured | 1 for the cardiovascular endpoint |\n| 14 | Lifelong liver fat is not causally linked to coronary risk | 79 | None; single genetic instrument | Ischemic heart disease | 2 |\n| 15 | Diabetes status modifies drug-specific fibrosis response | Section 6.2 | Separate trials of different agents, compared across | Histology, no formal interaction test | 2 |\n| 16 | Community composition is confounded by concomitant medication | 47,48 | Metformin, not an incretin | Composition, glucose tolerance | 2 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "62.9",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1175,
+          "end": 1180,
+          "quote": "62.9%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_06",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/11_PMC13749324.md",
+    "question": "在《Predicting response to GLP-1–based therapy in MASLD/MASH》第 1 张证据分级表中，Semaglutide 2.4 mg 缓解脂肪性肝炎的比例（62.9%）比安慰剂组（34.3%）高多少个百分点？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3389/fendo.2026.1962068\npmcid: PMC13749324\ntrack: Metabolic (GLP-1/MASH)\nsource_url: https://europepmc.org/article/PMC/PMC13749324\n---\n\n# Predicting response to GLP-1–based therapy in MASLD/MASH: an evidence-tiered, endpoint-specific framework built on host genotype and gut microbial features\n\n- **DOI / PMCID**: https://doi.org/10.3389/fendo.2026.1962068 (PMC13749324)\n- **Journal**: Frontiers in Endocrinology\n- **Published**: 2026\n- **Authors**: Guojian Zhu, Yucao Huang, Yun Huang, Wenlong Yang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: Provenance of the load-bearing evidence: the intervention actually administered and the endpoint actually measured.**\n\n| # | Finding as used in this review | Ref | Intervention actually administered | Endpoint actually measured | Tier |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Semaglutide resolves steatohepatitis in 62.9% versus 34.3% on placebo | 7,8 | Semaglutide 2.4 mg | Histology, paired biopsy | 1 |\n| 2 | Tirzepatide resolves MASH dose-dependently | 6 | Tirzepatide, dual GIP/GLP-1 | Histology | 1 |\n| 3 | Resmetirom improves steatohepatitis and fibrosis | 5 | Resmetirom, a thyroid hormone receptor-β agonist | Histology | 1 for its own class only |\n| 4 | Hepatic benefit of GLP-1 action is largely indirect | 11,24 | Mechanistic synthesis, no trial | Not applicable | Mechanism |\n| 5 | Part of the lipogenic effect is weight-independent | 25 | Dulaglutide | Hepatic steatosis and de novo lipogenesis in obesity | 2 |\n| 6 | Bile acid metabolism responds more reliably than community composition | 30,31 | Liraglutide and sitagliptin; metformin comparator | Microbial composition, bile acids | 2 |\n| 7 | Genotype modifies hepatic benefit per unit weight lost | 10 | Dietary advice, no drug administered | Liver stiffness, not histology | 3 |\n| 8 | Variant hepatocytes respond less to a directly acting hepatic drug | 39 | Resmetirom in vitro | Cellular phenotype | 3 |\n| 9 | Baseline microbiota predicts response | 12 | Resistant starch, a substrate delivered to the community | Intrahepatic triglyceride | 3 |\n| 10 | Prevotella marks the better metabolic responders | 50,51 | Fiber-rich and whole-grain diets | Body fat and weight, not a hepatic endpoint | 2, direction not stable |\n| 11 | Microbial signature tracks fibrosis stage | 45,46 | None; cross-sectional | Stage of disease, not response to therapy | 2 |\n| 12 | Microbial manipulation does not move hepatic endpoints | 56,59-62 | Synbiotic; fecal microbiota transplantation | Liver fat, validated fibrosis scores | 1, negative |\n| 13 | Cardiovascular benefit does not track baseline FIB-4 category | 74,75 | Semaglutide 2.4 mg | MACE; hepatic phenotype not measured | 1 for the cardiovascular endpoint |\n| 14 | Lifelong liver fat is not causally linked to coronary risk | 79 | None; single genetic instrument | Ischemic heart disease | 2 |\n| 15 | Diabetes status modifies drug-specific fibrosis response | Section 6.2 | Separate trials of different agents, compared across | Histology, no formal interaction test | 2 |\n| 16 | Community composition is confounded by concomitant medication | 47,48 | Metformin, not an incretin | Composition, glucose tolerance | 2 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "28.6",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1175,
+          "end": 1180,
+          "quote": "62.9%"
+        },
+        {
+          "start": 1188,
+          "end": 1193,
+          "quote": "34.3%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_07",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/19_PMC13119887.md",
+    "question": "在《Potential Public Health and Economic Impact of the Next-Generation COVID-19 Vaccine mRNA-1283 in The Netherlands》表的疫苗相关不良事件（Vaccine related AEs）部分中，mRNA-1283 发生 Grade 3 systemic 不良事件的概率是多少（百分比数值）？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3390/vaccines14040364\npmcid: PMC13119887\ntrack: mRNA/Vaccines\nsource_url: https://europepmc.org/article/PMC/PMC13119887\n---\n\n# Potential Public Health and Economic Impact of the Next-Generation COVID-19 Vaccine mRNA-1283 in The Netherlands\n\n- **DOI / PMCID**: https://doi.org/10.3390/vaccines14040364 (PMC13119887)\n- **Journal**: Vaccines\n- **Published**: 2026\n- **Authors**: Simon van der Pol, Ekkehard Beck, Tjalke Westra, Maarten Postma, Cornelis Boersma\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table A1: Model inputs.**\n\n| Population | Population | Population | Population | Population | Source |\n| --- | --- | --- | --- | --- | --- |\n\n| Vaccine related AEs |  |  |  |  |  |\n| Probabilities |  | mRNA-1283 | mRNA-1273 | BNT162b2 |  |\n| Grade 3 local |  | 1.61% | 1.17% | 1.17% | [3] |\n| Grade 3 systemic |  | 7.16% | 5.77% | 5.77% | [3] |\n| Anaphylaxis |  | 0.0005% | 0.0005% | 0.0005% | [47] |\n| Myocarditis/pericarditis * |  | 0.0008% | 0.0008% | 0.0008% | [34] |\n| Vaccination coverage |  |  |  |  |  |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "7.16",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1118,
+          "end": 1123,
+          "quote": "7.16%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_08",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/29_PMC13607009.md",
+    "question": "在《Beyond the Needle: Is Liquid Biopsy the Future of Veterinary Medicine?》的 MCED Test 对比表中，Galleri test 分析覆盖的癌症种类数（Cancer Types Analyzed）是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3390/ijms27188183\npmcid: PMC13607009\ntrack: IVD/Diagnostics\nsource_url: https://europepmc.org/article/PMC/PMC13607009\n---\n\n# Beyond the Needle: Is Liquid Biopsy the Future of Veterinary Medicine?\n\n- **DOI / PMCID**: https://doi.org/10.3390/ijms27188183 (PMC13607009)\n- **Journal**: International Journal of Molecular Sciences\n- **Published**: 2026\n- **Authors**: Iga Horodyska, Patrycja Kasperska, Daria Będkowska, Sara Al-Ameri, Aleksandra Adam, Izabela Herman, Marta Miszczak, Joanna Bubak\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 3: Comparative overview of MCED tests in human and veterinary oncology [88,90,128,132,134,138,139,140].**\n\n| MCED Test | Method | Cancer Types Analyzed | Detection of TOO | Reference |\n| --- | --- | --- | --- | --- |\n| CancerSEEK | detection of ctDNA | 8 | 83% of cases | [100] |\n| PanSeer | detection of ctDNA methylation | 5 | not able | [134] |\n| Galleri test | detection of DNA methylation | 50 | 93% of cases | [139] |\n| DELFI test | cfDNA fragmentation | 7 | 75% of cases | [92] |\n| CANDiD * | detection of ctDNA | 8 | Not specified | [135] |\n| Nu.Q * | elevated levels of nucleosomes | 7 | not able | [141] |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "50",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1191,
+          "end": 1243,
+          "quote": "| Galleri test | detection of DNA methylation | 50 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_09",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/29_PMC13607009.md",
+    "question": "在《Beyond the Needle: Is Liquid Biopsy the Future of Veterinary Medicine?》的 MCED Test 对比表中，Galleri test 的组织溯源检出率（Detection of TOO，93%）比 DELFI test（75%）高多少个百分点？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3390/ijms27188183\npmcid: PMC13607009\ntrack: IVD/Diagnostics\nsource_url: https://europepmc.org/article/PMC/PMC13607009\n---\n\n# Beyond the Needle: Is Liquid Biopsy the Future of Veterinary Medicine?\n\n- **DOI / PMCID**: https://doi.org/10.3390/ijms27188183 (PMC13607009)\n- **Journal**: International Journal of Molecular Sciences\n- **Published**: 2026\n- **Authors**: Iga Horodyska, Patrycja Kasperska, Daria Będkowska, Sara Al-Ameri, Aleksandra Adam, Izabela Herman, Marta Miszczak, Joanna Bubak\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 3: Comparative overview of MCED tests in human and veterinary oncology [88,90,128,132,134,138,139,140].**\n\n| MCED Test | Method | Cancer Types Analyzed | Detection of TOO | Reference |\n| --- | --- | --- | --- | --- |\n| CancerSEEK | detection of ctDNA | 8 | 83% of cases | [100] |\n| PanSeer | detection of ctDNA methylation | 5 | not able | [134] |\n| Galleri test | detection of DNA methylation | 50 | 93% of cases | [139] |\n| DELFI test | cfDNA fragmentation | 7 | 75% of cases | [92] |\n| CANDiD * | detection of ctDNA | 8 | Not specified | [135] |\n| Nu.Q * | elevated levels of nucleosomes | 7 | not able | [141] |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "18",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1244,
+          "end": 1256,
+          "quote": "93% of cases"
+        },
+        {
+          "start": 1308,
+          "end": 1320,
+          "quote": "75% of cases"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_10",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/40_NCT01714739.md",
+    "question": "在 NCT01714739 临床试验已公布的主要终点结果中，Part 1/2: Liri 3 + Nivo 3 组发生任意不良事件（AEs）的人数比发生严重不良事件（SAEs）的人数多多少人？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC0-1.0\nnct_id: NCT01714739\nsource_url: https://clinicaltrials.gov/study/NCT01714739\ntrack: Oncology (PD-1/ADC/CAR-T)\n---\n\n# A Phase 1/2 Study of the Combination of Lirilumab (Anti-KIR) Plus Nivolumab (Anti-PD-1) or Lirilumab Plus Nivolumab and Ipilimumab in Advanced Refractory Solid Tumors\n\n- **NCT ID**: NCT01714739\n- **Track**: Oncology (PD-1/ADC/CAR-T)\n- **Sponsor**: Bristol-Myers Squibb\n- **Status**: COMPLETED (INTERVENTIONAL, Phase: PHASE1, PHASE2, Enrollment: 337)\n- **Conditions**: CANCER,NOS\n- **Interventions**: DRUG: Lirilumab, DRUG: Nivolumab, DRUG: Ipilimumab\n- **License**: CC0-1.0 (US NIH ClinicalTrials.gov Public Domain)\n\n## Study Summary\n\nTo assess the safety and tolerability and preliminary anti-tumor activity of lirilumab (BMS-986015) given in combination with nivolumab (BMS-936558) and to identify dose limiting toxicities (DLTs) and the maximally tolerated dose (MTD) of the combination. In addition, to assess the combinations of lirilumab and nivolumab or lirilumab and nivolumab plus ipilimumab (BMS-734016) in subjects with advanced (metastatic and/or unresectable) refractory solid tumors.\n\n## Posted Outcome Measures\n\n### [PRIMARY] Number of Participants With Adverse Events (AEs) - Parts 1, 2 and 5\n- **Time Frame**: From first dose to 150 days post last dose (up to an average of 51 weeks and a maximum of 2.5 years) | **Unit**: Participants\n\n| Category / Measure | Part 1/2 Liri 0.1 + Nivo 3 | Part 1/2: Liri 0.3 + Nivo 3 | Part 1/2: Liri 1 + Nivo 3 | Part 1/2: Liri 3 + Nivo 3 | Part 5: Liri 3 + Nivo 3 + Ipi 1 |\n| --- | --- | --- | --- | --- | --- |\n| Overall | 4 | 16 | 15 | 284 | 10 |\n\n### [PRIMARY] Number of Participants With Serious Adverse Events (SAEs) - Parts 1, 2 and 5\n- **Time Frame**: From first dose to 150 days post last dose (up to an average of 51 weeks and a maximum of 2.5 years) | **Unit**: Participants\n\n| Category / Measure | Part 1/2 Liri 0.1 + Nivo 3 | Part 1/2: Liri 0.3 + Nivo 3 | Part 1/2: Liri 1 + Nivo 3 | Part 1/2: Liri 3 + Nivo 3 | Part 5: Liri 3 + Nivo 3 + Ipi 1 |\n| --- | --- | --- | --- | --- | --- |\n| Overall | 1 | 8 | 9 | 205 | 7 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "79",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1657,
+          "end": 1660,
+          "quote": "284"
+        },
+        {
+          "start": 2139,
+          "end": 2142,
+          "quote": "205"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_11",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/41_NCT02771574.md",
+    "question": "在 NCT02771574 临床试验主要终点 Nadir Glucose 表中，Part B: Liq Avexitide 0.38 (±0.03) mg/kg 组在第 3 天（Day 3）的最低血糖均值（括号前数值）比基线（Baseline）高多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC0-1.0\nnct_id: NCT02771574\nsource_url: https://clinicaltrials.gov/study/NCT02771574\ntrack: Metabolic (GLP-1/MASH)\n---\n\n# A Phase 2 Multi-Ascending Dose Trial to Assess the Efficacy, Tolerability and Pharmacokinetic Profile of Exendin (9-39) in Patients With Post-bariatric Hyperinsulinemic Hypoglycemia\n\n- **NCT ID**: NCT02771574\n- **Track**: Metabolic (GLP-1/MASH)\n- **Sponsor**: Tracey McLaughlin\n- **Status**: COMPLETED (INTERVENTIONAL, Phase: PHASE2, Enrollment: 19)\n- **Conditions**: Post Bariatric Hypoglycemia\n- **Interventions**: DRUG: Lyo avexitide, DRUG: Liq avexitide\n- **License**: CC0-1.0 (US NIH ClinicalTrials.gov Public Domain)\n\n## Study Summary\n\nThis study is designed to evaluate the efficacy, safety and pharmacokinetics of subcutaneous exendin (9-39) in subjects with post-bariatric hypoglycemia. Development of this subcutaneous formulation of exendin (9-39) would represent a targeted therapeutic approach for this rare disease with unmet clinical need.\n\n## Posted Outcome Measures\n\n### [PRIMARY] Nadir Glucose\n- **Time Frame**: Day 3 (time zero then every 30 minutes until 180 minutes or gylcemic rescue was required) | **Unit**: mg/dL\n\n| Category / Measure | Part A: Lyo Avexitide 0.5 mg/kg | Part A: Lyo Avexitide 0.15 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg | Part A: Lyo Avexitide 0.46 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg and 0.46 mg/kg Groups | Part B: Liq Avexitide 0.38 (±0.03) mg/kg |\n| --- | --- | --- | --- | --- | --- | --- |\n| Baseline | 41 (±5) | 43 (±7) | 39 (±7) | 42 (±4) | 41 (±5) | 41 (±9) |\n| Day 3 | 45 (±6) | 46 (±12) | 51 (±3) | 59 (±14) | 55 (±10) | 60 (±13) |\n\n### [SECONDARY] Change in Composite Symptom Score as a Measure of Treatment Effect\n- **Time Frame**: Baseline, Day 3 | **Unit**: score on a scale\n\n| Category / Measure | Part A: Lyo Avexitide 0.5 mg/kg | Part A: Lyo Avexitide 0.15 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg | Part A: Lyo Avexitide 0.46 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg and 0.46 mg/kg Groups | Part B: Liq Avexitide 0.38 (±0.03) mg/kg |\n| --- | --- | --- | --- | --- | --- | --- |\n| Baseline | 25 (±7) | 12 (±4) | 22 (±13) | 15 (±1) | 19 (±9) | 17 (±12) |\n| Day 3 | 25 (±11) | 12 (±9) | 15 (±11) | 7 (±3) | 11 (±8) | 9 (±8) |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "19",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 1645,
+          "end": 1653,
+          "quote": "60 (±13)"
+        },
+        {
+          "start": 1572,
+          "end": 1579,
+          "quote": "41 (±9)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_bio_12",
+    "track": "biomed_clinical",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/46_NCT06602531.md",
+    "question": "在 NCT06602531 疫苗试验的 7 日内征集性不良事件（Solicited Adverse Events）表中，D1,57 Cohort: ARCT-2304 12 µg 组在首剂接种后（Post dose 1）的人数比第二剂后（Post dose 2）多多少人？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC0-1.0\nnct_id: NCT06602531\nsource_url: https://clinicaltrials.gov/study/NCT06602531\ntrack: mRNA/Vaccines\n---\n\n# A Phase 1, First-in-human, Randomized, Observer-blind, Parallel Design, Controlled, Dose Level and Schedule-finding Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of a Self-Amplifying mRNA Pandemic Influenza Vaccine (ARCT-2304) When Administered to Healthy Adults\n\n- **NCT ID**: NCT06602531\n- **Track**: mRNA/Vaccines\n- **Sponsor**: Arcturus Therapeutics, Inc.\n- **Status**: COMPLETED (INTERVENTIONAL, Phase: PHASE1, PHASE2, Enrollment: 212)\n- **Conditions**: Influenza, Human\n- **Interventions**: BIOLOGICAL: ARCT-2304, BIOLOGICAL: Control vaccine younger adults, BIOLOGICAL: Control vaccine older adults, OTHER: Placebo Vaccine\n- **License**: CC0-1.0 (US NIH ClinicalTrials.gov Public Domain)\n\n## Study Summary\n\nThe goal of this clinical trial is to evaluate the safety and immune responses of three different dose levels a self-amplifying RNA pandemic influenza vaccine (ARCT-2304) in adults. The key objectives of the study are: * To evaluate safety and reactogenicity of different dose levels of the ARCT-2304 vaccine * To describe the Immune responses of different dose levels of the ARCT-2304 vaccine as measured by hemagglutination inhibition (HAI) and neuraminidase enzyme-linked lectin (ELLA) antibody responses Researchers will compare the results with licensed influenza vaccines to select the most optimal dose level and schedule for vaccine administration in terms of safety and immunogenicity for further development of the vaccine. Participants will receive 2 doses of the ARCT-2304 vaccine or 1 dose of licensed influenza vaccine and 1 dose of placebo. They will be asked: * to complete a daily diary for 7 days after each vaccination, answering questions how they have been feeling on that day. * to provide blood samples at each visit in the clinic * to comply with all study visits and procedures (e.g., be available for planned telephone contacts and unscheduled clinic visits, if required)\n\n## Posted Outcome Measures\n\n### [PRIMARY] Number of Participants With Solicited Adverse Events (AEs) Within 7 Days After Each Vaccination\n- **Time Frame**: 7 days post each dose | **Unit**: Participants\n\n| Category / Measure | D1,29 Cohort: ARCT-2304 1.5 µg | D1,29 Cohort: ARCT-2304 5 µg | D1,29 Cohort: ARCT-2304 12 µg | D1,29 Cohort: Control/Placebo | D1,57 Cohort: ARCT-2304 1.5µg | D1,57 Cohort: ARCT-2304 5 µg | D1,57 Cohort: ARCT-2304 12 µg | D1,57 Cohort: Control/Placebo |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Post dose 1 | 17 | 22 | 23 | 19 | 17 | 23 | 23 | 19 |\n| Post dose 2 | 15 | 22 | 24 | 11 | 14 | 21 | 20 | 12 |",
+    "expected": {
+      "status": "ANSWER",
+      "value": "3",
+      "type": "number",
+      "evidence": [
+        {
+          "start": 2624,
+          "end": 2679,
+          "quote": "| Post dose 1 | 17 | 22 | 23 | 19 | 17 | 23 | 23 | 19 |"
+        },
+        {
+          "start": 2680,
+          "end": 2735,
+          "quote": "| Post dose 2 | 15 | 22 | 24 | 11 | 14 | 21 | 20 | 12 |"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sci_abs_01",
+    "track": "absent",
+    "expect_path_sub": "data/raw/ai-papers-ccby/11_10.48550_arxiv.2210.03629.md",
+    "expect_absent": true,
+    "question": "在 ReAct 论文第一张结果对比表中，ReAct 在 MMLU (5-shot) 基准上的准确率是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2210.03629\ntrack: Reasoning / RLVR / Neuro-Symbolic\nsource_url: https://arxiv.org/html/2210.03629\n---\n\n# ReAct: Synergizing Reasoning and Acting in Language Models\n\n- **Track**: Reasoning / RLVR / Neuro-Symbolic\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2210.03629\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2022 | **Cited By**: 9705\n- **Authors**: Yao, Shunyu, Jeffrey W. Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Benchmark & Results Tables\n\n**Table 1: PaLM-540B prompting results on HotpotQA and Fever. Figure 2: PaLM-540B prompting results with respect to number of CoT-SC samples used.**\n\n| Prompt Method | HotpotQA | Fever |\n| --- | --- | --- |\n| Prompt Method | (EM) | (Acc) |\n| Standard | 28.7 | 57.1 |\n| CoT (Wei et al., 2022) | 29.4 | 56.3 |\n| CoT-SC (Wang et al., 2022a) | 33.4 | 60.4 |\n| Act | 25.7 | 58.9 |\n| ReAct | 27.4 | 60.9 |\n| CoT-SC → ReAct | 34.2 | 64.6 |\n| ReAct→ CoT-SC | 35.1 | 62.0 |\n| Supervised SoTA | 67.5 | 89.5 |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "sci_abs_02",
+    "track": "absent",
+    "expect_path_sub": "data/raw/ai-papers-ccby/32_10.48550_arxiv.2507.05595.md",
+    "expect_absent": true,
+    "question": "在 PaddleOCR 3.0 Technical Report 的 Recall@1 对比表中，DeepSeek-OCR 的 Recall@1 得分是多少？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.48550/arxiv.2507.05595\ntrack: Document / Table Understanding\nsource_url: https://arxiv.org/html/2507.05595\n---\n\n# PaddleOCR 3.0 Technical Report\n\n- **Track**: Document / Table Understanding\n- **DOI / OpenAlex**: https://doi.org/10.48550/arxiv.2507.05595\n- **Journal / Venue**: arXiv (Cornell University)\n- **Year**: 2025 | **Cited By**: 464\n- **Authors**: Cui, Cheng, Sun, Ting, Manhui Lin, Tingquan Gao, Zhang, Yubo, Jiaxuan Liu, Xueqing Wang, Zelun Zhang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Abstract\n\nThis technical report introduces PaddleOCR 3.0, an Apache-licensed open-source toolkit for OCR and document parsing. To address the growing demand for document understanding in the era of large language models, PaddleOCR 3.0 presents three major solutions: (1) PP-OCRv5 for multilingual text recognition, (2) PP-StructureV3 for hierarchical document parsing, and (3) PP-ChatOCRv4 for key information extraction. Compared to mainstream vision-language models (VLMs), these models with fewer than 100 million parameters achieve competitive accuracy and efficiency, rivaling billion-parameter VLMs. In addition to offering a high-quality OCR model library, PaddleOCR 3.0 provides efficient tools for training, inference, and deployment, supports heterogeneous hardware acceleration, and enables developers to easily build intelligent document applications.\n\n## Benchmark & Results Tables\n\n**Table 1: Comprehensive evaluation of document parsing methods on OmniDocBench.**\n\n| Method Type | Methods | Edit ↓ | Col 4 |\n| --- | --- | --- | --- |\n| Method Type | Methods | EN | ZH |\n| Pipeline Tools | PP-StructureV3 | 0.145 | 0.206 |\n| Pipeline Tools | MinerU-1.3.11 (Wang et al., 2024) | 0.166 | 0.310 |\n| Pipeline Tools | MinerU-0.9.3 (Wang et al., 2024) | 0.150 | 0.357 |\n| Pipeline Tools | Mathpix1 | 0.191 | 0.365 |\n| Pipeline Tools | Pix2Text-1.1.2.3 (breezedeus, 2022) | 0.320 | 0.528 |\n| Pipeline Tools | Marker-1.2.3 (Paruchuri, 2023) | 0.336 | 0.556 |\n| Pipeline Tools | Unstructured-0.17.2 (Unstructured-IO, 2022) | 0.586 | 0.716 |\n| Pipeline Tools | OpenParse-0.7.0 (Filimoa, 2024) | 0.646 | 0.814 |\n| Pipeline Tools | Docling-2.14.0 (Docling Team, 2024) | 0.589 | 0.909 |\n| Expert VLMs | GOT-OCR2.0 (Wei et al., 2024) | 0.287 | 0.411 |\n| Expert VLMs | Mistral OCR2 | 0.268 | 0.439 |\n| Expert VLMs | OLMOCR-sglang (Poznanski et al., 2025) | 0.326 | 0.469 |\n| Expert VLMs | SmolDocling-256M_transformer (Nassar et al., 2025) | 0.493 | 0.816 |\n| Expert VLMs | Nougat (Blecher et al., 2023) | 0.452 | 0.973 |\n| General VLMs | Gemini2.5-Pro3 | 0.148 | 0.212 |\n| General VLMs | Gemini2.0-flash4 | 0.191 | 0.264 |\n| General VLMs | Qwen2.5-VL-72B (Yang et al., 2024) | 0.214 | 0.261 |\n| General VLMs | GPT-4o5 | 0.233 | 0.399 |\n| General VLMs | InternVL2-76B (Chen et al., 2024) | 0.440 | 0.443 |\n\n**Table 2: Comprehensive evaluation of various solutions on a custom multi-scenario benchmark: overall recall@1 performance based on ground truth comparison.**\n\n| Methods | Recall@1 |\n| --- | --- |\n| GPT-4o | 63.47% |\n| PP-ChatOCRv3 | 70.08% |\n| Qwen2.5-VL-72B | 80.26% |\n| PP-ChatOCRv4 | 85.55% |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "sci_abs_03",
+    "track": "absent",
+    "expect_path_sub": "data/raw/ai-papers-ccby/15_10.1038_s41586-023-06747-5.md",
+    "expect_absent": true,
+    "question": "在 AlphaGeometry 论文的 IMO-AG-30 基准测试对比表中，Claude 3.7 Sonnet 一共解出了多少道题？",
+    "oracle_document": "---\ncorpus: ai-papers-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.1038/s41586-023-06747-5\ntrack: Reasoning / RLVR / Neuro-Symbolic\nsource_url: https://openalex.org/W4390940921\npmcid: PMC10794143\n---\n\n# Solving olympiad geometry without human demonstrations\n\n- **DOI / PMCID**: https://doi.org/10.1038/s41586-023-06747-5 (PMC10794143)\n- **Journal**: Nature\n- **Published**: 2024\n- **Authors**: Trieu H Trinh, Yuhuai Wu, Quoc V Le, He He, Thang Luong\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: Main results on our IMO-AG-30 test benchmark**\n\n| Method | Method | Problems solved (out of 30) |\n| --- | --- | --- |\n| Computer algebra | Wu’s method21 (previous state of the art) | 10 |\n| Computer algebra | Gröbner basis20 | 4 |\n| Search (human-like) | GPT-4 (ref. 25) | 0 |\n| Search (human-like) | Full-angle method30 | 2 |\n| Search (human-like) | Deductive database (DD)10 | 7 |\n| Search (human-like) | DD + human-designed heuristics17 | 9 |\n| Search (human-like) | DD + AR (ours) | 14 |\n| Search (human-like) | DD + AR + GPT-4 auxiliary constructions | 15 |\n| Search (human-like) | DD + AR + human-designed heuristics | 18 |\n| Search (human-like) | AlphaGeometry | 25 |\n| Search (human-like) | • Without pretraining | 21 |\n| Search (human-like) | • Without fine-tuning | 23 |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "sci_abs_04",
+    "track": "absent",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/11_PMC13749324.md",
+    "expect_absent": true,
+    "question": "在《Predicting response to GLP-1–based therapy in MASLD/MASH》第 1 张证据分级表中，Semaglutide 2.4 mg 在 ESSENCE 试验中的 5 年总生存率（5-year overall survival rate）是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC-BY-4.0\ndoi: https://doi.org/10.3389/fendo.2026.1962068\npmcid: PMC13749324\ntrack: Metabolic (GLP-1/MASH)\nsource_url: https://europepmc.org/article/PMC/PMC13749324\n---\n\n# Predicting response to GLP-1–based therapy in MASLD/MASH: an evidence-tiered, endpoint-specific framework built on host genotype and gut microbial features\n\n- **DOI / PMCID**: https://doi.org/10.3389/fendo.2026.1962068 (PMC13749324)\n- **Journal**: Frontiers in Endocrinology\n- **Published**: 2026\n- **Authors**: Guojian Zhu, Yucao Huang, Yun Huang, Wenlong Yang\n- **License**: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)\n- **Adaptation Notice**: Excerpted and converted from open-access XML/HTML tables into structured Markdown pipe tables; cell values preserved verbatim.\n\n## Extracted Clinical & Benchmark Tables\n\n**Table 1: Provenance of the load-bearing evidence: the intervention actually administered and the endpoint actually measured.**\n\n| # | Finding as used in this review | Ref | Intervention actually administered | Endpoint actually measured | Tier |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Semaglutide resolves steatohepatitis in 62.9% versus 34.3% on placebo | 7,8 | Semaglutide 2.4 mg | Histology, paired biopsy | 1 |\n| 2 | Tirzepatide resolves MASH dose-dependently | 6 | Tirzepatide, dual GIP/GLP-1 | Histology | 1 |\n| 3 | Resmetirom improves steatohepatitis and fibrosis | 5 | Resmetirom, a thyroid hormone receptor-β agonist | Histology | 1 for its own class only |\n| 4 | Hepatic benefit of GLP-1 action is largely indirect | 11,24 | Mechanistic synthesis, no trial | Not applicable | Mechanism |\n| 5 | Part of the lipogenic effect is weight-independent | 25 | Dulaglutide | Hepatic steatosis and de novo lipogenesis in obesity | 2 |\n| 6 | Bile acid metabolism responds more reliably than community composition | 30,31 | Liraglutide and sitagliptin; metformin comparator | Microbial composition, bile acids | 2 |\n| 7 | Genotype modifies hepatic benefit per unit weight lost | 10 | Dietary advice, no drug administered | Liver stiffness, not histology | 3 |\n| 8 | Variant hepatocytes respond less to a directly acting hepatic drug | 39 | Resmetirom in vitro | Cellular phenotype | 3 |\n| 9 | Baseline microbiota predicts response | 12 | Resistant starch, a substrate delivered to the community | Intrahepatic triglyceride | 3 |\n| 10 | Prevotella marks the better metabolic responders | 50,51 | Fiber-rich and whole-grain diets | Body fat and weight, not a hepatic endpoint | 2, direction not stable |\n| 11 | Microbial signature tracks fibrosis stage | 45,46 | None; cross-sectional | Stage of disease, not response to therapy | 2 |\n| 12 | Microbial manipulation does not move hepatic endpoints | 56,59-62 | Synbiotic; fecal microbiota transplantation | Liver fat, validated fibrosis scores | 1, negative |\n| 13 | Cardiovascular benefit does not track baseline FIB-4 category | 74,75 | Semaglutide 2.4 mg | MACE; hepatic phenotype not measured | 1 for the cardiovascular endpoint |\n| 14 | Lifelong liver fat is not causally linked to coronary risk | 79 | None; single genetic instrument | Ischemic heart disease | 2 |\n| 15 | Diabetes status modifies drug-specific fibrosis response | Section 6.2 | Separate trials of different agents, compared across | Histology, no formal interaction test | 2 |\n| 16 | Community composition is confounded by concomitant medication | 47,48 | Metformin, not an incretin | Composition, glucose tolerance | 2 |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "sci_abs_05",
+    "track": "absent",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/41_NCT02771574.md",
+    "expect_absent": true,
+    "question": "在 NCT02771574 临床试验主要终点 Nadir Glucose 表中，安慰剂组（Placebo arm）在第 30 天（Day 30）的最低血糖均值是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC0-1.0\nnct_id: NCT02771574\nsource_url: https://clinicaltrials.gov/study/NCT02771574\ntrack: Metabolic (GLP-1/MASH)\n---\n\n# A Phase 2 Multi-Ascending Dose Trial to Assess the Efficacy, Tolerability and Pharmacokinetic Profile of Exendin (9-39) in Patients With Post-bariatric Hyperinsulinemic Hypoglycemia\n\n- **NCT ID**: NCT02771574\n- **Track**: Metabolic (GLP-1/MASH)\n- **Sponsor**: Tracey McLaughlin\n- **Status**: COMPLETED (INTERVENTIONAL, Phase: PHASE2, Enrollment: 19)\n- **Conditions**: Post Bariatric Hypoglycemia\n- **Interventions**: DRUG: Lyo avexitide, DRUG: Liq avexitide\n- **License**: CC0-1.0 (US NIH ClinicalTrials.gov Public Domain)\n\n## Study Summary\n\nThis study is designed to evaluate the efficacy, safety and pharmacokinetics of subcutaneous exendin (9-39) in subjects with post-bariatric hypoglycemia. Development of this subcutaneous formulation of exendin (9-39) would represent a targeted therapeutic approach for this rare disease with unmet clinical need.\n\n## Posted Outcome Measures\n\n### [PRIMARY] Nadir Glucose\n- **Time Frame**: Day 3 (time zero then every 30 minutes until 180 minutes or gylcemic rescue was required) | **Unit**: mg/dL\n\n| Category / Measure | Part A: Lyo Avexitide 0.5 mg/kg | Part A: Lyo Avexitide 0.15 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg | Part A: Lyo Avexitide 0.46 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg and 0.46 mg/kg Groups | Part B: Liq Avexitide 0.38 (±0.03) mg/kg |\n| --- | --- | --- | --- | --- | --- | --- |\n| Baseline | 41 (±5) | 43 (±7) | 39 (±7) | 42 (±4) | 41 (±5) | 41 (±9) |\n| Day 3 | 45 (±6) | 46 (±12) | 51 (±3) | 59 (±14) | 55 (±10) | 60 (±13) |\n\n### [SECONDARY] Change in Composite Symptom Score as a Measure of Treatment Effect\n- **Time Frame**: Baseline, Day 3 | **Unit**: score on a scale\n\n| Category / Measure | Part A: Lyo Avexitide 0.5 mg/kg | Part A: Lyo Avexitide 0.15 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg | Part A: Lyo Avexitide 0.46 mg/kg | Part A: Lyo Avexitide 0.35 mg/kg and 0.46 mg/kg Groups | Part B: Liq Avexitide 0.38 (±0.03) mg/kg |\n| --- | --- | --- | --- | --- | --- | --- |\n| Baseline | 25 (±7) | 12 (±4) | 22 (±13) | 15 (±1) | 19 (±9) | 17 (±12) |\n| Day 3 | 25 (±11) | 12 (±9) | 15 (±11) | 7 (±3) | 11 (±8) | 9 (±8) |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  },
+  {
+    "id": "sci_abs_06",
+    "track": "absent",
+    "expect_path_sub": "data/raw/biomed-clinical-ccby/35_NCT03439891.md",
+    "expect_absent": true,
+    "question": "在 NCT03439891 临床试验已公布的主要终点结果中，Pembrolizumab 单药治疗组（Pembrolizumab monotherapy arm）的 3 级及以上治疗相关不良事件比例是多少？",
+    "oracle_document": "---\ncorpus: biomed-clinical-ccby\nlicense: CC0-1.0\nnct_id: NCT03439891\nsource_url: https://clinicaltrials.gov/study/NCT03439891\ntrack: Oncology (PD-1/ADC/CAR-T)\n---\n\n# Multicenter Pilot Study of the Safety, Efficacy, and Immune Cell Profiling in Advanced Hepatocellular Carcinoma (HCC) Patients Treated With the Combination of Sorafenib Plus Nivolumab as First-Line of Systemic Therapy\n\n- **NCT ID**: NCT03439891\n- **Track**: Oncology (PD-1/ADC/CAR-T)\n- **Sponsor**: Robin Kate Kelley\n- **Status**: COMPLETED (INTERVENTIONAL, Phase: PHASE2, Enrollment: 16)\n- **Conditions**: Stage III Hepatocellular Carcinoma AJCC v8, Stage IIIA Hepatocellular Carcinoma AJCC v8, Stage IIIB Hepatocellular Carcinoma AJCC v7, Stage IIIC Hepatocellular Carcinoma AJCC v7, Stage IV Hepatocellular Carcinoma AJCC v8, Stage IVA Hepatocellular Carcinoma AJCC v8, Stage IVB Hepatocellular Carcinoma AJCC v8\n- **Interventions**: BIOLOGICAL: Nivolumab, DRUG: Sorafenib\n- **License**: CC0-1.0 (US NIH ClinicalTrials.gov Public Domain)\n\n## Study Summary\n\nThis phase II trial studies the best dose and side effects of sorafenib tosylate and nivolumab in treating patients with liver cancer that cannot be removed by surgery (unresectable), has spread to nearby tissues or lymph nodes (locally advanced) or to other places in the body (metastatic). Sorafenib tosylate may stop the growth of cancer cells by blocking some of the enzymes needed for cell growth. Immunotherapy with monoclonal antibodies, such as nivolumab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Giving sorafenib tosylate and nivolumab may work better in treating patients with liver cancer.\n\n## Posted Outcome Measures\n\n### [PRIMARY] Maximum Tolerated Dose (MTD) (Part 1 Only)\n- **Time Frame**: 28 days | **Unit**: milligrams (mg) once per day\n\n| Category / Measure | Part 1: All Participants (Sorafenib, Nivolumab) |\n| --- | --- |\n| Overall | 400 |\n\n### [PRIMARY] Proportion of Participants With Grade 3 or Higher Treatment-related Adverse Events (Part 2 Only)\n- **Time Frame**: Up to 2 years | **Unit**: proportion of participants\n\n| Category / Measure | Part 2: Child Pugh B Expansion Cohort (Sorafenib, Nivolumab) |\n| --- | --- |\n| Overall | 0.6 |\n\n### [SECONDARY] Proportion of Participants With Treatment-related Adverse Events\n- **Time Frame**: Up to 2 years | **Unit**: proportion of participants\n\n| Category / Measure | Part 1: Starting Dose Schedule (DL -1) Once a Day | Part 1: Escalated Dose Schedule (DL 1) Twice a Day | Part 2: Child Pugh B Expansion Cohort (Sorafenib, Nivolumab) |\n| --- | --- | --- | --- |\n| Overall | 1.00 | 1.00 | 1.00 |",
+    "expected": {
+      "status": "ABSENT",
+      "value": null,
+      "type": null,
+      "evidence": []
+    }
+  }
+]

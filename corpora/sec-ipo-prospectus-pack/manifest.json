@@ -1,0 +1,64 @@
+{
+  "slug": "sec-ipo-prospectus-pack",
+  "title": "美股硬科技 IPO 招股书（424B4/S-1）与上市后年报 XBRL 对照包（5 家）",
+  "description": "面向一级市场硬科技尽调与公开检索评测的双语检索真值语料：覆盖 Astera Labs、Credo、CoreWeave、Arm、SpaceX 招股书终版及上市后年报/季报，全量 SEC-Public-Filing 零版权争议。",
+  "domain": "FINANCE",
+  "region": "GLOBAL",
+  "mode": "pack",
+  "license": "SEC-Public-Filing",
+  "source_url": "https://www.sec.gov/edgar/searchedgar/companysearch",
+  "sources": [
+    {
+      "name": "ALAB_sec_ipo_pack",
+      "ticker": "ALAB",
+      "cik": "0001736297",
+      "wiki_track": "ai-cluster-optical-interconnect",
+      "url": "https://data.sec.gov/submissions/CIK0001736297.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 3
+    },
+    {
+      "name": "CRDO_sec_ipo_pack",
+      "ticker": "CRDO",
+      "cik": "0001807794",
+      "wiki_track": "ai-cluster-optical-interconnect",
+      "url": "https://data.sec.gov/submissions/CIK0001807794.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 3
+    },
+    {
+      "name": "CRWV_sec_ipo_pack",
+      "ticker": "CRWV",
+      "cik": "0001769628",
+      "wiki_track": "ai-value-chain",
+      "url": "https://data.sec.gov/submissions/CIK0001769628.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 2
+    },
+    {
+      "name": "ARM_sec_ipo_pack",
+      "ticker": "ARM",
+      "cik": "0001973239",
+      "wiki_track": "china-autonomous-ai-compute-stack",
+      "url": "https://data.sec.gov/submissions/CIK0001973239.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 3
+    },
+    {
+      "name": "SPCX_sec_ipo_pack",
+      "ticker": "SPCX",
+      "cik": "0001181412",
+      "wiki_track": "high-performance-composites",
+      "url": "https://data.sec.gov/submissions/CIK0001181412.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 3
+    }
+  ],
+  "review": {
+    "spdx": "SEC-Public-Filing",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "US federal public SEC EDGAR 424B4 IPO prospectuses and post-IPO filings."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "cn-hk-ipo-prospectus-recipe",
+  "title": "港股18C与科创板硬科技招股书、审核问询回复及首年年报配方（7家，本地评测）",
+  "description": "覆盖黑芝麻智能(02533)、地平线(09660)、智谱(02513)、越疆机器人(02432只读基准对照)及科创板海光信息(688041)、源杰科技(688498含上交所审核问询回复)、中复神鹰(688295)，以 recipe 模式本地隔离留档并经 pdf_table_fix 重建表格。",
+  "domain": "FINANCE",
+  "region": "CN",
+  "mode": "recipe",
+  "license": "Multi-Exchange-Public-Disclosure",
+  "source_url": "https://www1.hkexnews.hk/",
+  "catalog_file": "corpora/cn-hk-ipo-prospectus-recipe/ipo_catalog.json",
+  "sources": [
+    {
+      "name": "hkex_18c_prospectus_recipe",
+      "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?lang=zh",
+      "local_path": "data/raw/cn-hk-ipo-prospectus-recipe/hkex",
+      "license": "HKEX-Public-Disclosure"
+    },
+    {
+      "name": "cninfo_star_prospectus_inquiry_recipe",
+      "url": "https://www.cninfo.com.cn/new/disclosure",
+      "local_path": "data/raw/cn-hk-ipo-prospectus-recipe/cninfo",
+      "license": "CNINFO-Public-Disclosure"
+    }
+  ],
+  "review": {
+    "spdx": "Multi-Exchange-Public-Disclosure",
+    "use": "approach-only",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "HKEX 18C and SSE STAR prospectus recipe; raw filings restricted to local recipe mode only."
+  }
+}

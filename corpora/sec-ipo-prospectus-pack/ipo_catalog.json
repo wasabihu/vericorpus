@@ -1,0 +1,207 @@
+[
+  {
+    "id": "ALAB",
+    "name_zh": "Astera Labs",
+    "name_en": "Astera Labs, Inc.",
+    "track": "sec_pack",
+    "sec_ticker": "ALAB",
+    "wiki_track": "ai-cluster-optical-interconnect",
+    "note": "AI数据中心高速互联(PCIe/CXL/Ethernet Retimer)，2024-03纳斯达克IPO",
+    "sec_cik": "0001736297",
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001736297.json",
+    "filings": [
+      {
+        "market": "SEC",
+        "form": "424B4",
+        "fiscal_year": "2024",
+        "filing_date": "2024-03-21",
+        "report_date": "",
+        "accession_number": "0001193125-24-073873",
+        "primary_document": "d285484d424b4.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1736297/000119312524073873/d285484d424b4.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-K",
+        "fiscal_year": "2025",
+        "filing_date": "2026-02-20",
+        "report_date": "2025-12-31",
+        "accession_number": "0001736297-26-000010",
+        "primary_document": "alab-20251231.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-K",
+        "fiscal_year": "2024",
+        "filing_date": "2025-02-14",
+        "report_date": "2024-12-31",
+        "accession_number": "0001736297-25-000003",
+        "primary_document": "alab-20241231.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629725000003/alab-20241231.htm"
+      }
+    ]
+  },
+  {
+    "id": "CRDO",
+    "name_zh": "Credo Technology",
+    "name_en": "Credo Technology Group Holding Ltd",
+    "track": "sec_pack",
+    "sec_ticker": "CRDO",
+    "wiki_track": "ai-cluster-optical-interconnect",
+    "note": "AI集群AEC有源电缆与SerDes DSP核心标的",
+    "sec_cik": "0001807794",
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001807794.json",
+    "filings": [
+      {
+        "market": "SEC",
+        "form": "424B4",
+        "fiscal_year": "2022",
+        "filing_date": "2022-01-27",
+        "report_date": "",
+        "accession_number": "0001628280-22-001369",
+        "primary_document": "credotechnologygroup424b4.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828022001369/credotechnologygroup424b4.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-K",
+        "fiscal_year": "2026",
+        "filing_date": "2026-06-15",
+        "report_date": "2026-05-02",
+        "accession_number": "0001628280-26-043303",
+        "primary_document": "crdo-20260502.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-K",
+        "fiscal_year": "2025",
+        "filing_date": "2025-07-02",
+        "report_date": "2025-05-03",
+        "accession_number": "0001628280-25-033813",
+        "primary_document": "crdo-20250503.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828025033813/crdo-20250503.htm"
+      }
+    ]
+  },
+  {
+    "id": "CRWV",
+    "name_zh": "CoreWeave",
+    "name_en": "CoreWeave, Inc.",
+    "track": "sec_pack",
+    "sec_ticker": "CRWV",
+    "wiki_track": "ai-value-chain",
+    "note": "AI专用GPU算力云龙头，2025美股IPO后披露首年10-K",
+    "sec_cik": "0001769628",
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001769628.json",
+    "filings": [
+      {
+        "market": "SEC",
+        "form": "424B4",
+        "fiscal_year": "2025",
+        "filing_date": "2025-03-31",
+        "report_date": "",
+        "accession_number": "0001193125-25-067651",
+        "primary_document": "d899798d424b4.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-K",
+        "fiscal_year": "2025",
+        "filing_date": "2026-03-02",
+        "report_date": "2025-12-31",
+        "accession_number": "0001769628-26-000104",
+        "primary_document": "crwv-20251231.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm"
+      }
+    ]
+  },
+  {
+    "id": "ARM",
+    "name_zh": "Arm",
+    "name_en": "Arm Holdings plc",
+    "track": "sec_pack",
+    "sec_ticker": "ARM",
+    "wiki_track": "china-autonomous-ai-compute-stack",
+    "note": "AI算力处理器架构IP基准，2023-09 IPO 424B4 + 上市后20-F",
+    "sec_cik": "0001973239",
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001973239.json",
+    "filings": [
+      {
+        "market": "SEC",
+        "form": "424B4",
+        "fiscal_year": "2023",
+        "filing_date": "2023-09-14",
+        "report_date": "",
+        "accession_number": "0001193125-23-235320",
+        "primary_document": "d550931d424b4.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1973239/000119312523235320/d550931d424b4.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "20-F",
+        "fiscal_year": "2026",
+        "filing_date": "2026-05-26",
+        "report_date": "2026-03-31",
+        "accession_number": "0001973239-26-000097",
+        "primary_document": "arm-20260331.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "20-F",
+        "fiscal_year": "2025",
+        "filing_date": "2025-05-28",
+        "report_date": "2025-03-31",
+        "accession_number": "0001973239-25-000016",
+        "primary_document": "arm-20250331.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323925000016/arm-20250331.htm"
+      }
+    ]
+  },
+  {
+    "id": "SPCX",
+    "name_zh": "SpaceX",
+    "name_en": "Space Exploration Technologies Corp.",
+    "track": "sec_pack",
+    "sec_ticker": "SPCX",
+    "wiki_track": "high-performance-composites",
+    "note": "2026-06纳斯达克IPO招股书424B4/S-1/A与上市后10-Q",
+    "sec_cik": "0001181412",
+    "sec_submissions_url": "https://data.sec.gov/submissions/CIK0001181412.json",
+    "filings": [
+      {
+        "market": "SEC",
+        "form": "424B4",
+        "fiscal_year": "2026",
+        "filing_date": "2026-06-12",
+        "report_date": "",
+        "accession_number": "0001628280-26-042639",
+        "primary_document": "spaceexplorationtechnologi.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-Q",
+        "fiscal_year": "2026",
+        "filing_date": "2026-10-22",
+        "report_date": "2026-09-30",
+        "accession_number": "0001628280-26-066880",
+        "primary_document": "spcx-20260930.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+      },
+      {
+        "market": "SEC",
+        "form": "10-Q",
+        "fiscal_year": "2026",
+        "filing_date": "2026-08-04",
+        "report_date": "2026-06-30",
+        "accession_number": "0001628280-26-052535",
+        "primary_document": "spcx-20260630.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+      }
+    ]
+  }
+]

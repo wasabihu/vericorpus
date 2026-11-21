@@ -1,0 +1,22 @@
+VeriCorpus
+Copyright 2026 wasabihu
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Trademark & Non-Affiliation Notice:
+VeriCorpus is an independent open-source project built for XERJ and Elasticsearch-compatible search engines.
+Not affiliated with, sponsored by, or endorsed by The XERJ Authors.
+
+Third-Party & Open-Access Evaluation Notices:
+- Companion scientific table excerpts in evals/sci_ai_biomed_eval_30.json are
+  licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0,
+  https://creativecommons.org/licenses/by/4.0/) and CC0 1.0 Universal
+  (https://creativecommons.org/publicdomain/zero/1.0/), with per-record author
+  attribution, source DOIs/PMCIDs, and adaptation notices preserved inline.
+- Optional PDF coordinate table reconstruction (`pip install 'vericorpus[pdf]'`)
+  uses PyMuPDF (licensed under GNU AGPL-3.0 by Artifex Software, Inc. unless
+  separately licensed). Core `vericorpus` uses zero third-party dependencies.

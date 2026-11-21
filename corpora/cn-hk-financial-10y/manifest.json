@@ -1,0 +1,44 @@
+{
+  "slug": "cn-hk-financial-10y",
+  "title": "中美港韩 92 家核心公司近 10 年财报全市场配方清单（A股/港股/韩股仅配方不分发原件）",
+  "description": "统一编目 26 家 A 股/A+H（巨潮资讯 CNINFO）、16 家纯港股及补齐年份 A+H（港交所披露易 HKEXnews）与 2 家韩国科技巨头（三星电子/SK海力士），附带 92 家公司权威代码映射与官方原文链接目录；原 PDF 与本地重建 Markdown 严格保存在被 .gitignore 隔离的 data/ 下，不随公共仓库二次分发。",
+  "domain": "FINANCE",
+  "region": "CN",
+  "mode": "recipe",
+  "license": "Multi-Exchange-Public-Disclosure",
+  "source_url": "https://www.cninfo.com.cn/",
+  "catalog_file": "corpora/cn-hk-financial-10y/filing_catalog.json",
+  "sources": [
+    {
+      "name": "cninfo_a_share_10y_recipe",
+      "url": "https://www.cninfo.com.cn/new/disclosure",
+      "local_path": "data/raw/cn-hk-financial-10y/cninfo",
+      "license": "CNINFO-Public-Disclosure",
+      "company_count": 26,
+      "filing_count": 241
+    },
+    {
+      "name": "hkexnews_hk_10y_recipe",
+      "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?lang=zh",
+      "local_path": "data/raw/cn-hk-financial-10y/hkex",
+      "license": "HKEX-Public-Disclosure",
+      "company_count": 19,
+      "filing_count": 166
+    },
+    {
+      "name": "krx_ir_south_korea_recipe",
+      "url": "https://englishdart.fss.or.kr/",
+      "local_path": "data/raw/cn-hk-financial-10y/krx",
+      "license": "KRX-Public-Disclosure",
+      "company_count": 2,
+      "filing_count": 0
+    }
+  ],
+  "review": {
+    "spdx": "Multi-Exchange-Public-Disclosure",
+    "use": "approach-only",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "Multi-exchange CNINFO/HKEX/DART catalogue; raw filings restricted to local recipe mode only."
+  }
+}

@@ -1,0 +1,40 @@
+name: ci
+
+on:
+  push:
+    branches: [main, corpus-registry]
+  pull_request:
+    branches: [main, corpus-registry]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  stdlib-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: Verify pure-stdlib lazy import isolation (PyMuPDF blocked)
+        run: |
+          PYTHONPATH=src python3 -c '
+          import sys
+          sys.modules["pymupdf"] = None
+          import vericorpus
+          from vericorpus import compliance, query_cn, pdf_table_fix
+          assert pdf_table_fix.normalize_cell("39.\n9 亿美元") == "39.9 亿美元"
+          assert pdf_table_fix.repair_hkex_cmap("本尸检报告") == "本尸检报告"
+          '
+      - name: Run unit and negative-control test suite
+        run: PYTHONPATH=src python3 -m unittest discover -s tests -v
+      - name: Run public release compliance and leak audit
+        run: PYTHONPATH=src python3 scripts/audit_public_release.py

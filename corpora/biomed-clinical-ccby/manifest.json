@@ -1,0 +1,94 @@
+{
+  "slug": "biomed-clinical-ccby",
+  "title": "生物医学临床全文表格与注册临床试验结果语料包（CC-BY-4.0 / CC0-1.0）",
+  "description": "覆盖肿瘤免疫/ADC/CAR-T、GLP-1/MASH 代谢、mRNA 疫苗与 IVD 体外诊断四大临床赛道：整合 Europe PMC/NCBI PMC 严格核验 CC-BY-4.0 全文 JATS XML 临床疗效安全性 Markdown 表格，以及 ClinicalTrials.gov v2 美国 NIH 公有领域 (CC0-1.0) 已公布结果的干预性临床试验。",
+  "domain": "HEALTH",
+  "region": "GLOBAL",
+  "mode": "pack",
+  "license": "CC-BY-4.0",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/",
+  "epmc_queries": [
+    {
+      "name": "oncology-pd1-adc-cart",
+      "track": "Oncology (PD-1/ADC/CAR-T)",
+      "query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"pembrolizumab\" OR \"nivolumab\" OR \"antibody-drug conjugate\" OR \"CAR-T\") AND (\"clinical trial\" OR \"phase\")",
+      "count": 9,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "metabolic-glp1-mash",
+      "track": "Metabolic (GLP-1/MASH)",
+      "query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"semaglutide\" OR \"tirzepatide\" OR \"GLP-1\" OR \"steatohepatitis\") AND (\"trial\" OR \"randomized\")",
+      "count": 9,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "mrna-vaccines",
+      "track": "mRNA/Vaccines",
+      "query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"mRNA vaccine\" OR \"BNT162b2\" OR \"mRNA-1273\") AND (\"efficacy\" OR \"trial\")",
+      "count": 8,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "ivd-diagnostics",
+      "track": "IVD/Diagnostics",
+      "query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"sensitivity\" AND \"specificity\") AND (\"diagnostic\" OR \"assay\" OR \"ctDNA\")",
+      "count": 8,
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "clinicaltrials_queries": [
+    {
+      "name": "ctgov-oncology",
+      "track": "Oncology (PD-1/ADC/CAR-T)",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=pembrolizumab+OR+nivolumab+OR+CAR-T&filter.overallStatus=COMPLETED&aggFilters=results:with&pageSize=12",
+      "count": 6,
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "ctgov-metabolic",
+      "track": "Metabolic (GLP-1/MASH)",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=semaglutide+OR+tirzepatide+OR+GLP-1&filter.overallStatus=COMPLETED&aggFilters=results:with&pageSize=12",
+      "count": 5,
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "ctgov-mrna-vaccines",
+      "track": "mRNA/Vaccines",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=mRNA+vaccine&filter.overallStatus=COMPLETED&aggFilters=results:with&pageSize=10",
+      "count": 4,
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "ctgov-ivd-diagnostics",
+      "track": "IVD/Diagnostics",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=diagnostic+biomarker+assay&filter.overallStatus=COMPLETED&aggFilters=results:with&pageSize=10",
+      "count": 4,
+      "license": "CC0-1.0"
+    }
+  ],
+  "sources": [
+    {
+      "name": "europepmc-oa-ccby-fulltext-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "ncbi-pmc-oa-jats-mirror",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "clinicaltrials-gov-v2-results",
+      "url": "https://clinicaltrials.gov/api/v2/studies?filter.overallStatus=COMPLETED&aggFilters=results:with",
+      "license": "CC0-1.0"
+    }
+  ],
+  "review": {
+    "spdx": "CC-BY-4.0",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "Europe PMC JATS XML CC-BY-4.0 + ClinicalTrials.gov v2 CC0-1.0 verified with real author attribution."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "cn-law-core",
+  "title": "中国现行核心商法与合规法律语料包",
+  "description": "精选中国现行高频商法、资本市场与数据合规核心成文法条，基于《著作权法》第五条（公有领域）整理，附阿拉伯/中文法条编号双向检索基准。",
+  "domain": "LAW",
+  "region": "CN",
+  "mode": "pack",
+  "license": "Public-Domain-CN-Law",
+  "legal_basis": "《中华人民共和国著作权法》第五条第一项：法律、法规及官方正式译文不适用著作权法，属于公有领域（Public Domain）。",
+  "source_url": "https://flk.npc.gov.cn/",
+  "upstream_mirror": {
+    "repo": "LawRefBook/Laws",
+    "commit": "8cb05f0dfd02c442b28e3fa1299014246aa7d3da",
+    "note": "仅提取其中的公有领域成文法条 Markdown 文本，未包含或复用该仓库任何无许可证程序代码。"
+  },
+  "sources": [
+    {
+      "name": "中华人民共和国民法典-总则编.md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%85%B8/%E6%80%BB%E5%88%99.md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国民法典-物权编.md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%85%B8/%E7%89%A9%E6%9D%83%E7%BC%96.md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国民法典-合同编.md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%85%B8/%E5%90%88%E5%90%8C%E7%BC%96.md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国民法典-侵权责任编.md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%85%B8/%E4%BE%B5%E6%9D%83%E8%B4%A3%E4%BB%BB%E7%BC%96.md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国公司法(2023-12-29).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%95%86%E6%B3%95/%E5%85%AC%E5%8F%B8%E6%B3%95(2023-12-29).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国证券法(2019-12-28).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%95%86%E6%B3%95/%E8%AF%81%E5%88%B8%E6%B3%95(2019-12-28).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国劳动合同法(2012-12-28).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%A4%BE%E4%BC%9A%E6%B3%95/%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95(2012-12-28).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国数据安全法(2021-06-10).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E8%A1%8C%E6%94%BF%E6%B3%95/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95(2021-06-10).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "中华人民共和国个人信息保护法(2021-08-20).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E8%A1%8C%E6%94%BF%E6%B3%95/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4%E6%B3%95(2021-08-20).md",
+      "license": "Public-Domain-CN-Law"
+    }
+  ],
+  "review": {
+    "spdx": "Public-Domain-CN-Law",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "PRC Copyright Law Art. 5(1) statutory public domain; pinned 40-hex commit verified."
+  }
+}

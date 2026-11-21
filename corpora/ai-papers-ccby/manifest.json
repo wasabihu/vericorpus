@@ -1,0 +1,77 @@
+{
+  "slug": "ai-papers-ccby",
+  "title": "前沿 AI 论文开放获取精编语料包（CC-BY-4.0）",
+  "description": "面向商业合规检索与推理评测的 2022–2026 高被引 AI 论文库，覆盖 RAG 幻觉溯源、推理与 RLVR、LLM Agent、文档与表格理解、AI for Science 五大赛道，严格核验 CC-BY-4.0 / CC0-1.0 许可并提取 JATS/LaTeXML 评测结果表。",
+  "domain": "AI",
+  "region": "GLOBAL",
+  "mode": "pack",
+  "license": "CC-BY-4.0",
+  "source_url": "https://api.openalex.org/works",
+  "query_filters": [
+    {
+      "name": "ai-rag-hallucination",
+      "track": "RAG & Hallucination Attribution",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021,title_and_abstract.search:(%22retrieval%20augmented%22%20OR%20%22retrieval-augmented%22)%20AND%20(hallucination%20OR%20attribution%20OR%20grounding%20OR%20benchmark)&per-page=45&sort=cited_by_count:desc",
+      "fallback_epmc_query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"retrieval augmented\" OR \"retrieval-augmented\") AND (hallucination OR attribution OR benchmark)",
+      "count": 10,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "ai-reasoning-rlvr",
+      "track": "Reasoning / RLVR / Neuro-Symbolic",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021,title_and_abstract.search:(%22reinforcement%20learning%22%20OR%20RLVR%20OR%20%22neuro-symbolic%22%20OR%20%22chain-of-thought%22)%20AND%20reasoning%20AND%20(%22language%20model%22%20OR%20LLM)&per-page=45&sort=cited_by_count:desc",
+      "fallback_epmc_query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"reinforcement learning\" OR \"chain-of-thought\" OR \"neuro-symbolic\") AND reasoning AND (\"language model\" OR LLM)",
+      "count": 10,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "ai-llm-agents",
+      "track": "LLM Agents",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021,title_and_abstract.search:(%22language%20model%22%20OR%20LLM)%20AND%20(agent%20OR%20%22tool%20use%22%20OR%20%22function%20calling%22)%20AND%20(planning%20OR%20benchmark)&per-page=45&sort=cited_by_count:desc",
+      "fallback_epmc_query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"large language model\") AND (agent OR \"tool use\") AND (planning OR benchmark)",
+      "count": 10,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "ai-doc-table-understanding",
+      "track": "Document / Table Understanding",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021,title_and_abstract.search:(%22document%20understanding%22%20OR%20%22table%20understanding%22%20OR%20%22table%20extraction%22%20OR%20%22document%20parsing%22%20OR%20OCR)%20AND%20(%22language%20model%22%20OR%20multimodal%20OR%20benchmark)&per-page=45&sort=cited_by_count:desc",
+      "fallback_epmc_query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"table understanding\" OR \"document understanding\" OR \"OCR\") AND (\"language model\" OR benchmark)",
+      "count": 10,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "ai-for-science-bio",
+      "track": "AI for Science / Bio",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021,title_and_abstract.search:(protein%20OR%20%22drug%20discovery%22%20OR%20molecular%20OR%20genomic%20OR%20AlphaFold)%20AND%20(%22deep%20learning%22%20OR%20%22language%20model%22%20OR%20%22foundation%20model%22)&per-page=45&sort=cited_by_count:desc",
+      "fallback_epmc_query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (protein OR AlphaFold OR \"drug discovery\") AND (\"language model\" OR \"deep learning\")",
+      "count": 10,
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "fallback_epmc_query": "(OPEN_ACCESS:y) AND (LICENSE:\"cc by\") AND (\"large language model\" OR \"retrieval augmented\" OR \"reasoning\" OR \"table understanding\")",
+  "sources": [
+    {
+      "name": "openalex-ai-ccby-works",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021&per-page=45&sort=cited_by_count:desc",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "arxiv-html-ccby-enrichment",
+      "url": "https://arxiv.org/html/",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "europepmc-oa-ai-fallback",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "review": {
+    "spdx": "CC-BY-4.0",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "OpenAlex + arXiv/Europe PMC CC-BY-4.0 verified; -NC/-ND/-SA excluded; Section 3(a) attribution preserved."
+  }
+}

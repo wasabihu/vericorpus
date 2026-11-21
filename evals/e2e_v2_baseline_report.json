@@ -1,0 +1,3350 @@
+{
+  "generated_at": "2026-11-20T22:26:11+0800",
+  "corpora_audited": 9,
+  "namespace": "e2e-*",
+  "index_stats": {
+    "total_files": 208,
+    "total_chunks": 33575,
+    "index_elapsed_ms": 12188.8,
+    "indices": [
+      {
+        "index": "e2e-docs",
+        "chunks": 33575
+      }
+    ],
+    "subsets": {
+      "sec-10y-core/xbrl_summaries": {
+        "files": 48,
+        "bytes": 225496
+      },
+      "sec-10y-core/filings/MSFT": {
+        "files": 10,
+        "bytes": 3522739
+      },
+      "sec-10y-core/filings/TSM": {
+        "files": 10,
+        "bytes": 5644338
+      },
+      "sec-10y-core/filings/GS": {
+        "files": 10,
+        "bytes": 10943285
+      },
+      "sec-10y-core/filings/JPM": {
+        "files": 10,
+        "bytes": 12862524
+      },
+      "sec-10y-core/filings/BABA": {
+        "files": 10,
+        "bytes": 12017526
+      },
+      "sec-ipo-prospectus-pack": {
+        "files": 19,
+        "bytes": 9727641
+      },
+      "cn-law-core": {
+        "files": 9,
+        "bytes": 554639
+      },
+      "cn-capital-market-law": {
+        "files": 20,
+        "bytes": 652247
+      },
+      "cn-science-ccby": {
+        "files": 40,
+        "bytes": 90658
+      },
+      "cn-github-stars": {
+        "files": 22,
+        "bytes": 306303
+      }
+    }
+  },
+  "verifier_calls": {
+    "model_key": "neuro_symbolic_reader_1_7b_baseline",
+    "endpoint": "http://127.0.0.1:8000/api/verify",
+    "logical_evaluations": 161,
+    "unique_http_calls": 160,
+    "dedup_hits": 1
+  },
+  "retrieval": {
+    "arm2_native_bm25": {
+      "answerable_total": 45,
+      "absent_total": 15,
+      "r_at_1": 0.1778,
+      "r_at_3": 0.2222,
+      "ndcg_at_3": 0.2029,
+      "doc_r_at_1": 0.4,
+      "doc_r_at_3": 0.4889,
+      "absent_zero_hit_count": 5,
+      "absent_zero_hit_rate": 0.3333
+    },
+    "arm3_vericorpus": {
+      "answerable_total": 45,
+      "absent_total": 15,
+      "r_at_1": 0.7778,
+      "r_at_3": 0.9111,
+      "ndcg_at_3": 0.8561,
+      "doc_r_at_1": 0.9333,
+      "doc_r_at_3": 0.9778,
+      "absent_zero_hit_count": 9,
+      "absent_zero_hit_rate": 0.6
+    }
+  },
+  "arms": {
+    "arm1_oracle": {
+      "total": 60,
+      "R": 54,
+      "W": 4,
+      "N": 2,
+      "net": 46,
+      "score_pct_of_oracle": 100.0,
+      "strict_accuracy": 0.9,
+      "evidence_offsets_valid_count": 60,
+      "evidence_offsets_valid_rate": 1.0,
+      "absent_false_answers": 2,
+      "bootstrap_draws": 4000,
+      "net_ci95": [
+        33.0,
+        56.0
+      ],
+      "score_ci95": [
+        100.0,
+        100.0
+      ],
+      "delta_vs_baseline_ci95": null,
+      "latency_ms": {
+        "retrieval_p50": 0.0,
+        "retrieval_p95": 0.0,
+        "reader_p50": 2121.5,
+        "reader_p95": 5385.28,
+        "total_p50": 2121.5,
+        "total_p95": 5385.28
+      },
+      "by_track": {
+        "sec_fin": {
+          "R": 19,
+          "W": 1,
+          "N": 0,
+          "total": 20,
+          "net": 17,
+          "accuracy": 0.95
+        },
+        "arm_ipo": {
+          "R": 8,
+          "W": 0,
+          "N": 2,
+          "total": 10,
+          "net": 8,
+          "accuracy": 0.8
+        },
+        "cn_law": {
+          "R": 14,
+          "W": 1,
+          "N": 0,
+          "total": 15,
+          "net": 12,
+          "accuracy": 0.9333
+        },
+        "absent": {
+          "R": 13,
+          "W": 2,
+          "N": 0,
+          "total": 15,
+          "net": 9,
+          "accuracy": 0.8667
+        }
+      }
+    },
+    "arm2_native_bm25": {
+      "total": 60,
+      "R": 24,
+      "W": 10,
+      "N": 26,
+      "net": 4,
+      "score_pct_of_oracle": 8.7,
+      "strict_accuracy": 0.4,
+      "evidence_offsets_valid_count": 60,
+      "evidence_offsets_valid_rate": 1.0,
+      "absent_false_answers": 0,
+      "bootstrap_draws": 4000,
+      "net_ci95": [
+        -12.0,
+        19.0
+      ],
+      "score_ci95": [
+        -28.0,
+        41.7
+      ],
+      "delta_vs_baseline_ci95": null,
+      "latency_ms": {
+        "retrieval_p50": 204.86,
+        "retrieval_p95": 551.58,
+        "reader_p50": 3403.25,
+        "reader_p95": 11640.45,
+        "total_p50": 3775.88,
+        "total_p95": 12029.69
+      },
+      "by_track": {
+        "sec_fin": {
+          "R": 4,
+          "W": 6,
+          "N": 10,
+          "total": 20,
+          "net": -8,
+          "accuracy": 0.2
+        },
+        "arm_ipo": {
+          "R": 1,
+          "W": 2,
+          "N": 7,
+          "total": 10,
+          "net": -3,
+          "accuracy": 0.1
+        },
+        "cn_law": {
+          "R": 4,
+          "W": 2,
+          "N": 9,
+          "total": 15,
+          "net": 0,
+          "accuracy": 0.2667
+        },
+        "absent": {
+          "R": 15,
+          "W": 0,
+          "N": 0,
+          "total": 15,
+          "net": 15,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "arm3_vericorpus": {
+      "total": 60,
+      "R": 50,
+      "W": 6,
+      "N": 4,
+      "net": 38,
+      "score_pct_of_oracle": 82.6,
+      "strict_accuracy": 0.8333,
+      "evidence_offsets_valid_count": 60,
+      "evidence_offsets_valid_rate": 1.0,
+      "absent_false_answers": 1,
+      "bootstrap_draws": 4000,
+      "net_ci95": [
+        23.0,
+        50.0
+      ],
+      "score_ci95": [
+        52.5,
+        113.2
+      ],
+      "delta_vs_baseline_ci95": [
+        17.0,
+        51.0
+      ],
+      "latency_ms": {
+        "retrieval_p50": 146.5,
+        "retrieval_p95": 1030.23,
+        "reader_p50": 2909.45,
+        "reader_p95": 7578.05,
+        "total_p50": 3223.66,
+        "total_p95": 8369.03
+      },
+      "by_track": {
+        "sec_fin": {
+          "R": 14,
+          "W": 3,
+          "N": 3,
+          "total": 20,
+          "net": 8,
+          "accuracy": 0.7
+        },
+        "arm_ipo": {
+          "R": 8,
+          "W": 1,
+          "N": 1,
+          "total": 10,
+          "net": 6,
+          "accuracy": 0.8
+        },
+        "cn_law": {
+          "R": 14,
+          "W": 1,
+          "N": 0,
+          "total": 15,
+          "net": 12,
+          "accuracy": 0.9333
+        },
+        "absent": {
+          "R": 14,
+          "W": 1,
+          "N": 0,
+          "total": 15,
+          "net": 12,
+          "accuracy": 0.9333
+        }
+      }
+    }
+  },
+  "error_attribution": {
+    "arm1_oracle": {
+      "reader_miss": 4,
+      "false_answer_hallucinated": 2
+    },
+    "arm2_native_bm25": {
+      "retrieval_wrong_doc": 18,
+      "retrieval_wrong_chunk_in_doc": 12,
+      "retrieval_zero_hits": 5,
+      "reader_wrong_value_or_op": 1
+    },
+    "arm3_vericorpus": {
+      "reader_wrong_value_or_op": 5,
+      "retrieval_wrong_chunk_in_doc": 2,
+      "retrieval_wrong_doc": 1,
+      "reader_program_rejected": 1,
+      "false_answer_hallucinated": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "SEC-01",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "MSFT",
+      "expect_absent": false,
+      "question": "微软(MSFT)在 2025-06-30 财年的营业收入是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "281724",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 893,
+            "end": 908,
+            "quote": "USD 281,724.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "281724",
+        "reader_ms": 4644.1,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "281724",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRDO/CRDO_xbrl_summary.md"
+        ],
+        "retrieval_ms": 473.98,
+        "reader_ms": 7664.7,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "281724",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-10y-core/filings/MSFT/2025_10-K_2025-07-30.md",
+          "sec-10y-core/filings/MSFT/2025_10-K_2025-07-30.md"
+        ],
+        "retrieval_ms": 1028.49,
+        "reader_ms": 4843.6,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-02",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "MSFT",
+      "expect_absent": false,
+      "question": "根据微软(MSFT) 2025 10-K 分部业绩表，Intelligent Cloud 分部 2025 年的营业收入(Revenue)是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "106265",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 429,
+            "end": 437,
+            "quote": "$106,265"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "106265",
+        "reader_ms": 2450.3,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "58283",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/AAPL_10y_xbrl.md"
+        ],
+        "retrieval_ms": 296.88,
+        "reader_ms": 5666.3,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "106265",
+        "hit_paths": [
+          "sec-10y-core/filings/MSFT/2025_10-K_2025-07-30.md",
+          "sec-10y-core/filings/MSFT/2025_10-K_2025-07-30.md",
+          "sec-10y-core/filings/MSFT/2025_10-K_2025-07-30.md"
+        ],
+        "retrieval_ms": 906.33,
+        "reader_ms": 3272.2,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-03",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "TSM",
+      "expect_absent": false,
+      "question": "台积电(TSM)在 2024-12-31 财年的营业收入是多少百万新台币(TWD)？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "2894307.7",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 498,
+            "end": 515,
+            "quote": "TWD 2,894,307.70M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2894307.7",
+        "reader_ms": 5384.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2894307.7",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRWV/CRWV_xbrl_summary.md"
+        ],
+        "retrieval_ms": 489.96,
+        "reader_ms": 6101.5,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2894307.7",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/filings/TSM/2024_20-F_2025-04-17.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md"
+        ],
+        "retrieval_ms": 1063.26,
+        "reader_ms": 9636.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-04",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "TSM",
+      "expect_absent": false,
+      "question": "根据台积电(TSM) 2025 20-F 晶圆技术节点表，3-nanometer 制程在 2025 年占晶圆总收入的百分比是多少？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "24",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 303,
+            "end": 306,
+            "quote": "24%"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "24",
+        "reader_ms": 2433.2,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "cn-science-ccby/03_10.1007_s42242-024-00285-3.md",
+          "cn-science-ccby/20_10.5281_zenodo.23217100.md"
+        ],
+        "retrieval_ms": 648.74,
+        "reader_ms": 3124.0,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "24",
+        "hit_paths": [
+          "sec-10y-core/filings/TSM/2025_20-F_2026-04-16.md",
+          "sec-10y-core/filings/TSM/2024_20-F_2025-04-17.md",
+          "sec-10y-core/filings/TSM/2025_20-F_2026-04-16.md"
+        ],
+        "retrieval_ms": 426.29,
+        "reader_ms": 4570.3,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-05",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "GS",
+      "expect_absent": false,
+      "question": "高盛(GS)在 2025-12-31 财年的净利润(Net Income)是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "17176",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 517,
+            "end": 531,
+            "quote": "USD 17,176.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "17176",
+        "reader_ms": 4104.3,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "1157523.9",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md"
+        ],
+        "retrieval_ms": 585.3,
+        "reader_ms": 6728.2,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "17176",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/HSBC_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/PDD_10y_xbrl.md"
+        ],
+        "retrieval_ms": 982.81,
+        "reader_ms": 7050.2,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-06",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "GS",
+      "expect_absent": false,
+      "question": "根据高盛(GS) 2025 10-K 分部业绩表，Global Banking & Markets 在 2025 年的 Net revenues 是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "41453",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 283,
+            "end": 290,
+            "quote": "$41,453"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "41453",
+        "reader_ms": 2445.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "cn-science-ccby/20_10.5281_zenodo.23217100.md",
+          "cn-github-stars/selfllm/DeepSeek-R1-Qwen-7B-vLLM.md"
+        ],
+        "retrieval_ms": 549.81,
+        "reader_ms": 3329.9,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "58283",
+        "hit_paths": [
+          "sec-10y-core/filings/GS/2025_10-K_2026-02-25.md",
+          "sec-10y-core/filings/GS/2024_10-K_2025-02-27.md",
+          "sec-10y-core/filings/GS/2025_10-K_2026-02-25.md"
+        ],
+        "retrieval_ms": 2127.87,
+        "reader_ms": 3776.7,
+        "attribution": "reader_wrong_value_or_op"
+      }
+    },
+    {
+      "id": "SEC-07",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "JPM",
+      "expect_absent": false,
+      "question": "根据摩根大通(JPM) 2025 10-K 分部业绩表，Consumer & Community Banking 在 2025 年的 Total net revenue 是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "76029",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 537,
+            "end": 544,
+            "quote": "$76,029"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "76029",
+        "reader_ms": 3234.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/JPM_10y_xbrl.md",
+          "sec-10y-core/filings/JPM/2025_10-K_2026-02-13.md",
+          "sec-10y-core/filings/JPM/2024_10-K_2025-02-14.md"
+        ],
+        "retrieval_ms": 483.78,
+        "reader_ms": 6943.8,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "3875393",
+        "hit_paths": [
+          "sec-10y-core/filings/JPM/2025_10-K_2026-02-13.md",
+          "sec-10y-core/filings/JPM/2025_10-K_2026-02-13.md",
+          "sec-10y-core/filings/JPM/2024_10-K_2025-02-14.md"
+        ],
+        "retrieval_ms": 701.24,
+        "reader_ms": 3339.8,
+        "attribution": "reader_wrong_value_or_op"
+      }
+    },
+    {
+      "id": "SEC-08",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "BABA",
+      "expect_absent": false,
+      "question": "根据阿里巴巴(BABA) 2026 20-F 分部营业收入表，Cloud Intelligence Group 在 2026 财年(Year ended March 31, 2026)的营业收入是多少百万元人民币？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "158132",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 1021,
+            "end": 1028,
+            "quote": "158,132"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "106374",
+        "reader_ms": 2763.4,
+        "attribution": "reader_miss"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/BABA_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/BABA_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/HSBC_10y_xbrl.md"
+        ],
+        "retrieval_ms": 424.66,
+        "reader_ms": 4621.3,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/filings/BABA/2026_20-F_2026-05-20.md",
+          "sec-10y-core/filings/BABA/2020_20-F_2020-07-09.md",
+          "sec-10y-core/filings/BABA/2022_20-F_2022-07-26.md"
+        ],
+        "retrieval_ms": 507.37,
+        "reader_ms": 3954.5,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      }
+    },
+    {
+      "id": "SEC-09",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "JNJ",
+      "expect_absent": false,
+      "question": "强生(JNJ)在 2025-12-28 财年的摊薄每股收益(Diluted EPS)是多少美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "11.03",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 570,
+            "end": 579,
+            "quote": "USD 11.03"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "11.03",
+        "reader_ms": 3615.5,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TCOM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/BIDU_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/INTC_10y_xbrl.md"
+        ],
+        "retrieval_ms": 154.83,
+        "reader_ms": 6636.3,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "11.03",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/JNJ_10y_xbrl.md"
+        ],
+        "retrieval_ms": 49.11,
+        "reader_ms": 4063.2,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-10",
+      "track": "sec_fin",
+      "category": "extract",
+      "ticker": "XOM",
+      "expect_absent": false,
+      "question": "埃克森美孚(XOM)在 2024-12-31 财年的资本开支(CapEx)是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "24306",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 979,
+            "end": 993,
+            "quote": "USD 24,306.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "24306",
+        "reader_ms": 4059.8,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "956006.5",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/XOM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRWV/CRWV_xbrl_summary.md"
+        ],
+        "retrieval_ms": 469.26,
+        "reader_ms": 5435.7,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "24306",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/XOM_10y_xbrl.md"
+        ],
+        "retrieval_ms": 79.93,
+        "reader_ms": 4345.9,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-11",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "MSFT",
+      "expect_absent": false,
+      "question": "计算微软(MSFT) 2025-06-30 财年营业收入比 2024-06-30 财年增加了多少百万美元（2025减去2024）？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "36602",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 893,
+            "end": 908,
+            "quote": "USD 281,724.00M"
+          },
+          {
+            "start": 1355,
+            "end": 1370,
+            "quote": "USD 245,122.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "36602",
+        "reader_ms": 5402.1,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "36602",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRDO/CRDO_xbrl_summary.md",
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md"
+        ],
+        "retrieval_ms": 201.83,
+        "reader_ms": 7884.1,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "36602",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-10y-core/filings/MSFT/2025_10-K_2025-07-30.md",
+          "sec-10y-core/filings/MSFT/2024_10-K_2024-07-30.md"
+        ],
+        "retrieval_ms": 259.95,
+        "reader_ms": 6380.1,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-12",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "MSFT",
+      "expect_absent": false,
+      "question": "根据微软(MSFT) 2025 10-K 分部表，Productivity and Business Processes 与 Intelligent Cloud 两个分部 2025 年营业收入(Revenue)合计是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "227075",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 221,
+            "end": 229,
+            "quote": "$120,810"
+          },
+          {
+            "start": 429,
+            "end": 437,
+            "quote": "$106,265"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "227075",
+        "reader_ms": 2084.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "cn-science-ccby/20_10.5281_zenodo.23217100.md",
+          "cn-science-ccby/19_10.5281_zenodo.23323276.md"
+        ],
+        "retrieval_ms": 307.74,
+        "reader_ms": 8033.7,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/filings/MSFT/2023_10-K_2023-07-27.md",
+          "sec-10y-core/filings/MSFT/2017_10-K_2017-08-02.md",
+          "sec-10y-core/filings/MSFT/2023_10-K_2023-07-27.md"
+        ],
+        "retrieval_ms": 918.3,
+        "reader_ms": 2926.0,
+        "attribution": "retrieval_wrong_doc"
+      }
+    },
+    {
+      "id": "SEC-13",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "TSM",
+      "expect_absent": false,
+      "question": "根据台积电(TSM) 2025 20-F 晶圆节点表，2025 年 3-nanometer 与 5-nanometer 合计占晶圆总收入的百分之多少？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "60",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 303,
+            "end": 306,
+            "quote": "24%"
+          },
+          {
+            "start": 337,
+            "end": 340,
+            "quote": "36%"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "60",
+        "reader_ms": 2029.1,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "cn-capital-market-law/会计基础工作规范(2019-03-14).md",
+          "cn-science-ccby/17_10.5281_zenodo.23345012.md"
+        ],
+        "retrieval_ms": 224.47,
+        "reader_ms": 6683.6,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "60",
+        "hit_paths": [
+          "sec-10y-core/filings/TSM/2025_20-F_2026-04-16.md",
+          "sec-10y-core/filings/TSM/2025_20-F_2026-04-16.md",
+          "sec-10y-core/filings/TSM/2025_20-F_2026-04-16.md"
+        ],
+        "retrieval_ms": 180.24,
+        "reader_ms": 4387.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-14",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "GS",
+      "expect_absent": false,
+      "question": "高盛(GS) 2025-12-31 财年的净利润比 2024-12-31 财年增加了多少百万美元（2025减去2024）？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "2900",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 517,
+            "end": 531,
+            "quote": "USD 17,176.00M"
+          },
+          {
+            "start": 845,
+            "end": 859,
+            "quote": "USD 14,276.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2900",
+        "reader_ms": 4899.3,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2900",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md"
+        ],
+        "retrieval_ms": 300.43,
+        "reader_ms": 7391.0,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2900",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/HSBC_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/PDD_10y_xbrl.md"
+        ],
+        "retrieval_ms": 1025.35,
+        "reader_ms": 7539.9,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-15",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "JPM",
+      "expect_absent": false,
+      "question": "根据摩根大通(JPM) 2025-12-31 财年 XBRL 摘要数据，其总资产(Total Assets)减去股东权益(Stockholders Equity)的隐含总负债是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "4062462",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 609,
+            "end": 626,
+            "quote": "USD 4,424,900.00M"
+          },
+          {
+            "start": 649,
+            "end": 664,
+            "quote": "USD 362,438.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "4062462",
+        "reader_ms": 5081.7,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "2412493.1",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/JPM_10y_xbrl.md",
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md"
+        ],
+        "retrieval_ms": 456.45,
+        "reader_ms": 5856.0,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "4062462",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/JPM_10y_xbrl.md",
+          "sec-10y-core/filings/JPM/2018_10-K_2019-02-26.md",
+          "sec-10y-core/filings/JPM/2025_10-K_2026-02-13.md"
+        ],
+        "retrieval_ms": 347.85,
+        "reader_ms": 7267.4,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-16",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "BABA",
+      "expect_absent": false,
+      "question": "根据阿里巴巴(BABA) 2026 20-F 分部营业收入表，Cloud Intelligence Group 2026 财年收入比 2025 财年增加了多少百万元人民币（2026减去2025）？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "40104",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 1021,
+            "end": 1028,
+            "quote": "158,132"
+          },
+          {
+            "start": 1011,
+            "end": 1018,
+            "quote": "118,028"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "40104",
+        "reader_ms": 2620.2,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "27323",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/BABA_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/BABA_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/HSBC_10y_xbrl.md"
+        ],
+        "retrieval_ms": 192.26,
+        "reader_ms": 6695.5,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/filings/BABA/2026_20-F_2026-05-20.md",
+          "sec-10y-core/filings/BABA/2025_20-F_2025-06-26.md",
+          "sec-10y-core/filings/BABA/2026_20-F_2026-05-20.md"
+        ],
+        "retrieval_ms": 792.6,
+        "reader_ms": 7566.1,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      }
+    },
+    {
+      "id": "SEC-17",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "MRNA",
+      "expect_absent": false,
+      "question": "莫德纳(MRNA) 2025-12-31 财年的研发费用(R&D Expense)相比 2024-12-31 财年变化了多少百万美元（2025减去2024）？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "-1411",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 582,
+            "end": 595,
+            "quote": "USD 3,132.00M"
+          },
+          {
+            "start": 946,
+            "end": 959,
+            "quote": "USD 4,543.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "-1411",
+        "reader_ms": 4754.3,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md"
+        ],
+        "retrieval_ms": 394.54,
+        "reader_ms": 14756.1,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "-1411",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MRNA_10y_xbrl.md"
+        ],
+        "retrieval_ms": 104.37,
+        "reader_ms": 4599.4,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-18",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "OXY",
+      "expect_absent": false,
+      "question": "西方石油(OXY)在 2025-12-31、2024-12-31 与 2023-12-31 三个财年的资本开支(CapEx)累计合计是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "18386",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 604,
+            "end": 617,
+            "quote": "USD 6,427.00M"
+          },
+          {
+            "start": 915,
+            "end": 928,
+            "quote": "USD 6,263.00M"
+          },
+          {
+            "start": 1226,
+            "end": 1239,
+            "quote": "USD 5,696.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "18386",
+        "reader_ms": 5153.2,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "2988495.4",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/OXY_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md"
+        ],
+        "retrieval_ms": 355.32,
+        "reader_ms": 7695.0,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "24998",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/OXY_10y_xbrl.md"
+        ],
+        "retrieval_ms": 100.9,
+        "reader_ms": 6891.7,
+        "attribution": "reader_wrong_value_or_op"
+      }
+    },
+    {
+      "id": "SEC-19",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "WFC",
+      "expect_absent": false,
+      "question": "富国银行(WFC) 2025-12-31 财年净利润比 2024-12-31 财年增加了多少百万美元（2025减去2024）？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "1616",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 512,
+            "end": 526,
+            "quote": "USD 21,338.00M"
+          },
+          {
+            "start": 779,
+            "end": 793,
+            "quote": "USD 19,722.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "1616",
+        "reader_ms": 4053.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/WFC_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md"
+        ],
+        "retrieval_ms": 372.11,
+        "reader_ms": 14107.4,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "1616",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/WFC_10y_xbrl.md"
+        ],
+        "retrieval_ms": 125.18,
+        "reader_ms": 5264.5,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "SEC-20",
+      "track": "sec_fin",
+      "category": "arithmetic",
+      "ticker": "XOM",
+      "expect_absent": false,
+      "question": "埃克森美孚(XOM)在 2025-12-31 与 2024-12-31 两个财年的经营性现金流(Operating Cash Flow)累计合计是多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "106992",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 594,
+            "end": 608,
+            "quote": "USD 51,970.00M"
+          },
+          {
+            "start": 945,
+            "end": 959,
+            "quote": "USD 55,022.00M"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "106992",
+        "reader_ms": 4616.0,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/XOM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md"
+        ],
+        "retrieval_ms": 457.49,
+        "reader_ms": 13807.4,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "106992",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/XOM_10y_xbrl.md"
+        ],
+        "retrieval_ms": 184.67,
+        "reader_ms": 4311.5,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-01",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM Holdings plc 2023 年 424B4 招股书披露，本次首次公开发行每份 ADS 的初始发行价(Initial public offering price)是多少美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "51",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 822,
+            "end": 828,
+            "quote": "$51.00"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "51",
+        "reader_ms": 2570.3,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md",
+          "cn-capital-market-law/上市公司信息披露管理办法(2021-03-18).md",
+          "cn-capital-market-law/科创板首次公开发行股票注册管理办法（试行）(2020-07-10).md"
+        ],
+        "retrieval_ms": 310.55,
+        "reader_ms": 3444.1,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "51",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2026_20-F_2026-05-26.md"
+        ],
+        "retrieval_ms": 167.83,
+        "reader_ms": 3103.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-02",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM Holdings plc 2023 年 424B4 招股书封面披露的本次发行 American Depositary Shares (ADSs) 初始数量是多少份？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "95500000",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 49,
+            "end": 68,
+            "quote": "95,500,000 American"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "95500000",
+        "reader_ms": 2828.0,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "95500000",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "cn-science-ccby/10_10.14293_s2199-1006.1.sor-.ppi7gob.v1.md",
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md"
+        ],
+        "retrieval_ms": 248.42,
+        "reader_ms": 3074.9,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "95500000",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 276.88,
+        "reader_ms": 3354.3,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-03",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "根据 ARM 2023 年 424B4 招股书，本次发行完成后 SoftBank Group 预计实益持有 ARM 多少比例的普通股(ordinary shares)？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "90.6",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 1327,
+            "end": 1332,
+            "quote": "90.6%"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "90.6",
+        "reader_ms": 2123.9,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md",
+          "cn-capital-market-law/审计法实施条例(2026-09-19).md",
+          "cn-capital-market-law/金融负债与权益工具的区分及相关会计处理规定(2014-03-17).md"
+        ],
+        "retrieval_ms": 207.88,
+        "reader_ms": 3216.9,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "90.6",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 197.27,
+        "reader_ms": 2892.9,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-04",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM 2023 年 424B4 招股书披露，Cornerstone Investors（基石投资者）合计表示有意按发行价认购至多多少百万美元的 ADS？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "735",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 2146,
+            "end": 2158,
+            "quote": "$735 million"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "735",
+        "reader_ms": 2833.5,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "cn-science-ccby/10_10.14293_s2199-1006.1.sor-.ppi7gob.v1.md",
+          "sec-10y-core/xbrl_summaries/ARM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/ARM/ARM_xbrl_summary.md"
+        ],
+        "retrieval_ms": 223.61,
+        "reader_ms": 5011.1,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "735",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 121.56,
+        "reader_ms": 2352.9,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-05",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM 2023 年 424B4 招股书员工统计表显示，截至 March 31, 2023，ARM 全球共有多少名总员工(Total Employees)？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "5963",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 925,
+            "end": 930,
+            "quote": "5,963"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "5963",
+        "reader_ms": 1717.8,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "sec-10y-core/xbrl_summaries/ARM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/ARM/ARM_xbrl_summary.md"
+        ],
+        "retrieval_ms": 364.13,
+        "reader_ms": 2985.1,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "5963",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 252.87,
+        "reader_ms": 3112.5,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-06",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM 2023 年 424B4 招股书披露，在截至 March 31, 2023 止财年，Royalty revenue（特许权使用费收入）占总收入的百分之多少？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "63",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 586,
+            "end": 589,
+            "quote": "63%"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "63",
+        "reader_ms": 2092.2,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/企业所得税法(2018-12-29).md",
+          "sec-ipo-prospectus-pack/CRWV/CRWV_xbrl_summary.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md"
+        ],
+        "retrieval_ms": 385.65,
+        "reader_ms": 11526.4,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "63",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 253.57,
+        "reader_ms": 2455.5,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-07",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM 2023 年 424B4 招股书预测，截至 December 31, 2025 止日历年度 ARM 的可寻址总市场规模(TAM)将增长至约多少十亿美元(billion)？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "246.6",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 627,
+            "end": 641,
+            "quote": "$246.6 billion"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "246.6",
+        "reader_ms": 2096.7,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-github-stars/selfllm/DeepSeek-R1-Qwen-7B-vLLM.md",
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "cn-science-ccby/27_10.70267_ts897z50.md"
+        ],
+        "retrieval_ms": 373.95,
+        "reader_ms": 2522.3,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "246.6",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 399.39,
+        "reader_ms": 2777.1,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ARM-08",
+      "track": "arm_ipo",
+      "category": "extract",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "ARM 2023 年 424B4 招股书风险因素披露，截至 March 31, 2023 止财年最大单一客户 Arm China 约占 ARM 总收入的百分之多少？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "24",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 425,
+            "end": 442,
+            "quote": "approximately 24%"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "24",
+        "reader_ms": 1796.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "229",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/ARM_xbrl_summary.md",
+          "sec-10y-core/xbrl_summaries/ARM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRWV/CRWV_xbrl_summary.md"
+        ],
+        "retrieval_ms": 301.7,
+        "reader_ms": 3642.6,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "48.18",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md"
+        ],
+        "retrieval_ms": 229.46,
+        "reader_ms": 2824.2,
+        "attribution": "reader_wrong_value_or_op"
+      }
+    },
+    {
+      "id": "ARM-09",
+      "track": "arm_ipo",
+      "category": "arithmetic",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "根据 ARM 2023 年 424B4 招股书收入拆分表(Disaggregation of Revenue)，2023 财年 Total Royalty Revenue 比 Total License and Other Revenue 高多少百万美元？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "671",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 502,
+            "end": 507,
+            "quote": "1,675"
+          },
+          {
+            "start": 415,
+            "end": 421,
+            "quote": "$1,004"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "reader_ms": 5061.6,
+        "attribution": "reader_miss"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/AXP_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/MU_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/BAC_10y_xbrl.md"
+        ],
+        "retrieval_ms": 624.44,
+        "reader_ms": 4797.7,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-ipo-prospectus-pack/ARM/2025_20-F_2025-05-28.md"
+        ],
+        "retrieval_ms": 434.46,
+        "reader_ms": 7805.2,
+        "attribution": "reader_program_rejected"
+      }
+    },
+    {
+      "id": "ARM-10",
+      "track": "arm_ipo",
+      "category": "arithmetic",
+      "ticker": "ARM",
+      "expect_absent": false,
+      "question": "根据 ARM 2026 20-F 合并损益表，ARM 2026 财年 Total revenue 相比 2025 财年增加了多少百万美元（2026减去2025）？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "913",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 471,
+            "end": 476,
+            "quote": "4,920"
+          },
+          {
+            "start": 486,
+            "end": 491,
+            "quote": "4,007"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "reader_ms": 5569.0,
+        "attribution": "reader_miss"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "27323",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/BABA_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/HSBC_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/BIDU_10y_xbrl.md"
+        ],
+        "retrieval_ms": 270.55,
+        "reader_ms": 8022.8,
+        "attribution": "retrieval_wrong_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "913",
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/ARM_xbrl_summary.md",
+          "sec-10y-core/xbrl_summaries/ARM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/ARM/2026_20-F_2026-05-26.md"
+        ],
+        "retrieval_ms": 763.93,
+        "reader_ms": 6831.7,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-01",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《中华人民共和国公司法》第四十七条规定，有限责任公司全体股东认缴的出资额应自公司成立之日起几年内缴足？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "5",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 83,
+            "end": 85,
+            "quote": "五年"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "5",
+        "reader_ms": 1497.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "3",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "cn-capital-market-law/期货和衍生品法(2022-04-20).md"
+        ],
+        "retrieval_ms": 37.49,
+        "reader_ms": 2470.7,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "5",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md"
+        ],
+        "retrieval_ms": 35.87,
+        "reader_ms": 1826.6,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-02",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《中华人民共和国公司法》第二百一十条规定，公司分配当年税后利润时，应当提取利润的百分之多少列入公司法定公积金？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "10",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 40,
+            "end": 44,
+            "quote": "百分之十"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "10",
+        "reader_ms": 1368.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "10",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-capital-market-law/期货和衍生品法(2022-04-20).md"
+        ],
+        "retrieval_ms": 54.67,
+        "reader_ms": 2446.9,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "10",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md"
+        ],
+        "retrieval_ms": 25.39,
+        "reader_ms": 1472.6,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-03",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《中华人民共和国证券法》第三十一条规定，证券的代销、包销期限最长不得超过多少日？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "90",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 36,
+            "end": 39,
+            "quote": "九十日"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "90",
+        "reader_ms": 1709.0,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "90",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-capital-market-law/证券投资基金法(2015-04-24).md"
+        ],
+        "retrieval_ms": 43.2,
+        "reader_ms": 2650.7,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "90",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md"
+        ],
+        "retrieval_ms": 30.11,
+        "reader_ms": 1538.9,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-04",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《中华人民共和国证券法》第三十三条规定，股票发行采用代销方式，代销期限届满向投资者出售的股票数量未达到拟公开发行股票数量百分之多少的为发行失败？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "70",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 61,
+            "end": 66,
+            "quote": "百分之七十"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "70",
+        "reader_ms": 1593.5,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "70",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-capital-market-law/创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md"
+        ],
+        "retrieval_ms": 44.22,
+        "reader_ms": 2719.8,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "70",
+        "hit_paths": [
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md"
+        ],
+        "retrieval_ms": 41.24,
+        "reader_ms": 1698.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-05",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《会计法》第四十条规定，违反本法规定且情节严重的，对其直接负责的主管人员和其他直接责任人员最高可以处多少万元的罚款？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "500000",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 171,
+            "end": 175,
+            "quote": "五十万元"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "500000",
+        "reader_ms": 1381.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 52.1,
+        "reader_ms": 0.0,
+        "attribution": "retrieval_zero_hits"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "500000",
+        "hit_paths": [
+          "cn-capital-market-law/会计法(2024-06-28).md"
+        ],
+        "retrieval_ms": 15.8,
+        "reader_ms": 1772.2,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-06",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《会计法》第四十二条规定，授意、指使、强令会计机构伪造会计凭证且情节严重的，最高可以并处多少万元的罚款？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "5000000",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 160,
+            "end": 164,
+            "quote": "五百万元"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "1000000",
+        "reader_ms": 1617.4,
+        "attribution": "reader_miss"
+      },
+      "arm2_native_bm25": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "1000000",
+        "hit_paths": [
+          "cn-capital-market-law/会计法(2024-06-28).md",
+          "cn-capital-market-law/会计法(2024-06-28).md",
+          "cn-capital-market-law/会计法(2024-06-28).md"
+        ],
+        "retrieval_ms": 45.51,
+        "reader_ms": 2425.4,
+        "attribution": "reader_wrong_value_or_op"
+      },
+      "arm3_vericorpus": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "1000000",
+        "hit_paths": [
+          "cn-capital-market-law/会计法(2024-06-28).md"
+        ],
+        "retrieval_ms": 23.56,
+        "reader_ms": 1467.3,
+        "attribution": "reader_wrong_value_or_op"
+      }
+    },
+    {
+      "id": "LAW-07",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《注册会计师法》第十一条规定，参加注册会计师全国统一考试成绩合格，并从事审计业务工作几年以上的，可以申请注册？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "2",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 49,
+            "end": 51,
+            "quote": "二年"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2",
+        "reader_ms": 1685.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2",
+        "hit_paths": [
+          "cn-capital-market-law/注册会计师法(2026-06-26).md"
+        ],
+        "retrieval_ms": 48.36,
+        "reader_ms": 1819.8,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "2",
+        "hit_paths": [
+          "cn-capital-market-law/注册会计师法(2026-06-26).md"
+        ],
+        "retrieval_ms": 29.03,
+        "reader_ms": 1819.8,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-08",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《注册会计师法》第二十八条规定，审批机关应当自收到申请文件之日起多少日内决定批准或者不批准？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "15",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 39,
+            "end": 42,
+            "quote": "十五日"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "15",
+        "reader_ms": 1102.5,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 36.48,
+        "reader_ms": 0.0,
+        "attribution": "retrieval_zero_hits"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "15",
+        "hit_paths": [
+          "cn-capital-market-law/注册会计师法(2026-06-26).md",
+          "cn-capital-market-law/注册会计师法(2026-06-26).md"
+        ],
+        "retrieval_ms": 21.02,
+        "reader_ms": 1864.6,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-09",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《科创板首次公开发行股票注册管理办法（试行）》第二十四条规定，中国证监会在多少个工作日内对发行人的注册申请作出同意注册或者不予注册的决定？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "20",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 37,
+            "end": 43,
+            "quote": "20个工作日"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "20",
+        "reader_ms": 1509.1,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/科创板首次公开发行股票注册管理办法（试行）(2020-07-10).md",
+          "cn-capital-market-law/创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md",
+          "cn-capital-market-law/企业破产法(2006-08-27).md"
+        ],
+        "retrieval_ms": 61.93,
+        "reader_ms": 5996.8,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "20",
+        "hit_paths": [
+          "cn-capital-market-law/科创板首次公开发行股票注册管理办法（试行）(2020-07-10).md"
+        ],
+        "retrieval_ms": 24.92,
+        "reader_ms": 1657.2,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-10",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《创业板首次公开发行股票注册管理办法（试行）》第二十七条规定，交易所作出终止发行上市审核决定或中国证监会作出不予注册决定的，自决定作出之日起几个月后发行人可以再次提出申请？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "6",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 93,
+            "end": 96,
+            "quote": "六个月"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "6",
+        "reader_ms": 1589.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "REJECTED",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md",
+          "cn-capital-market-law/科创板首次公开发行股票注册管理办法（试行）(2020-07-10).md",
+          "cn-capital-market-law/企业破产法(2006-08-27).md"
+        ],
+        "retrieval_ms": 61.27,
+        "reader_ms": 5823.6,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "6",
+        "hit_paths": [
+          "cn-capital-market-law/创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md"
+        ],
+        "retrieval_ms": 49.08,
+        "reader_ms": 1613.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-11",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《上市公司信息披露管理办法》第十三条规定，上市公司年度报告应当在每个会计年度结束之日起几个月内编制完成并披露？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "4",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 39,
+            "end": 42,
+            "quote": "四个月"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "4",
+        "reader_ms": 1134.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/上市公司信息披露管理办法(2021-03-18).md",
+          "cn-capital-market-law/上市公司信息披露管理办法(2021-03-18).md"
+        ],
+        "retrieval_ms": 32.31,
+        "reader_ms": 4283.9,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "4",
+        "hit_paths": [
+          "cn-capital-market-law/上市公司信息披露管理办法(2021-03-18).md"
+        ],
+        "retrieval_ms": 29.51,
+        "reader_ms": 1453.9,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-12",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《企业所得税法》第四条第一款规定，企业所得税的法定税率是百分之多少？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "25",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 30,
+            "end": 33,
+            "quote": "25％"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "25",
+        "reader_ms": 1259.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 34.57,
+        "reader_ms": 0.0,
+        "attribution": "retrieval_zero_hits"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "25",
+        "hit_paths": [
+          "cn-capital-market-law/企业所得税法(2018-12-29).md",
+          "cn-capital-market-law/企业所得税法(2018-12-29).md"
+        ],
+        "retrieval_ms": 15.79,
+        "reader_ms": 2279.4,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-13",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《增值税法》第九条规定，小规模纳税人是指年应征增值税销售额未超过多少万元的纳税人？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "5000000",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 44,
+            "end": 48,
+            "quote": "五百万元"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "5000000",
+        "reader_ms": 1444.3,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 55.98,
+        "reader_ms": 0.0,
+        "attribution": "retrieval_zero_hits"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "5000000",
+        "hit_paths": [
+          "cn-capital-market-law/增值税法实施条例(2025-12-25).md",
+          "cn-capital-market-law/增值税法(2024-12-25).md",
+          "cn-capital-market-law/增值税法实施条例(2025-12-25).md"
+        ],
+        "retrieval_ms": 30.11,
+        "reader_ms": 2423.1,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-14",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《上市公司收购管理办法》第二十四条规定，收购人持有一个上市公司的股份达到该公司已发行股份的百分之多少时继续增持应当采取要约方式进行？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "30",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 58,
+            "end": 61,
+            "quote": "30%"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "30",
+        "reader_ms": 1342.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-capital-market-law/上市公司重大资产重组管理办法(2020-03-20).md",
+          "cn-capital-market-law/上市公司重大资产重组管理办法(2020-03-20).md",
+          "cn-capital-market-law/上市公司收购管理办法(2020-03-20).md"
+        ],
+        "retrieval_ms": 32.93,
+        "reader_ms": 2483.0,
+        "attribution": "retrieval_wrong_chunk_in_doc"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "30",
+        "hit_paths": [
+          "cn-capital-market-law/上市公司收购管理办法(2020-03-20).md",
+          "cn-capital-market-law/上市公司收购管理办法(2020-03-20).md"
+        ],
+        "retrieval_ms": 42.28,
+        "reader_ms": 2095.5,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "LAW-15",
+      "track": "cn_law",
+      "category": "extract",
+      "ticker": null,
+      "expect_absent": false,
+      "question": "《企业破产法》第十四条规定，人民法院应当自裁定受理破产申请之日起多少日内通知已知债权人并予以公告？",
+      "expected": {
+        "status": "ANSWER",
+        "value": "25",
+        "type": "number",
+        "evidence": [
+          {
+            "start": 39,
+            "end": 43,
+            "quote": "二十五日"
+          }
+        ]
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "25",
+        "reader_ms": 1188.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "N",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 35.98,
+        "reader_ms": 0.0,
+        "attribution": "retrieval_zero_hits"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ANSWER",
+        "value": "25",
+        "hit_paths": [
+          "cn-capital-market-law/企业破产法(2006-08-27).md"
+        ],
+        "retrieval_ms": 16.29,
+        "reader_ms": 1692.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-01",
+      "track": "absent",
+      "category": "absent_out_of_corpus",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "字节跳动(ByteDance) 2025 财年的合并营业收入是多少亿美元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 3783.1,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TME_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/AAPL_10y_xbrl.md"
+        ],
+        "retrieval_ms": 129.42,
+        "reader_ms": 6031.3,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 99.61,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-02",
+      "track": "absent",
+      "category": "absent_out_of_corpus",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "Stripe Inc. 2025 年 SEC 424B4 招股书披露的净利润是多少百万美元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 2609.8,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MU_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/PDD_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md"
+        ],
+        "retrieval_ms": 178.31,
+        "reader_ms": 3600.7,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 90.72,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-03",
+      "track": "absent",
+      "category": "absent_out_of_corpus",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "华为技术有限公司 2025 年年度报告披露的研发费用支出是多少亿元人民币？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 4232.7,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-science-ccby/05_10.70267_47sn0j24.md",
+          "cn-capital-market-law/增值税法实施条例(2025-12-25).md",
+          "cn-science-ccby/27_10.70267_ts897z50.md"
+        ],
+        "retrieval_ms": 229.07,
+        "reader_ms": 2666.1,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRWV/CRWV_xbrl_summary.md",
+          "sec-10y-core/xbrl_summaries/BIDU_10y_xbrl.md"
+        ],
+        "retrieval_ms": 1921.41,
+        "reader_ms": 5716.4,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-04",
+      "track": "absent",
+      "category": "absent_out_of_corpus",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《中华人民共和国反垄断法》第二十二条规定的经营者集中申报营业额门槛是多少亿元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1701.0,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 63.2,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 39.47,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-05",
+      "track": "absent",
+      "category": "absent_out_of_corpus",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《中华人民共和国人工智能法》第十八条规定的大模型备案审批时限是多少个工作日？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1428.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 65.57,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 39.56,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-06",
+      "track": "absent",
+      "category": "absent_heldout_metric_or_year",
+      "ticker": "MSFT",
+      "expect_absent": true,
+      "question": "微软(MSFT) 2005-06-30 财年的营业收入是多少百万美元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 3573.6,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/CRDO/CRDO_xbrl_summary.md"
+        ],
+        "retrieval_ms": 123.85,
+        "reader_ms": 6077.6,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/MSFT_10y_xbrl.md",
+          "sec-10y-core/filings/MSFT/2017_10-K_2017-08-02.md",
+          "sec-10y-core/filings/MSFT/2026_10-K_2026-07-29.md"
+        ],
+        "retrieval_ms": 703.75,
+        "reader_ms": 3882.1,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-07",
+      "track": "absent",
+      "category": "absent_heldout_metric_or_year",
+      "ticker": "GS",
+      "expect_absent": true,
+      "question": "高盛(GS) 2025-12-31 财年在 SEC XBRL 财务总表中披露的研发费用(R&D Expense)是多少百万美元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "17176",
+        "reader_ms": 7772.6,
+        "attribution": "false_answer_hallucinated"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/AXP_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/MU_10y_xbrl.md"
+        ],
+        "retrieval_ms": 299.64,
+        "reader_ms": 2480.4,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "17176",
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/GS_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/HSBC_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/PDD_10y_xbrl.md"
+        ],
+        "retrieval_ms": 455.25,
+        "reader_ms": 6747.3,
+        "attribution": "false_answer_hallucinated"
+      }
+    },
+    {
+      "id": "ABS-08",
+      "track": "absent",
+      "category": "absent_heldout_metric_or_year",
+      "ticker": "JPM",
+      "expect_absent": true,
+      "question": "摩根大通(JPM) 2025-12-31 财年在 SEC XBRL 财务总表中披露的毛利润(Gross Profit)是多少百万美元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "W",
+        "status": "ANSWER",
+        "value": "—",
+        "reader_ms": 3105.6,
+        "attribution": "false_answer_hallucinated"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/JPM_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/AXP_10y_xbrl.md",
+          "sec-10y-core/xbrl_summaries/MU_10y_xbrl.md"
+        ],
+        "retrieval_ms": 299.31,
+        "reader_ms": 2318.4,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/JPM_10y_xbrl.md",
+          "sec-10y-core/filings/JPM/2022_10-K_2023-02-21.md",
+          "sec-10y-core/filings/JPM/2020_10-K_2021-02-23.md"
+        ],
+        "retrieval_ms": 173.45,
+        "reader_ms": 11477.8,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-09",
+      "track": "absent",
+      "category": "absent_heldout_metric_or_year",
+      "ticker": "ARM",
+      "expect_absent": true,
+      "question": "ARM Holdings plc 2023 年 424B4 招股书员工分布表中单独披露的中国大陆全职员工人数是多少名？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1884.9,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "sec-10y-core/xbrl_summaries/ARM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/ARM/ARM_xbrl_summary.md"
+        ],
+        "retrieval_ms": 186.12,
+        "reader_ms": 2345.4,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-ipo-prospectus-pack/ARM/2023_424B4_2023-09-14.md",
+          "sec-10y-core/xbrl_summaries/ARM_10y_xbrl.md",
+          "sec-ipo-prospectus-pack/ARM/ARM_xbrl_summary.md"
+        ],
+        "retrieval_ms": 428.31,
+        "reader_ms": 2345.2,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-10",
+      "track": "absent",
+      "category": "absent_heldout_metric_or_year",
+      "ticker": "TSM",
+      "expect_absent": true,
+      "question": "台积电(TSM) 2025 年 20-F 晶圆技术节点表中 1-nanometer 制程占晶圆总收入的百分比是多少？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1826.2,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/xbrl_summaries/TSM_10y_xbrl.md",
+          "cn-capital-market-law/金融负债与权益工具的区分及相关会计处理规定(2014-03-17).md",
+          "cn-science-ccby/20_10.5281_zenodo.23217100.md"
+        ],
+        "retrieval_ms": 197.75,
+        "reader_ms": 3362.4,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "sec-10y-core/filings/TSM/2025_20-F_2026-04-16.md",
+          "sec-10y-core/filings/TSM/2024_20-F_2025-04-17.md",
+          "sec-10y-core/filings/TSM/2022_20-F_2023-04-20.md"
+        ],
+        "retrieval_ms": 578.78,
+        "reader_ms": 3247.1,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-11",
+      "track": "absent",
+      "category": "absent_law_article",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《会计法》第999条规定对虚假财务会计报告的最高行政罚款是多少万元？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 2119.1,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 55.06,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 26.19,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-12",
+      "track": "absent",
+      "category": "absent_law_article",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《中华人民共和国公司法》第888条规定的跨境并购国家安全审查期限是多少日？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1376.0,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-law-core/中华人民共和国公司法(2023-12-29).md",
+          "cn-capital-market-law/期货和衍生品法(2022-04-20).md",
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md"
+        ],
+        "retrieval_ms": 47.77,
+        "reader_ms": 2364.9,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 19.17,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-13",
+      "track": "absent",
+      "category": "absent_law_article",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《中华人民共和国证券法》第777条规定的高频量化交易印花税率是多少？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1292.4,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [
+          "cn-law-core/中华人民共和国证券法(2019-12-28).md",
+          "cn-capital-market-law/最高人民法院关于审理证券市场虚假陈述侵权民事赔偿案件的若干规定(2022-01-21).md",
+          "cn-capital-market-law/科创板首次公开发行股票注册管理办法（试行）(2020-07-10).md"
+        ],
+        "retrieval_ms": 37.72,
+        "reader_ms": 3144.3,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 43.54,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-14",
+      "track": "absent",
+      "category": "absent_law_article",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《注册会计师法》第666条规定的数字审计工作底稿最低保存年限是多少年？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1300.8,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 39.1,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 16.01,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    },
+    {
+      "id": "ABS-15",
+      "track": "absent",
+      "category": "absent_law_article",
+      "ticker": null,
+      "expect_absent": true,
+      "question": "《企业所得税法》第555条规定的数字资产资本利得特别税率是百分之多少？",
+      "expected": {
+        "status": "ABSENT",
+        "value": null,
+        "type": null,
+        "evidence": []
+      },
+      "arm1_oracle": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "reader_ms": 1156.2,
+        "attribution": "ok"
+      },
+      "arm2_native_bm25": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 38.58,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      },
+      "arm3_vericorpus": {
+        "verdict": "R",
+        "status": "ABSENT",
+        "value": null,
+        "hit_paths": [],
+        "retrieval_ms": 15.33,
+        "reader_ms": 0.0,
+        "attribution": "ok"
+      }
+    }
+  ]
+}

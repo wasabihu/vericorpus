@@ -1,0 +1,251 @@
+[
+  {
+    "id": "02533",
+    "name_zh": "黑芝麻智能",
+    "name_en": "Black Sesame International Holding Limited",
+    "track": "hkex_recipe",
+    "hk_code": "02533",
+    "wiki_track": "china-autonomous-ai-compute-stack",
+    "note": "港股18C特专科技车规级智驾SoC芯片招股书与上市后年报",
+    "filings": [
+      {
+        "market": "HKEX",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "27/04/2026 16:48",
+        "title": "2025年報",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0427/2026042701017_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2024",
+        "filing_date": "25/04/2025 17:13",
+        "title": "2024年報",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042501584_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS",
+        "fiscal_year": "2024",
+        "filing_date": "31/07/2024 06:18",
+        "title": "全球發售",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0731/2024073100016_c.pdf"
+      }
+    ]
+  },
+  {
+    "id": "09660",
+    "name_zh": "地平线机器人-W",
+    "name_en": "Horizon Robotics",
+    "track": "hkex_recipe",
+    "hk_code": "09660",
+    "wiki_track": "china-autonomous-ai-compute-stack",
+    "note": "智驾计算方案龙头，2024-10港股招股书与上市后年报",
+    "filings": [
+      {
+        "market": "HKEX",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "30/04/2026 17:10",
+        "title": "2025年年報",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0430/2026043001831_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2024",
+        "filing_date": "21/04/2025 18:41",
+        "title": "2024年年報",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0421/2025042100204_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS",
+        "fiscal_year": "2024",
+        "filing_date": "16/10/2024 06:15",
+        "title": "全球發售",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1016/2024101600018_c.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ZHIPU",
+    "name_zh": "智谱",
+    "name_en": "Beijing Zhipu Huazhang Technology Co., Ltd.",
+    "track": "hkex_recipe",
+    "hk_code": "02513",
+    "wiki_track": "frontier-ai-technology-landscape",
+    "note": "2026-01港交所大模型第一股招股书+2025年报+2026中报",
+    "filings": [
+      {
+        "name": "2025_ANNUAL_REPORT.md",
+        "source": "data/raw/cn-hk-financial-10y/hkex/ZHIPU/2025_ANNUAL_REPORT.md"
+      },
+      {
+        "name": "2025_PROSPECTUS.md",
+        "source": "data/raw/cn-hk-financial-10y/hkex/ZHIPU/2025_PROSPECTUS.md"
+      },
+      {
+        "name": "2026_INTERIM_REPORT.md",
+        "source": "data/raw/cn-hk-financial-10y/hkex/ZHIPU/2026_INTERIM_REPORT.md"
+      }
+    ]
+  },
+  {
+    "id": "02432",
+    "name_zh": "越疆机器人",
+    "name_en": "Shenzhen Dobot Corp Ltd",
+    "track": "hkex_recipe",
+    "hk_code": "02432",
+    "wiki_track": "frontier-ai-technology-landscape",
+    "note": "港股18C协作机器人招股章程与年度报告表格重建对照",
+    "filings": [
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS_PHIP",
+        "fiscal_year": "2024",
+        "filing_date": "2026-09-26",
+        "title": "00-聆讯后资料集-警告",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1223/11485372/sehk24120100065_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS_PHIP",
+        "fiscal_year": "2024",
+        "filing_date": "2026-09-26",
+        "title": "01-聆讯后资料集-概要",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1223/11485372/sehk24120100069_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS_PHIP",
+        "fiscal_year": "2024",
+        "filing_date": "2026-09-26",
+        "title": "02-聆讯后资料集-业务",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1223/11485372/sehk24120100081_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS_PHIP",
+        "fiscal_year": "2024",
+        "filing_date": "2026-09-26",
+        "title": "03-聆讯后资料集-行业概览",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1223/11485372/sehk24120100078_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "PROSPECTUS_PHIP",
+        "fiscal_year": "2024",
+        "filing_date": "2026-09-26",
+        "title": "04-聆讯后资料集-风险因素",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1223/11485372/sehk24120100073_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "INTERIM_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "2026-09-26",
+        "title": "05-2025中期报告",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/0922/2025092200661_c.pdf"
+      },
+      {
+        "market": "HKEX",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "2026-09-26",
+        "title": "06-2025年度报告",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0330/2026033001835_c.pdf"
+      }
+    ]
+  },
+  {
+    "id": "688041",
+    "name_zh": "海光信息",
+    "name_en": "Hygon Information Technology Co., Ltd.",
+    "track": "cninfo_recipe",
+    "cn_code": "688041",
+    "wiki_track": "china-autonomous-ai-compute-stack",
+    "note": "国产AI算力DCU/CPU核心标的，科创板招股书+2025年报",
+    "filings": [
+      {
+        "market": "CNINFO",
+        "form": "PROSPECTUS",
+        "fiscal_year": "2022",
+        "filing_date": "2022-08-09",
+        "title": "海光信息首次公开发行股票并在科创板上市招股说明书",
+        "url": "https://static.cninfo.com.cn/finalpage/2022-08-09/1214251824.PDF"
+      },
+      {
+        "market": "CNINFO",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "2026-04-08",
+        "title": "海光信息技术股份有限公司2025年年度报告",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-04-08/1225083088.PDF"
+      }
+    ]
+  },
+  {
+    "id": "688498",
+    "name_zh": "源杰科技",
+    "name_en": "Yuanjie Semiconductor Technology Co., Ltd.",
+    "track": "cninfo_recipe",
+    "cn_code": "688498",
+    "wiki_track": "ai-cluster-optical-interconnect",
+    "note": "高速光芯片核心标的，科创板招股书+上交所年报审核问询函回复+2025年报",
+    "filings": [
+      {
+        "market": "CNINFO",
+        "form": "PROSPECTUS",
+        "fiscal_year": "2022",
+        "filing_date": "2022-12-16",
+        "title": "源杰科技首次公开发行股票并在科创板上市招股说明书",
+        "url": "https://static.cninfo.com.cn/finalpage/2022-12-16/1215368028.PDF"
+      },
+      {
+        "market": "CNINFO",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "2026-03-25",
+        "title": "陕西源杰半导体科技股份有限公司2025年年度报告",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-03-25/1225028582.PDF"
+      },
+      {
+        "market": "CNINFO",
+        "form": "INQUIRY_REPLY",
+        "fiscal_year": "2023",
+        "filing_date": "2024-06-20",
+        "title": "陕西源杰半导体科技股份有限公司关于对上海证券交易所2023年年度报告的事后审核问询函回复的公告",
+        "url": "https://static.cninfo.com.cn/finalpage/2024-06-20/1220402197.PDF"
+      }
+    ]
+  },
+  {
+    "id": "688295",
+    "name_zh": "中复神鹰",
+    "name_en": "Zhongfu Shenying Carbon Fiber Co., Ltd.",
+    "track": "cninfo_recipe",
+    "cn_code": "688295",
+    "wiki_track": "high-performance-composites",
+    "note": "高性能CFRP碳纤维龙头，科创板招股书+2025年报",
+    "filings": [
+      {
+        "market": "CNINFO",
+        "form": "PROSPECTUS",
+        "fiscal_year": "2022",
+        "filing_date": "2022-03-30",
+        "title": "中复神鹰首次公开发行股票并在科创板上市招股说明书",
+        "url": "https://static.cninfo.com.cn/finalpage/2022-03-30/1212728566.PDF"
+      },
+      {
+        "market": "CNINFO",
+        "form": "ANNUAL_REPORT",
+        "fiscal_year": "2025",
+        "filing_date": "2026-03-26",
+        "title": "2025年年度报告",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-03-26/1225032175.PDF"
+      }
+    ]
+  }
+]

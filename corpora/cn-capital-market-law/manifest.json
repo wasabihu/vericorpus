@@ -1,0 +1,125 @@
+{
+  "slug": "cn-capital-market-law",
+  "title": "中国资本市场、企业会计准则与财税审计核心法规包",
+  "description": "精选中国资本市场证券监管、并购重组与注册制、企业会计准则、财税与审计核心成文法条、行政法规、财政部/证监会部门规章及最高法司法解释，基于《著作权法》第五条（公有领域）整理。",
+  "domain": "LAW",
+  "region": "CN",
+  "mode": "pack",
+  "license": "Public-Domain-CN-Law",
+  "legal_basis": "《中华人民共和国著作权法》第五条第一项：法律、法规及官方正式译文不适用著作权法，属于公有领域（Public Domain）。",
+  "source_url": "https://flk.npc.gov.cn/",
+  "upstream_mirror": {
+    "repo": "LawRefBook/Laws",
+    "commit": "8cb05f0dfd02c442b28e3fa1299014246aa7d3da",
+    "note": "仅提取其中的公有领域成文法条与部门规章 Markdown 文本，未包含或复用该仓库任何无许可证程序代码。"
+  },
+  "sources": [
+    {
+      "name": "会计法(2024-06-28).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E4%BC%9A%E8%AE%A1%E6%B3%95(2024-06-28).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "注册会计师法(2026-06-26).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E6%B3%A8%E5%86%8C%E4%BC%9A%E8%AE%A1%E5%B8%88%E6%B3%95(2026-06-26).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "审计法(2021-10-23).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E5%AE%A1%E8%AE%A1%E6%B3%95(2021-10-23).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "审计法实施条例(2026-09-19).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E8%A1%8C%E6%94%BF%E6%B3%95%E8%A7%84/%E5%AE%A1%E8%AE%A1%E6%B3%95%E5%AE%9E%E6%96%BD%E6%9D%A1%E4%BE%8B(2026-09-19).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "企业所得税法(2018-12-29).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E4%BC%81%E4%B8%9A%E6%89%80%E5%BE%97%E7%A8%8E%E6%B3%95(2018-12-29).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "增值税法(2024-12-25).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E5%A2%9E%E5%80%BC%E7%A8%8E%E6%B3%95(2024-12-25).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "增值税法实施条例(2025-12-25).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E8%A1%8C%E6%94%BF%E6%B3%95%E8%A7%84/%E5%A2%9E%E5%80%BC%E7%A8%8E%E6%B3%95%E5%AE%9E%E6%96%BD%E6%9D%A1%E4%BE%8B(2025-12-25).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "期货和衍生品法(2022-04-20).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E7%BB%8F%E6%B5%8E%E6%B3%95/%E6%9C%9F%E8%B4%A7%E5%92%8C%E8%A1%8D%E7%94%9F%E5%93%81%E6%B3%95(2022-04-20).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "证券投资基金法(2015-04-24).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%95%86%E6%B3%95/%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%91%E6%B3%95(2015-04-24).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "企业破产法(2006-08-27).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E6%B0%91%E6%B3%95%E5%95%86%E6%B3%95/%E4%BC%81%E4%B8%9A%E7%A0%B4%E4%BA%A7%E6%B3%95(2006-08-27).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "企业会计准则---基本准则(2006-02-15).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E8%B4%A2%E6%94%BF%E9%83%A8/%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AE%A1%E5%87%86%E5%88%99---%E5%9F%BA%E6%9C%AC%E5%87%86%E5%88%99(2006-02-15).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "会计基础工作规范(2019-03-14).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E8%B4%A2%E6%94%BF%E9%83%A8/%E4%BC%9A%E8%AE%A1%E5%9F%BA%E7%A1%80%E5%B7%A5%E4%BD%9C%E8%A7%84%E8%8C%83(2019-03-14).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "金融负债与权益工具的区分及相关会计处理规定(2014-03-17).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E8%B4%A2%E6%94%BF%E9%83%A8/%E9%87%91%E8%9E%8D%E8%B4%9F%E5%80%BA%E4%B8%8E%E6%9D%83%E7%9B%8A%E5%B7%A5%E5%85%B7%E7%9A%84%E5%8C%BA%E5%88%86%E5%8F%8A%E7%9B%B8%E5%85%B3%E4%BC%9A%E8%AE%A1%E5%A4%84%E7%90%86%E8%A7%84%E5%AE%9A(2014-03-17).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "增值税会计处理规定(2016-12-03).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E8%B4%A2%E6%94%BF%E9%83%A8/%E5%A2%9E%E5%80%BC%E7%A8%8E%E4%BC%9A%E8%AE%A1%E5%A4%84%E7%90%86%E8%A7%84%E5%AE%9A(2016-12-03).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "上市公司信息披露管理办法(2021-03-18).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95(2021-03-18).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "上市公司重大资产重组管理办法(2020-03-20).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E9%87%8D%E5%A4%A7%E8%B5%84%E4%BA%A7%E9%87%8D%E7%BB%84%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95(2020-03-20).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "上市公司收购管理办法(2020-03-20).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E6%94%B6%E8%B4%AD%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95(2020-03-20).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "科创板首次公开发行股票注册管理办法（试行）(2020-07-10).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A/%E7%A7%91%E5%88%9B%E6%9D%BF%E9%A6%96%E6%AC%A1%E5%85%AC%E5%BC%80%E5%8F%91%E8%A1%8C%E8%82%A1%E7%A5%A8%E6%B3%A8%E5%86%8C%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89(2020-07-10).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "创业板首次公开发行股票注册管理办法（试行）(2020-06-12).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E9%83%A8%E9%97%A8%E8%A7%84%E7%AB%A0/%E4%B8%AD%E5%9B%BD%E8%AF%81%E5%88%B8%E7%9B%91%E7%9D%A3%E7%AE%A1%E7%90%86%E5%A7%94%E5%91%98%E4%BC%9A/%E5%88%9B%E4%B8%9A%E6%9D%BF%E9%A6%96%E6%AC%A1%E5%85%AC%E5%BC%80%E5%8F%91%E8%A1%8C%E8%82%A1%E7%A5%A8%E6%B3%A8%E5%86%8C%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89(2020-06-12).md",
+      "license": "Public-Domain-CN-Law"
+    },
+    {
+      "name": "最高人民法院关于审理证券市场虚假陈述侵权民事赔偿案件的若干规定(2022-01-21).md",
+      "url": "https://raw.githubusercontent.com/LawRefBook/Laws/8cb05f0dfd02c442b28e3fa1299014246aa7d3da/%E5%8F%B8%E6%B3%95%E8%A7%A3%E9%87%8A/%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E8%AF%81%E5%88%B8%E5%B8%82%E5%9C%BA%E8%99%9A%E5%81%87%E9%99%88%E8%BF%B0%E4%BE%B5%E6%9D%83%E6%B0%91%E4%BA%8B%E8%B5%94%E5%81%BF%E6%A1%88%E4%BB%B6%E7%9A%84%E8%8B%A5%E5%B9%B2%E8%A7%84%E5%AE%9A(2022-01-21).md",
+      "license": "Public-Domain-CN-Law"
+    }
+  ],
+  "review": {
+    "spdx": "Public-Domain-CN-Law",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "PRC Copyright Law Art. 5(1) statutory public domain across CSRC/MOF/SPC norms; pinned 40-hex commit verified."
+  }
+}

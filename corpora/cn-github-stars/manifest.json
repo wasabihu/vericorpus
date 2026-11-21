@@ -1,0 +1,205 @@
+{
+  "slug": "cn-github-stars",
+  "title": "GitHub 中文高星 Apache-2.0 开源名项目文档包",
+  "description": "严格核验 SPDX 开源协议为 Apache-2.0 的 5 个现象级中文主导高星开源项目（合计 33.5 万+ Stars），锁定精确 Commit SHA 摘取高密度中文工程、RAG、OCR 与大模型微调文档。",
+  "domain": "AI",
+  "region": "CN",
+  "mode": "pack",
+  "license": "Apache-2.0",
+  "source_url": "https://github.com/infiniflow/ragflow",
+  "repos": [
+    {
+      "repo": "infiniflow/ragflow",
+      "commit": "00b3b996bc0d53e4dbd02911ef60aa2ad7282309",
+      "license": "Apache-2.0",
+      "stars": 94450
+    },
+    {
+      "repo": "PaddlePaddle/PaddleOCR",
+      "commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "license": "Apache-2.0",
+      "stars": 92923
+    },
+    {
+      "repo": "hiyouga/LLaMA-Factory",
+      "commit": "b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1",
+      "license": "Apache-2.0",
+      "stars": 76141
+    },
+    {
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "commit": "49165d6af4438aa7e8a1f71ce276db55f4405151",
+      "license": "Apache-2.0",
+      "stars": 38715
+    },
+    {
+      "repo": "datawhalechina/self-llm",
+      "commit": "4da223bd0a25eeedc247696b1de51deafb58563e",
+      "license": "Apache-2.0",
+      "stars": 32829
+    }
+  ],
+  "sources": [
+    {
+      "name": "ragflow/README_zh.md",
+      "repo": "infiniflow/ragflow",
+      "commit": "00b3b996bc0d53e4dbd02911ef60aa2ad7282309",
+      "url": "https://raw.githubusercontent.com/infiniflow/ragflow/00b3b996bc0d53e4dbd02911ef60aa2ad7282309/README_zh.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ragflow/README_tzh.md",
+      "repo": "infiniflow/ragflow",
+      "commit": "00b3b996bc0d53e4dbd02911ef60aa2ad7282309",
+      "url": "https://raw.githubusercontent.com/infiniflow/ragflow/00b3b996bc0d53e4dbd02911ef60aa2ad7282309/README_tzh.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ragflow/docs_basics_rag.md",
+      "repo": "infiniflow/ragflow",
+      "commit": "00b3b996bc0d53e4dbd02911ef60aa2ad7282309",
+      "url": "https://raw.githubusercontent.com/infiniflow/ragflow/00b3b996bc0d53e4dbd02911ef60aa2ad7282309/docs/basics/rag.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ragflow/docs_chunk_parsing.md",
+      "repo": "infiniflow/ragflow",
+      "commit": "00b3b996bc0d53e4dbd02911ef60aa2ad7282309",
+      "url": "https://raw.githubusercontent.com/infiniflow/ragflow/00b3b996bc0d53e4dbd02911ef60aa2ad7282309/docs/guides/dataset/chunk_parsing_results_and_knowledge_fragment_management.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ragflow/docs_ragflow_cli.md",
+      "repo": "infiniflow/ragflow",
+      "commit": "00b3b996bc0d53e4dbd02911ef60aa2ad7282309",
+      "url": "https://raw.githubusercontent.com/infiniflow/ragflow/00b3b996bc0d53e4dbd02911ef60aa2ad7282309/docs/administrator/management/ragflow_cli.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "paddleocr/RELEASING_cn.md",
+      "repo": "PaddlePaddle/PaddleOCR",
+      "commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/RELEASING_cn.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "paddleocr/api_sdk_README_cn.md",
+      "repo": "PaddlePaddle/PaddleOCR",
+      "commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/api_sdk/README_cn.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "paddleocr/table_master.md",
+      "repo": "PaddlePaddle/PaddleOCR",
+      "commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/docs/version2.x/algorithm/table_recognition/algorithm_table_master.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "paddleocr/table_datasets.md",
+      "repo": "PaddlePaddle/PaddleOCR",
+      "commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/docs/datasets/table_datasets.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "paddleocr/paddle2onnx_ch.md",
+      "repo": "PaddlePaddle/PaddleOCR",
+      "commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "url": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/deploy/paddle2onnx/readme_ch.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "llamafactory/README_zh.md",
+      "repo": "hiyouga/LLaMA-Factory",
+      "commit": "b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1",
+      "url": "https://raw.githubusercontent.com/hiyouga/LLaMA-Factory/b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1/README_zh.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "llamafactory/data_README_zh.md",
+      "repo": "hiyouga/LLaMA-Factory",
+      "commit": "b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1",
+      "url": "https://raw.githubusercontent.com/hiyouga/LLaMA-Factory/b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1/data/README_zh.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "llamafactory/npu_OVERVIEW.zh.md",
+      "repo": "hiyouga/LLaMA-Factory",
+      "commit": "b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1",
+      "url": "https://raw.githubusercontent.com/hiyouga/LLaMA-Factory/b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1/docker/docker-npu/OVERVIEW.zh.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "llamafactory/qwen_sft_training.md",
+      "repo": "hiyouga/LLaMA-Factory",
+      "commit": "b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1",
+      "url": "https://raw.githubusercontent.com/hiyouga/LLaMA-Factory/b4e4d3fcb2a5a13ce6b9431d395e3939f84b8ec1/.agents/skills/llamafactory-qwen38-sft/references/training.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "chatchat/README.md",
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "commit": "49165d6af4438aa7e8a1f71ce276db55f4405151",
+      "url": "https://raw.githubusercontent.com/chatchat-space/Langchain-Chatchat/49165d6af4438aa7e8a1f71ce276db55f4405151/README.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "chatchat/README_xinference.md",
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "commit": "49165d6af4438aa7e8a1f71ce276db55f4405151",
+      "url": "https://raw.githubusercontent.com/chatchat-space/Langchain-Chatchat/49165d6af4438aa7e8a1f71ce276db55f4405151/docs/install/README_xinference.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "chatchat/大模型应用技术原理.md",
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "commit": "49165d6af4438aa7e8a1f71ce276db55f4405151",
+      "url": "https://raw.githubusercontent.com/chatchat-space/Langchain-Chatchat/49165d6af4438aa7e8a1f71ce276db55f4405151/libs/chatchat-server/chatchat/data/knowledge_base/samples/content/大模型应用技术原理.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "chatchat/大模型推理优化策略.md",
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "commit": "49165d6af4438aa7e8a1f71ce276db55f4405151",
+      "url": "https://raw.githubusercontent.com/chatchat-space/Langchain-Chatchat/49165d6af4438aa7e8a1f71ce276db55f4405151/libs/chatchat-server/chatchat/data/knowledge_base/samples/content/大模型推理优化策略.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "selfllm/README.md",
+      "repo": "datawhalechina/self-llm",
+      "commit": "4da223bd0a25eeedc247696b1de51deafb58563e",
+      "url": "https://raw.githubusercontent.com/datawhalechina/self-llm/4da223bd0a25eeedc247696b1de51deafb58563e/README.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "selfllm/DeepSeek-R1-Qwen-7B-vLLM.md",
+      "repo": "datawhalechina/self-llm",
+      "commit": "4da223bd0a25eeedc247696b1de51deafb58563e",
+      "url": "https://raw.githubusercontent.com/datawhalechina/self-llm/4da223bd0a25eeedc247696b1de51deafb58563e/models/DeepSeek-R1-Distill-Qwen/04-DeepSeek-R1-Distill-Qwen-7B vLLM 部署调用.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "selfllm/DeepSeek-Coder-V2-LoRA.md",
+      "repo": "datawhalechina/self-llm",
+      "commit": "4da223bd0a25eeedc247696b1de51deafb58563e",
+      "url": "https://raw.githubusercontent.com/datawhalechina/self-llm/4da223bd0a25eeedc247696b1de51deafb58563e/models/DeepSeek-Coder-V2/04-DeepSeek-Coder-V2-Lite-Instruct Lora 微调.md",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "selfllm/DeepSeek-V4-Flash-LoRA.md",
+      "repo": "datawhalechina/self-llm",
+      "commit": "4da223bd0a25eeedc247696b1de51deafb58563e",
+      "url": "https://raw.githubusercontent.com/datawhalechina/self-llm/4da223bd0a25eeedc247696b1de51deafb58563e/models/DeepSeek-V4-Flash/01-DeepSeek-V4-Flash-LoRA及SwanLab可视化记录.md",
+      "license": "Apache-2.0"
+    }
+  ],
+  "review": {
+    "spdx": "Apache-2.0",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "All 5 upstream repositories verified Apache-2.0 via SPDX and pinned to full 40-hex commit SHAs."
+  }
+}

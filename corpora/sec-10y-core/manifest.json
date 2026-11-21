@@ -1,0 +1,499 @@
+{
+  "slug": "sec-10y-core",
+  "title": "美股与赴美中概近 10 年 SEC 官方年报与 XBRL 财务总表（48 家）",
+  "description": "覆盖 48 家美股核心科技/消费/金融/能源/医药龙头及赴美上市中概 ADR 的近 10 年 SEC EDGAR 10-K/20-F 原文与 XBRL companyfacts 审计数据（含 2026-06 上市的 SpaceX SPCX 招股书/季报）。全部为美国联邦法定公开披露（SEC-Public-Filing），可用于公开检索基准与文档核验评测。",
+  "domain": "FINANCE",
+  "region": "GLOBAL",
+  "mode": "pack",
+  "license": "SEC-Public-Filing",
+  "source_url": "https://www.sec.gov/edgar/searchedgar/companysearch",
+  "sources": [
+    {
+      "name": "NVDA_sec_10y",
+      "ticker": "NVDA",
+      "cik": "0001045810",
+      "company_zh": "英伟达",
+      "url": "https://data.sec.gov/submissions/CIK0001045810.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "TSLA_sec_10y",
+      "ticker": "TSLA",
+      "cik": "0001318605",
+      "company_zh": "特斯拉",
+      "url": "https://data.sec.gov/submissions/CIK0001318605.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "SPCX_sec_10y",
+      "ticker": "SPCX",
+      "cik": "0001181412",
+      "company_zh": "SpaceX",
+      "url": "https://data.sec.gov/submissions/CIK0001181412.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 4,
+      "year_span": "2026..2026"
+    },
+    {
+      "name": "GOOGL_sec_10y",
+      "ticker": "GOOGL",
+      "cik": "0001652044",
+      "company_zh": "Google (Alphabet)",
+      "url": "https://data.sec.gov/submissions/CIK0001652044.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "AXP_sec_10y",
+      "ticker": "AXP",
+      "cik": "0000004962",
+      "company_zh": "美国运通",
+      "url": "https://data.sec.gov/submissions/CIK0000004962.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "BRK_B_sec_10y",
+      "ticker": "BRK-B",
+      "cik": "0001067983",
+      "company_zh": "伯克希尔·哈撒韦",
+      "url": "https://data.sec.gov/submissions/CIK0001067983.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "NET_sec_10y",
+      "ticker": "NET",
+      "cik": "0001477333",
+      "company_zh": "Cloudflare",
+      "url": "https://data.sec.gov/submissions/CIK0001477333.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 7,
+      "year_span": "2019..2025"
+    },
+    {
+      "name": "PFE_sec_10y",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "company_zh": "辉瑞",
+      "url": "https://data.sec.gov/submissions/CIK0000078003.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "AAPL_sec_10y",
+      "ticker": "AAPL",
+      "cik": "0000320193",
+      "company_zh": "苹果",
+      "url": "https://data.sec.gov/submissions/CIK0000320193.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "UNH_sec_10y",
+      "ticker": "UNH",
+      "cik": "0000731766",
+      "company_zh": "联合健康",
+      "url": "https://data.sec.gov/submissions/CIK0000731766.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "WFC_sec_10y",
+      "ticker": "WFC",
+      "cik": "0000072971",
+      "company_zh": "富国银行",
+      "url": "https://data.sec.gov/submissions/CIK0000072971.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "TSM_sec_10y",
+      "ticker": "TSM",
+      "cik": "0001046179",
+      "company_zh": "台积电",
+      "url": "https://data.sec.gov/submissions/CIK0001046179.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "AVGO_sec_10y",
+      "ticker": "AVGO",
+      "cik": "0001730168",
+      "company_zh": "博通",
+      "url": "https://data.sec.gov/submissions/CIK0001730168.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "AMD_sec_10y",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "company_zh": "AMD",
+      "url": "https://data.sec.gov/submissions/CIK0000002488.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "BAC_sec_10y",
+      "ticker": "BAC",
+      "cik": "0000070858",
+      "company_zh": "美国银行",
+      "url": "https://data.sec.gov/submissions/CIK0000070858.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "CB_sec_10y",
+      "ticker": "CB",
+      "cik": "0000896159",
+      "company_zh": "安达保险",
+      "url": "https://data.sec.gov/submissions/CIK0000896159.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "COST_sec_10y",
+      "ticker": "COST",
+      "cik": "0000909832",
+      "company_zh": "好市多",
+      "url": "https://data.sec.gov/submissions/CIK0000909832.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "ARM_sec_10y",
+      "ticker": "ARM",
+      "cik": "0001973239",
+      "company_zh": "Arm",
+      "url": "https://data.sec.gov/submissions/CIK0001973239.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 3,
+      "year_span": "2024..2026"
+    },
+    {
+      "name": "META_sec_10y",
+      "ticker": "META",
+      "cik": "0001326801",
+      "company_zh": "Meta",
+      "url": "https://data.sec.gov/submissions/CIK0001326801.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "LMT_sec_10y",
+      "ticker": "LMT",
+      "cik": "0000936468",
+      "company_zh": "洛克希德·马丁",
+      "url": "https://data.sec.gov/submissions/CIK0000936468.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "XOM_sec_10y",
+      "ticker": "XOM",
+      "cik": "0000034088",
+      "company_zh": "埃克森美孚",
+      "url": "https://data.sec.gov/submissions/CIK0000034088.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "CVX_sec_10y",
+      "ticker": "CVX",
+      "cik": "0000093410",
+      "company_zh": "雪佛龙",
+      "url": "https://data.sec.gov/submissions/CIK0000093410.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "OXY_sec_10y",
+      "ticker": "OXY",
+      "cik": "0000797468",
+      "company_zh": "西方石油",
+      "url": "https://data.sec.gov/submissions/CIK0000797468.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "MSFT_sec_10y",
+      "ticker": "MSFT",
+      "cik": "0000789019",
+      "company_zh": "微软",
+      "url": "https://data.sec.gov/submissions/CIK0000789019.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "BA_sec_10y",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "company_zh": "波音",
+      "url": "https://data.sec.gov/submissions/CIK0000012927.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "INTC_sec_10y",
+      "ticker": "INTC",
+      "cik": "0000050863",
+      "company_zh": "英特尔",
+      "url": "https://data.sec.gov/submissions/CIK0000050863.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "QCOM_sec_10y",
+      "ticker": "QCOM",
+      "cik": "0000804328",
+      "company_zh": "高通",
+      "url": "https://data.sec.gov/submissions/CIK0000804328.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "CSCO_sec_10y",
+      "ticker": "CSCO",
+      "cik": "0000858877",
+      "company_zh": "思科",
+      "url": "https://data.sec.gov/submissions/CIK0000858877.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "MRNA_sec_10y",
+      "ticker": "MRNA",
+      "cik": "0001682852",
+      "company_zh": "Moderna",
+      "url": "https://data.sec.gov/submissions/CIK0001682852.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 8,
+      "year_span": "2018..2025"
+    },
+    {
+      "name": "MU_sec_10y",
+      "ticker": "MU",
+      "cik": "0000723125",
+      "company_zh": "美光科技",
+      "url": "https://data.sec.gov/submissions/CIK0000723125.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "WMT_sec_10y",
+      "ticker": "WMT",
+      "cik": "0000104169",
+      "company_zh": "沃尔玛",
+      "url": "https://data.sec.gov/submissions/CIK0000104169.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "JNJ_sec_10y",
+      "ticker": "JNJ",
+      "cik": "0000200406",
+      "company_zh": "强生",
+      "url": "https://data.sec.gov/submissions/CIK0000200406.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2014..2025"
+    },
+    {
+      "name": "JPM_sec_10y",
+      "ticker": "JPM",
+      "cik": "0000019617",
+      "company_zh": "摩根大通",
+      "url": "https://data.sec.gov/submissions/CIK0000019617.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "GS_sec_10y",
+      "ticker": "GS",
+      "cik": "0000886982",
+      "company_zh": "高盛",
+      "url": "https://data.sec.gov/submissions/CIK0000886982.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "HSBC_sec_10y",
+      "ticker": "HSBC",
+      "cik": "0001089113",
+      "company_zh": "汇丰控股",
+      "url": "https://data.sec.gov/submissions/CIK0001089113.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "BABA_sec_10y",
+      "ticker": "BABA",
+      "cik": "0001577552",
+      "company_zh": "阿里巴巴",
+      "url": "https://data.sec.gov/submissions/CIK0001577552.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2017..2026"
+    },
+    {
+      "name": "NTES_sec_10y",
+      "ticker": "NTES",
+      "cik": "0001110646",
+      "company_zh": "网易",
+      "url": "https://data.sec.gov/submissions/CIK0001110646.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "BEKE_sec_10y",
+      "ticker": "BEKE",
+      "cik": "0001809587",
+      "company_zh": "贝壳",
+      "url": "https://data.sec.gov/submissions/CIK0001809587.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 6,
+      "year_span": "2020..2025"
+    },
+    {
+      "name": "BIDU_sec_10y",
+      "ticker": "BIDU",
+      "cik": "0001329099",
+      "company_zh": "百度集团",
+      "url": "https://data.sec.gov/submissions/CIK0001329099.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "JD_sec_10y",
+      "ticker": "JD",
+      "cik": "0001549802",
+      "company_zh": "京东",
+      "url": "https://data.sec.gov/submissions/CIK0001549802.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "TCOM_sec_10y",
+      "ticker": "TCOM",
+      "cik": "0001269238",
+      "company_zh": "携程集团",
+      "url": "https://data.sec.gov/submissions/CIK0001269238.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "PDD_sec_10y",
+      "ticker": "PDD",
+      "cik": "0001737806",
+      "company_zh": "拼多多",
+      "url": "https://data.sec.gov/submissions/CIK0001737806.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 8,
+      "year_span": "2018..2025"
+    },
+    {
+      "name": "FUTU_sec_10y",
+      "ticker": "FUTU",
+      "cik": "0001754581",
+      "company_zh": "富途控股",
+      "url": "https://data.sec.gov/submissions/CIK0001754581.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 7,
+      "year_span": "2019..2025"
+    },
+    {
+      "name": "ZTO_sec_10y",
+      "ticker": "ZTO",
+      "cik": "0001677250",
+      "company_zh": "中通快递",
+      "url": "https://data.sec.gov/submissions/CIK0001677250.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "LI_sec_10y",
+      "ticker": "LI",
+      "cik": "0001791706",
+      "company_zh": "理想汽车",
+      "url": "https://data.sec.gov/submissions/CIK0001791706.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 6,
+      "year_span": "2020..2025"
+    },
+    {
+      "name": "VIPS_sec_10y",
+      "ticker": "VIPS",
+      "cik": "0001529192",
+      "company_zh": "唯品会",
+      "url": "https://data.sec.gov/submissions/CIK0001529192.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 10,
+      "year_span": "2016..2025"
+    },
+    {
+      "name": "TME_sec_10y",
+      "ticker": "TME",
+      "cik": "0001744676",
+      "company_zh": "腾讯音乐",
+      "url": "https://data.sec.gov/submissions/CIK0001744676.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 8,
+      "year_span": "2018..2025"
+    },
+    {
+      "name": "BZ_sec_10y",
+      "ticker": "BZ",
+      "cik": "0001842827",
+      "company_zh": "Boss直聘",
+      "url": "https://data.sec.gov/submissions/CIK0001842827.json",
+      "license": "SEC-Public-Filing",
+      "filing_count": 5,
+      "year_span": "2021..2025"
+    }
+  ],
+  "review": {
+    "spdx": "SEC-Public-Filing",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "US federal public SEC EDGAR 10-K/20-F/10-Q/424B4 and XBRL CompanyFacts disclosures."
+  }
+}

@@ -1,0 +1,348 @@
+[
+  {
+    "id": "SEC-IPO-01",
+    "prefix": "secipo",
+    "category": "美股招股书·高速互联产品",
+    "query": "ALAB Astera Labs Aries retimer CXL",
+    "expect_path_sub": "ALAB/2024_424B4",
+    "expect_snippet_any": [
+      "Aries",
+      "Taurus",
+      "Retimer"
+    ]
+  },
+  {
+    "id": "SEC-IPO-02",
+    "prefix": "secipo",
+    "category": "美股年报·中文跨语业绩",
+    "query": "Astera Labs ALAB 2025 营业收入 研发费用",
+    "expect_path_sub": "ALAB/ALAB_xbrl_summary.md",
+    "expect_snippet_any": [
+      "852.52M",
+      "852,525,000"
+    ]
+  },
+  {
+    "id": "SEC-IPO-03",
+    "prefix": "secipo",
+    "category": "美股招股书·AEC集群协议",
+    "query": "CRDO Credo HiWire Switch AEC 424B4 IPO prospectus",
+    "expect_path_sub": "CRDO/2022_424B4",
+    "expect_snippet_any": [
+      "HiWire",
+      "Microsoft"
+    ]
+  },
+  {
+    "id": "SEC-IPO-04",
+    "prefix": "secipo",
+    "category": "美股年报·上市后爆发验证",
+    "query": "Credo CRDO 2026 营业收入 净利润",
+    "expect_path_sub": "CRDO/CRDO_xbrl_summary.md",
+    "expect_snippet_any": [
+      "1,335.12M",
+      "472.28M"
+    ]
+  },
+  {
+    "id": "SEC-IPO-05",
+    "prefix": "secipo",
+    "category": "美股招股书·AI算力云生态",
+    "query": "CoreWeave CRWV NVIDIA Microsoft OpenAI",
+    "expect_path_sub": "CRWV/2025_424B4",
+    "expect_snippet_any": [
+      "NVIDIA",
+      "Microsoft",
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "SEC-IPO-06",
+    "prefix": "secipo",
+    "category": "美股年报·算力云资本开支",
+    "query": "CoreWeave CRWV 2025 资本开支 总资产 营业收入",
+    "expect_path_sub": "CRWV/CRWV_xbrl_summary.md",
+    "expect_snippet_any": [
+      "5,131.00M",
+      "10,309.00M",
+      "49,302.00M"
+    ]
+  },
+  {
+    "id": "SEC-IPO-07",
+    "prefix": "secipo",
+    "category": "美股招股书·股权结构",
+    "query": "ARM SoftBank Group 90.6% ordinary shares",
+    "expect_path_sub": "ARM/2023_424B4",
+    "expect_snippet_any": [
+      "SoftBank",
+      "90.6%"
+    ]
+  },
+  {
+    "id": "SEC-IPO-08",
+    "prefix": "secipo",
+    "category": "美股招股书·航天星链",
+    "query": "SpaceX SPCX Starlink V2 Mini V3",
+    "expect_path_sub": "SPCX/2026_424B4",
+    "expect_snippet_any": [
+      "Starlink",
+      "V2 Mini"
+    ]
+  },
+  {
+    "id": "HK-IPO-01",
+    "prefix": "hkipo",
+    "category": "港股18C招股书·简搜繁芯片",
+    "query": "黑芝麻智能 华山系列 武当系列 车规级 SoC",
+    "expect_path_sub": "02533/2024_PROSPECTUS.md",
+    "expect_snippet_any": [
+      "華山",
+      "武當",
+      "SoC"
+    ]
+  },
+  {
+    "id": "HK-IPO-02",
+    "prefix": "hkipo",
+    "category": "港股18C年报·营收验证",
+    "query": "黑芝麻智能 2025年报 收入 822,328 毛利",
+    "expect_path_sub": "02533/2025_ANNUAL_REPORT.md",
+    "expect_snippet_any": [
+      "822,328",
+      "337,089"
+    ]
+  },
+  {
+    "id": "HK-IPO-03",
+    "prefix": "hkipo",
+    "category": "港股招股书·智驾软硬件",
+    "query": "地平线 征程3 Horizon Pilot NOA",
+    "expect_path_sub": "09660/2024_PROSPECTUS.md",
+    "expect_snippet_any": [
+      "Horizon Pilot",
+      "NOA",
+      "征程"
+    ]
+  },
+  {
+    "id": "HK-IPO-04",
+    "prefix": "hkipo",
+    "category": "港股年报·客户合同收入",
+    "query": "地平线 2025年报 来自客户合同的收入 3,758,268",
+    "expect_path_sub": "09660/2025_ANNUAL_REPORT.md",
+    "expect_snippet_any": [
+      "3,758,268",
+      "57.7"
+    ]
+  },
+  {
+    "id": "HK-IPO-05",
+    "prefix": "hkipo",
+    "category": "港股招股书·大模型MaaS",
+    "query": "智谱 GLM-130B MaaS 预训练大模型框架",
+    "expect_path_sub": "ZHIPU/2025_PROSPECTUS.md",
+    "expect_snippet_any": [
+      "GLM",
+      "MaaS"
+    ]
+  },
+  {
+    "id": "HK-IPO-06",
+    "prefix": "hkipo",
+    "category": "港股年报·大模型营收毛利",
+    "query": "智谱 2025年度报告 724,334 毛利 296,656",
+    "expect_path_sub": "ZHIPU/2025_ANNUAL_REPORT.md",
+    "expect_snippet_any": [
+      "724,334",
+      "296,656"
+    ]
+  },
+  {
+    "id": "HK-IPO-07",
+    "prefix": "hkipo",
+    "category": "港股基准对照·越疆概要",
+    "query": "越疆 协作机器人 灼识咨询 全球前二",
+    "expect_path_sub": "02432/",
+    "expect_snippet_any": [
+      "協作機器人",
+      "灼識諮詢"
+    ]
+  },
+  {
+    "id": "HK-IPO-08",
+    "prefix": "hkipo",
+    "category": "港股基准对照·越疆2025年报",
+    "query": "越疆机器人 2025年12月31日 营业收入 492.209",
+    "expect_path_sub": "02432/06-2025年度报告.md",
+    "expect_snippet_any": [
+      "492.209",
+      "百萬元人民幣"
+    ]
+  },
+  {
+    "id": "CN-IPO-01",
+    "prefix": "cnipo",
+    "category": "科创板招股书·国产算力DCU",
+    "query": "海光信息 DCU 海光一号 深算一号 营业收入",
+    "expect_path_sub": "688041/2022_PROSPECTUS.md",
+    "expect_snippet_any": [
+      "DCU",
+      "深算一号",
+      "海光一号"
+    ]
+  },
+  {
+    "id": "CN-IPO-02",
+    "prefix": "cnipo",
+    "category": "科创板年报·营收净利跃升",
+    "query": "海光信息 2025年报 归母净利润 14,376,889,476.95",
+    "expect_path_sub": "688041/2025_ANNUAL_REPORT.md",
+    "expect_snippet_any": [
+      "14,376,889,476.95",
+      "2,544,890,905.62"
+    ]
+  },
+  {
+    "id": "CN-IPO-03",
+    "prefix": "cnipo",
+    "category": "科创板招股书·高速光芯片",
+    "query": "源杰科技 招股说明书 2.5G 1490nm 10G 1270nm DFB EML",
+    "expect_path_sub": "688498/2022_PROSPECTUS.md",
+    "expect_snippet_any": [
+      "DFB",
+      "EML",
+      "1270nm"
+    ]
+  },
+  {
+    "id": "CN-IPO-04",
+    "prefix": "cnipo",
+    "category": "科创板问询回复·监管追问",
+    "query": "源杰科技 审核问询函 应收账款 1.14亿元 坏账减值",
+    "expect_path_sub": "688498/2023_INQUIRY_REPLY.md",
+    "expect_snippet_any": [
+      "1.14 亿元",
+      "1385 万元",
+      "问询函"
+    ]
+  },
+  {
+    "id": "CN-IPO-05",
+    "prefix": "cnipo",
+    "category": "科创板招股书·高性能碳纤维",
+    "query": "中复神鹰 SYT49S SYM40 碳纤维 航空航天",
+    "expect_path_sub": "688295/2022_PROSPECTUS.md",
+    "expect_snippet_any": [
+      "SYT49S",
+      "SYM40",
+      "碳纤维"
+    ]
+  },
+  {
+    "id": "CN-IPO-06",
+    "prefix": "cnipo",
+    "category": "科创板年报·碳纤维复苏",
+    "query": "中复神鹰 2025年报 营业收入 2,193,737,675.52",
+    "expect_path_sub": "688295/2025_ANNUAL_REPORT.md",
+    "expect_snippet_any": [
+      "2,193,737,675.52",
+      "40.87"
+    ]
+  },
+  {
+    "id": "GH-OSS-01",
+    "prefix": "cngh",
+    "category": "开源工程·知识切片管理",
+    "query": "RAGFlow Chunk Parsing Results Knowledge Fragment",
+    "expect_path_sub": "ragflow/docs_chunk_parsing.md",
+    "expect_snippet_any": [
+      "Chunk",
+      "Knowledge Fragment"
+    ]
+  },
+  {
+    "id": "GH-OSS-02",
+    "prefix": "cngh",
+    "category": "开源工程·昇腾NPU容器",
+    "query": "LlamaFactory 昇腾 Atlas NPU TorchNPU CANN 镜像",
+    "expect_path_sub": "llamafactory/npu_OVERVIEW.zh.md",
+    "expect_snippet_any": [
+      "昇腾",
+      "Atlas",
+      "CANN"
+    ]
+  },
+  {
+    "id": "GH-OSS-03",
+    "prefix": "cngh",
+    "category": "开源工程·QLoRA单卡训练",
+    "query": "llamafactory-cli qwen3_lora_sft_bnb_npu QLoRA",
+    "expect_path_sub": "llamafactory/qwen_sft_training.md",
+    "expect_snippet_any": [
+      "QLoRA",
+      "llamafactory-cli"
+    ]
+  },
+  {
+    "id": "GH-OSS-04",
+    "prefix": "cngh",
+    "category": "开源工程·ONNX模型转换",
+    "query": "Paddle2ONNX PaddleOCR ONNXRuntime 模型转化",
+    "expect_path_sub": "paddleocr/paddle2onnx_ch.md",
+    "expect_snippet_any": [
+      "Paddle2ONNX",
+      "ONNXRuntime"
+    ]
+  },
+  {
+    "id": "GH-OSS-05",
+    "prefix": "cngh",
+    "category": "开源工程·显存与注意力优化",
+    "query": "PagedAttention FlashAttention MQA/GQA 显存优化",
+    "expect_path_sub": "chatchat/大模型推理优化策略.md",
+    "expect_snippet_any": [
+      "PagedAttention",
+      "FlashAttention"
+    ]
+  },
+  {
+    "id": "GH-OSS-06",
+    "prefix": "cngh",
+    "category": "开源工程·代码模型微调",
+    "query": "DeepSeek-Coder-V2-Lite-Instruct Lora 微调 3090",
+    "expect_path_sub": "selfllm/DeepSeek-Coder-V2-LoRA.md",
+    "expect_snippet_any": [
+      "DeepSeek-Coder-V2-Lite-Instruct",
+      "3090"
+    ]
+  },
+  {
+    "id": "ABS-IPO-01",
+    "prefix": "secipo",
+    "category": "拒答·缺失私有条款",
+    "query": "SpaceX B轮优先股 对赌回购利率 条款",
+    "expect_absent": true
+  },
+  {
+    "id": "ABS-IPO-02",
+    "prefix": "hkipo",
+    "category": "拒答·虚构未上市标",
+    "query": "幻方量子计算 港股18C 招股书 第八章",
+    "expect_absent": true
+  },
+  {
+    "id": "ABS-IPO-03",
+    "prefix": "cnipo",
+    "category": "拒答·虚构监管函",
+    "query": "寒武纪 2026年科创板问询回复 退市风险警示",
+    "expect_absent": true
+  },
+  {
+    "id": "ABS-IPO-04",
+    "prefix": "cngh",
+    "category": "拒答·虚构量子算子",
+    "query": "PaddleOCR 室温超导量子引力波晶圆光刻第999章",
+    "expect_absent": true
+  }
+]

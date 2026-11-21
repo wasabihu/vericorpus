@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vericorpus"
+version = "0.1.0"
+description = "Licence-audited Chinese/SEC/clinical reference corpora, coordinate PDF table reconstruction, and bilingual retrieval benchmarks for XERJ and Elasticsearch-compatible engines."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = [
+  "pymupdf>=1.24.0",  # Optional: PyMuPDF is licensed under GNU AGPL-3.0 by Artifex Software, Inc.
+]
+
+[project.urls]
+Repository = "https://github.com/wasabihu/vericorpus"
+Issues = "https://github.com/wasabihu/vericorpus/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

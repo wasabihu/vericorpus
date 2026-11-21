@@ -1,0 +1,38 @@
+{
+  "slug": "cn-science-ccby",
+  "title": "开放获取中文与双语科学论文摘要库（CC-BY-4.0）",
+  "description": "从 OpenAlex 严格按 open_access + CC-BY-4.0 许可抓取 40 篇 2020 年后高被引中文/双语前沿医学、生命科学与工程技术论文，完整保留 DOI、作者与期刊署名。",
+  "domain": "HEALTH",
+  "region": "CN",
+  "mode": "pack",
+  "license": "CC-BY-4.0",
+  "source_url": "https://api.openalex.org/works",
+  "query_filters": [
+    {
+      "name": "zh-high-impact-ccby",
+      "url": "https://api.openalex.org/works?filter=language:zh,open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2019&per-page=35&sort=cited_by_count:desc",
+      "count": 30,
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "biomed-cn-symbols-ccby",
+      "url": "https://api.openalex.org/works?filter=open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2021&search=PD-1+BRCA1+lung+cancer+China&per-page=15&sort=cited_by_count:desc",
+      "count": 10,
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "sources": [
+    {
+      "name": "openalex-zh-ccby-works",
+      "url": "https://api.openalex.org/works?filter=language:zh,open_access.is_oa:true,primary_location.license:cc-by,has_abstract:true,publication_year:%3E2019&per-page=35&sort=cited_by_count:desc",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "review": {
+    "spdx": "CC-BY-4.0",
+    "use": "adapt-with-attribution",
+    "by": "wasabihu",
+    "at": "2026-11-21",
+    "note": "OpenAlex OA is_oa=true + cc-by verified; full author, DOI, and journal attribution preserved."
+  }
+}
