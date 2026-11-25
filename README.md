@@ -29,6 +29,10 @@
 - **[`wasabihu/xerj-bilingual-fin-law-384`](https://huggingface.co/wasabihu/xerj-bilingual-fin-law-384)**（`MIT`）：基于 `intfloat/multilingual-e5-small` 的 384 维中英双语金融/法规/临床句向量模型（同时提供 FP32/FP16 ONNX 与原生 XERJ Candle `safetensors`），在 `xerj v1.0.0-rc.105` 原生 `hybrid` 混合检索中达到 `92.00%` R@1 / `100.00%` R@5（阿拉伯数字法条 `100%`、繁体查询 `97.06%`）。
 - **[`wasabihu/VeriCorpus-Reranker-0.6B`](https://huggingface.co/wasabihu/VeriCorpus-Reranker-0.6B)**（`Apache-2.0`）：基于 `Qwen/Qwen3-Reranker-0.6B` 的双语金融/法规/临床口径校准重排器，240 组零泄漏净室盲测 `Top1 0.8625 → 1.0000`、`MRR 0.9188 → 1.0000`、`StrictCal 0.2083 → 0.9833`。
 
+### 签名示例语料包（Signed Public Sample Pack）
+
+- **[`examples/formd-sample-30d/`](./examples/formd-sample-30d/)**（`SEC-Public-Filing` + 分离式 `Ed25519` 签名）：收录连续 30 个自然日（`2026-10-06` 至 `2026-11-04`，21 个 SEC 申报日）内 **3,685 条**去重后的美国 SEC EDGAR 公开 Form D 首次申报记录（`3,577` 家唯一 CIK，仅实体级公开字段、零付费 API），每条附官方 `sec_edgar_url` 与原始 XML 的 `source_xml_sha256`，运行 `python3 examples/formd-sample-30d/verify_pack.py` 可离线单命令验签并校验完整性。
+
 ---
 
 ## 核心基础设施概览

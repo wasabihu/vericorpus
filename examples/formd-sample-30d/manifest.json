@@ -1,0 +1,89 @@
+{
+  "artifacts": {
+    "canonical_sorted_keys": true,
+    "filings_bytes": 3160978,
+    "filings_file": "filings_30d.jsonl",
+    "filings_sha256": "6bcee99f0b4bb1566c7fe2acf29fd8bdfb73b5ac5dd74f8acaef393549f34d1a",
+    "format": "jsonl"
+  },
+  "date_range": {
+    "calendar_days": 30,
+    "end": "2026-11-04",
+    "sec_filing_days": 21,
+    "start": "2026-10-06"
+  },
+  "generator": {
+    "deterministic": true,
+    "scope": "Initial SEC Form D notices (form_type='D', excluding D/A amendments) across a 30-calendar-day window, deduplicated by accession_number to primaryIssuer CIK, strictly entity-level public fields (excluding relatedPersonsList and street addresses).",
+    "tool": "formd-scan/build_sample_pack.py",
+    "version": "1.0.0"
+  },
+  "pack_id": "sec-form-d-sample-30d-2026-10-06-to-2026-11-04",
+  "provenance": {
+    "license": "SEC-Public-Filing",
+    "public_domain_notice": "U.S. SEC EDGAR Form D notices are public federal regulatory filings available without subscription or paid API keys. Provided strictly for verifiable corpus benchmarking, citation verification, and research; not investment or legal advice.",
+    "source": "U.S. Securities and Exchange Commission (SEC) EDGAR",
+    "source_url": "https://www.sec.gov/edgar/searchedgar/companysearch"
+  },
+  "record_count": 3685,
+  "schema_version": "formd-pack/v1",
+  "signing": {
+    "algorithm": "Ed25519",
+    "public_key_format": "SPKI-PEM",
+    "public_key_pem_sha256": "18d16b4d20bed329ca46cae03fad706f904e20278de7134f84ec183bba179f57",
+    "public_key_raw_b64": "ImbA1RcWIUYucAnIDYSnoyPuBf6CY+E6ygXoXpujdeM=",
+    "public_key_raw_hex": "2266c0d5171621462e7009c80d84a7a323ee05fe8263e13aca05e85e9ba375e3",
+    "public_key_raw_sha256": "61113854f4a00bc690fd3e42551d02ef5afce48c48d5728827a027e35eaef186",
+    "public_key_spki_sha256": "2c564b3b7f2b83156a7231a9b45aac40bede4a5b5adced63af310b5fff5d0189",
+    "signature_format": "detached raw 64-byte Ed25519 (manifest.sig) / base64 (manifest.sig.b64)",
+    "signed_artifact": "manifest.json"
+  },
+  "summary": {
+    "equity_filings": 1744,
+    "pooled_investment_fund_filings": 2230,
+    "top_industry_groups": [
+      {
+        "count": 2148,
+        "industry_group": "Pooled Investment Fund"
+      },
+      {
+        "count": 341,
+        "industry_group": "Other"
+      },
+      {
+        "count": 336,
+        "industry_group": "Other Technology"
+      },
+      {
+        "count": 142,
+        "industry_group": "Commercial"
+      },
+      {
+        "count": 139,
+        "industry_group": "Other Real Estate"
+      },
+      {
+        "count": 82,
+        "industry_group": "Residential"
+      },
+      {
+        "count": 68,
+        "industry_group": "Other Health Care"
+      },
+      {
+        "count": 53,
+        "industry_group": "Biotechnology"
+      },
+      {
+        "count": 46,
+        "industry_group": "Investing"
+      },
+      {
+        "count": 39,
+        "industry_group": "Business Services"
+      }
+    ],
+    "unique_ciks": 3577
+  },
+  "title": "SEC EDGAR Form D 30-Day Public Sample Pack (2026-10-06 to 2026-11-04)"
+}
